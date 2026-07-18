@@ -1,6 +1,6 @@
 # Cross-consumer source inventory
 
-This inventory fixes the extraction cohort. Nix SRI BLAKE3 identities bind exact reviewed file bytes; repository revisions bind surrounding source context.
+This inventory fixes the extraction cohort. Nix SRI BLAKE3 identities bind exact reviewed file bytes; repository revisions bind surrounding source context. Exact pre-extraction statement bytes and identities are frozen in [`baseline-vectors.md`](baseline-vectors.md).
 
 ## Source cohort
 

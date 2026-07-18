@@ -47,7 +47,24 @@ let RepositoryContract = {
   release_checks | Array String,
   non_claims | NonClaims,
 } in
+let Equal = fun expected =>
+  std.contract.from_predicate (fun value => value == expected)
+in
+let NonEmptyStrings = std.contract.from_predicate (fun value =>
+  std.is_array value
+  && std.array.length value > 0
+  && std.array.all std.is_string value
+) in
+let ConsumerMappingContract = fun expected_consumer expected_revision => {
+  schema | Equal "artifact-auth.consumer-mapping.v1",
+  consumer | Equal expected_consumer,
+  source_revision | Equal expected_revision,
+  shared | NonEmptyStrings,
+  extensions | Array String,
+  retained_authority | NonEmptyStrings,
+} in
 {
+  ConsumerMapping = ConsumerMappingContract,
   OwnerAuthorization = OwnerAuthorizationContract,
   Repository = RepositoryContract,
   Source = SourceContract,

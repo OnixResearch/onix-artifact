@@ -8,7 +8,7 @@
 - `artifact-auth-ed25519` is a pure verifier over core-produced canonical statement bytes and explicitly supplied public-key/signature bytes. It does not expose signing or private-key APIs.
 - Consumers retain measurement, payload canonicalization, signing, private material, trust-root selection, currentness collection, authorization, lifecycle, build, transport, registry, runtime, and release decisions.
 
-The implementation synthesizes Cairn's typed-observation boundary, Mantle's canonical normalization and distinct-full-key threshold behavior, and Molten's purpose/generation/currentness model. Valence remains the owner of Evidence IR and Radicle authorization semantics.
+The implementation synthesizes Cairn's typed-observation boundary, Mantle's canonical normalization and distinct-full-key threshold behavior, and Molten's purpose/generation/currentness model. Valence remains the owner of Evidence IR and Radicle authorization semantics. Exact legacy bytes and identities are frozen in [`docs/baseline-vectors.md`](docs/baseline-vectors.md).
 
 ## Statement contract
 

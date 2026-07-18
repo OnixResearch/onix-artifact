@@ -13,6 +13,14 @@ use serde::Deserialize;
 const GENERATION_ONE: u64 = 1;
 const GENERATION_TWO: u64 = 2;
 const THRESHOLD_TWO: u16 = 2;
+const CAIRN_BASELINE_BLAKE3: &str =
+    "65268c8bf653065b42f916ef79212513fbee3cc690f18c80a3b975021d7367ef";
+const MANTLE_BASELINE_BLAKE3: &str =
+    "d6adc008cce03ea5b39560b0a5586dc6523479e70cb1f7e93d57ec6ee230fbb4";
+const CAIRN_LEGACY_PUBLIC_KEY_HEX: &str =
+    "456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123";
+const CAIRN_LEGACY_PUBLIC_KEY_IDENTITY: &str =
+    "fd5a0f16f9af5f2739494a1bce29a4571d3845ea8a61c47e3e2e57b82975fe91";
 
 #[derive(Debug, Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -144,6 +152,32 @@ fn apply_mutation(
         "unknown_currentness" => policy.trusted_keys[0].currentness = KeyCurrentness::Unknown,
         other => panic!("unknown fixture mutation: {other}"),
     }
+}
+
+fn assert_canonical_json_fixture(bytes: &[u8], expected_blake3: &str) {
+    let value: serde_json::Value = serde_json::from_slice(bytes).expect("valid baseline JSON");
+    let canonical = serde_json::to_vec(&value).expect("canonical baseline JSON");
+    assert_eq!(canonical, bytes);
+    assert_eq!(blake3::hash(bytes).to_hex().as_str(), expected_blake3);
+}
+
+// r[verify artifact_auth.conformance.consumers]
+#[test]
+fn legacy_statement_bytes_and_identities_are_frozen() {
+    assert_canonical_json_fixture(
+        include_bytes!("../../../fixtures/baselines/cairn-signature-message.json"),
+        CAIRN_BASELINE_BLAKE3,
+    );
+    assert_canonical_json_fixture(
+        include_bytes!("../../../fixtures/baselines/mantle-trust-statement.json"),
+        MANTLE_BASELINE_BLAKE3,
+    );
+    assert_eq!(
+        blake3::hash(CAIRN_LEGACY_PUBLIC_KEY_HEX.as_bytes())
+            .to_hex()
+            .as_str(),
+        CAIRN_LEGACY_PUBLIC_KEY_IDENTITY
+    );
 }
 
 // r[verify artifact_auth.conformance.consumers]

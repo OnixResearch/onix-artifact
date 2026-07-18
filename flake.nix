@@ -151,10 +151,22 @@
                 set -eu
                 cd "$src"
                 nickel typecheck config/repository.ncl
+                nickel typecheck config/consumers/cairn.ncl
+                nickel typecheck config/consumers/mantle.ncl
+                nickel typecheck config/consumers/molten.ncl
+                nickel typecheck config/consumers/valence.ncl
                 nickel typecheck release/profile.ncl
                 nickel export --format json config/repository.ncl > "$TMPDIR/repository.json"
+                nickel export --format json config/consumers/cairn.ncl > "$TMPDIR/cairn.json"
+                nickel export --format json config/consumers/mantle.ncl > "$TMPDIR/mantle.json"
+                nickel export --format json config/consumers/molten.ncl > "$TMPDIR/molten.json"
+                nickel export --format json config/consumers/valence.ncl > "$TMPDIR/valence.json"
                 nickel export --format json release/profile.ncl > "$TMPDIR/profile.json"
                 cmp "$TMPDIR/repository.json" config/repository.json
+                cmp "$TMPDIR/cairn.json" fixtures/consumers/cairn.json
+                cmp "$TMPDIR/mantle.json" fixtures/consumers/mantle.json
+                cmp "$TMPDIR/molten.json" fixtures/consumers/molten.json
+                cmp "$TMPDIR/valence.json" fixtures/consumers/valence.json
                 cmp "$TMPDIR/profile.json" release/profile.json
                 if nickel export --format json config/fixtures/invalid-license.ncl > /dev/null 2>&1; then
                   echo "invalid standalone license unexpectedly passed" >&2
@@ -174,6 +186,10 @@
                 fi
                 if nickel export --format json config/fixtures/weakened-non-claims.ncl > /dev/null 2>&1; then
                   echo "weakened non-claims unexpectedly passed" >&2
+                  exit 1
+                fi
+                if nickel export --format json config/fixtures/mapping-drops-retained-authority.ncl > /dev/null 2>&1; then
+                  echo "consumer mapping authority loss unexpectedly passed" >&2
                   exit 1
                 fi
                 touch "$out"

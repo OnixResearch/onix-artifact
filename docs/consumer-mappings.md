@@ -1,6 +1,6 @@
 # Consumer mapping profiles
 
-Mappings are one-way compatibility adapters. They do not transfer payload canonicalization, trust selection, authorization, or release authority.
+Mappings are one-way compatibility adapters. Typed sources live in `config/consumers/*.ncl`; checked JSON projections live in `fixtures/consumers/*.json`. Positive and negative checks require every consumer profile to preserve its explicit retained-authority set. Mappings do not transfer payload canonicalization, trust selection, authorization, or release authority.
 
 ## Cairn
 
