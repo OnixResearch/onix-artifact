@@ -7,6 +7,7 @@ let Repository = import "../config/repository.ncl" in
   packages = Repository.packages,
   required_checks = Repository.release_checks,
   source_cohort = Repository.source_cohort,
+  owner_authorization = Repository.owner_authorization,
   distribution = {
     channel = "immutable-git-revision",
     crates_io = false,

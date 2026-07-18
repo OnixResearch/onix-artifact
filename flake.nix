@@ -156,6 +156,26 @@
                 nickel export --format json release/profile.ncl > "$TMPDIR/profile.json"
                 cmp "$TMPDIR/repository.json" config/repository.json
                 cmp "$TMPDIR/profile.json" release/profile.json
+                if nickel export --format json config/fixtures/invalid-license.ncl > /dev/null 2>&1; then
+                  echo "invalid standalone license unexpectedly passed" >&2
+                  exit 1
+                fi
+                if nickel export --format json config/fixtures/missing-owner-authorization.ncl > /dev/null 2>&1; then
+                  echo "missing owner authorization unexpectedly passed" >&2
+                  exit 1
+                fi
+                if nickel export --format json config/fixtures/false-owner-authorization.ncl > /dev/null 2>&1; then
+                  echo "false owner authorization unexpectedly passed" >&2
+                  exit 1
+                fi
+                if nickel export --format json config/fixtures/mismatched-source-provenance.ncl > /dev/null 2>&1; then
+                  echo "mismatched source provenance unexpectedly passed" >&2
+                  exit 1
+                fi
+                if nickel export --format json config/fixtures/weakened-non-claims.ncl > /dev/null 2>&1; then
+                  echo "weakened non-claims unexpectedly passed" >&2
+                  exit 1
+                fi
                 touch "$out"
               '';
 
@@ -190,7 +210,10 @@
           authority-audit =
             pkgs.runCommand "artifact-auth-authority-audit"
               {
-                nativeBuildInputs = [ pkgs.gnugrep ];
+                nativeBuildInputs = [
+                  pkgs.gnugrep
+                  toolchain
+                ];
                 src = self;
               }
               ''
@@ -199,6 +222,27 @@
                   echo "forbidden authority or private-key dependency found" >&2
                   exit 1
                 fi
+                if grep -R -i -E 'cairn|mantle|crunch|aspen|molten|valence' "$src"/Cargo.toml "$src"/crates/*/Cargo.toml; then
+                  echo "product dependency found in package manifests" >&2
+                  exit 1
+                fi
+                export CARGO_HOME="$TMPDIR/cargo-home"
+                cargo metadata \
+                  --manifest-path "$src/Cargo.toml" \
+                  --format-version 1 \
+                  --no-deps \
+                  --offline > "$TMPDIR/metadata.json"
+                expected_package_count=2
+                observed_license_count="$(grep -oF '"license":"MIT OR Apache-2.0"' "$TMPDIR/metadata.json" | wc -l)"
+                if [ "$observed_license_count" -ne "$expected_package_count" ]; then
+                  echo "package metadata does not carry the standalone license grant" >&2
+                  exit 1
+                fi
+                grep -F 'explicitly authorized reuse, modification, and relicensing' "$src/provenance/SOURCE_GRANT.md" > /dev/null
+                grep -F '26c6880c08cd730c9e9420f92ea91a87212e492d' "$src/provenance/SOURCE_GRANT.md" > /dev/null
+                grep -F 'cc4639be24475d80844b091cdec605eb2fef9ff0' "$src/provenance/SOURCE_GRANT.md" > /dev/null
+                grep -F '70590459a218dc8e66948ab6f305a7c54142b710' "$src/provenance/SOURCE_GRANT.md" > /dev/null
+                grep -F '8eccac35fcd8aae8ef64b3d1021e7f1a53656180' "$src/provenance/SOURCE_GRANT.md" > /dev/null
                 touch "$out"
               '';
         }

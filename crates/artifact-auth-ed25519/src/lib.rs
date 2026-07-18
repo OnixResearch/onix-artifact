@@ -233,6 +233,30 @@ mod tests {
             Some(Ed25519Failure::SignatureInvalid.code())
         );
 
+        let mut changed_subject = statement.clone();
+        changed_subject.scope.subject = reference("test-artifact.v1", "changed-subject");
+        let changed_subject_observation = verify_statement(
+            &changed_subject,
+            signing_key.verifying_key().as_bytes(),
+            &signature,
+        );
+        assert_eq!(
+            changed_subject_observation.failure_code.as_deref(),
+            Some(Ed25519Failure::SignatureInvalid.code())
+        );
+
+        let mut changed_parents = statement.clone();
+        changed_parents.scope.parents[0] = reference("test-parent.v1", "changed-parent");
+        let changed_parents_observation = verify_statement(
+            &changed_parents,
+            signing_key.verifying_key().as_bytes(),
+            &signature,
+        );
+        assert_eq!(
+            changed_parents_observation.failure_code.as_deref(),
+            Some(Ed25519Failure::SignatureInvalid.code())
+        );
+
         let wrong_key_observation =
             verify_statement(&statement, wrong_key.verifying_key().as_bytes(), &signature);
         assert_eq!(

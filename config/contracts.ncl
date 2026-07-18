@@ -5,22 +5,50 @@ let OwnedPackages = std.contract.from_predicate (fun value =>
   && std.array.elem "artifact-auth-core" value
   && std.array.elem "artifact-auth-ed25519" value
 ) in
+let StandaloneLicense = std.contract.from_predicate (fun value =>
+  value == "MIT OR Apache-2.0"
+) in
+let OwnerAuthorized = std.contract.from_predicate (fun value => value == true) in
 let SourceContract = {
   consumer | String,
   revision | String,
   role | String,
 } in
+let ExpectedSourceCohort = [
+  { consumer = "cairn", revision = "cc4639be24475d80844b091cdec605eb2fef9ff0", role = "typed-observation-boundary" },
+  { consumer = "mantle", revision = "26c6880c08cd730c9e9420f92ea91a87212e492d", role = "full-key-threshold-and-canonicalization" },
+  { consumer = "molten", revision = "70590459a218dc8e66948ab6f305a7c54142b710", role = "purpose-generation-currentness" },
+  { consumer = "valence", revision = "8eccac35fcd8aae8ef64b3d1021e7f1a53656180", role = "protocol-and-authorization-boundary" },
+] in
+let SourceCohort = std.contract.from_predicate (fun value =>
+  value == ExpectedSourceCohort
+) in
+let ExpectedNonClaims = [
+  "Authentication does not prove artifact truth, verifier correctness, or producer authorization.",
+  "Authentication does not prove trust-root correctness or revocation freshness.",
+  "Authentication does not prove provenance, lifecycle, build, semantic, deployment, or release correctness.",
+] in
+let NonClaims = std.contract.from_predicate (fun value =>
+  value == ExpectedNonClaims
+) in
+let OwnerAuthorizationContract = {
+  owner_authorized | OwnerAuthorized,
+  record | String,
+  license_grant | StandaloneLicense,
+} in
 let RepositoryContract = {
   name | String,
   repository | String,
-  license | String,
+  license | StandaloneLicense,
   packages | OwnedPackages,
   schemas | Array String,
-  source_cohort | Array SourceContract,
+  source_cohort | SourceCohort,
+  owner_authorization | OwnerAuthorizationContract,
   release_checks | Array String,
-  non_claims | Array String,
+  non_claims | NonClaims,
 } in
 {
+  OwnerAuthorization = OwnerAuthorizationContract,
   Repository = RepositoryContract,
   Source = SourceContract,
 }

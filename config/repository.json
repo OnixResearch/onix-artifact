@@ -6,6 +6,11 @@
     "Authentication does not prove trust-root correctness or revocation freshness.",
     "Authentication does not prove provenance, lifecycle, build, semantic, deployment, or release correctness."
   ],
+  "owner_authorization": {
+    "license_grant": "MIT OR Apache-2.0",
+    "owner_authorized": true,
+    "record": "provenance/SOURCE_GRANT.md"
+  },
   "packages": [
     "artifact-auth-core",
     "artifact-auth-ed25519"

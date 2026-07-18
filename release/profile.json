@@ -11,6 +11,11 @@
     "sibling_paths": false
   },
   "license": "MIT OR Apache-2.0",
+  "owner_authorization": {
+    "license_grant": "MIT OR Apache-2.0",
+    "owner_authorized": true,
+    "record": "provenance/SOURCE_GRANT.md"
+  },
   "packages": [
     "artifact-auth-core",
     "artifact-auth-ed25519"

@@ -23,6 +23,13 @@
       "expected_statement_blake3": null
     },
     {
+      "id": "wrong-profile",
+      "mutation": "wrong_profile",
+      "expected_passed": false,
+      "expected_issue": "auth.policy_profile_mismatch",
+      "expected_statement_blake3": null
+    },
+    {
       "id": "revoked-key",
       "mutation": "revoked_key",
       "expected_passed": false,

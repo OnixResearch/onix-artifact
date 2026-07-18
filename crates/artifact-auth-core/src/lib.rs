@@ -770,6 +770,8 @@ mod tests {
     const GENERATION_ONE: u64 = 1;
     const THRESHOLD_ONE: u16 = 1;
     const THRESHOLD_TWO: u16 = 2;
+    const SHA256_ZERO_HEX: &str =
+        "0000000000000000000000000000000000000000000000000000000000000000";
 
     fn reference(profile: &str, seed: &str) -> ArtifactRef {
         ArtifactRef {
@@ -854,6 +856,21 @@ mod tests {
         let mut changed = right;
         changed.scope.domain = "different-domain".to_string();
         assert_ne!(statement_identity(&left), statement_identity(&changed));
+
+        let mut interoperability_scope = scope;
+        interoperability_scope.parents.push(ArtifactRef {
+            profile: "oci-manifest.v1".to_string(),
+            algorithm: ALGORITHM_SHA256.to_string(),
+            digest_hex: SHA256_ZERO_HEX.to_string(),
+        });
+        let interoperability_statement = statement(
+            &interoperability_scope,
+            "mantle",
+            "registry-key",
+            key("registry-key"),
+        );
+        assert!(canonical_statement_bytes(&interoperability_statement).is_ok());
+        assert!(statement_identity(&interoperability_statement).is_ok());
     }
 
     // r[verify artifact_auth.policy.explicit]

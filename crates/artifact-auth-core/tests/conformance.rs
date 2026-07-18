@@ -129,6 +129,7 @@ fn apply_mutation(
             }
         }
         "wrong_domain" => evidence[0].statement.scope.domain = "other-domain".to_string(),
+        "wrong_profile" => policy.profile_id = "other-profile".to_string(),
         "revoked_key" => policy.trusted_keys[0].currentness = KeyCurrentness::Revoked,
         "stale_generation" => evidence[0].generation = GENERATION_TWO,
         "wrong_purpose" => {
