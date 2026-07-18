@@ -9,10 +9,13 @@
 extern crate alloc;
 
 use alloc::string::{String, ToString};
+use alloc::vec::Vec;
 
 use artifact_auth_core::{
-    ALGORITHM_BLAKE3, ALGORITHM_ED25519, ArtifactRef, ArtifactStatement, CryptographicObservation,
-    ED25519_PUBLIC_KEY_PROFILE_V1, canonical_statement_bytes,
+    ALGORITHM_BLAKE3, ALGORITHM_ED25519, ArtifactRef, ArtifactStatement, AuthenticationDecision,
+    AuthenticationPolicy, AuthenticationScope, CryptographicObservation,
+    ED25519_PUBLIC_KEY_PROFILE_V1, SignatureEvidence, canonical_statement_bytes,
+    evaluate_authentication,
 };
 use ed25519_dalek::{Signature, Verifier, VerifyingKey};
 
@@ -58,6 +61,45 @@ pub fn public_key_identity(public_key_bytes: &[u8]) -> ArtifactRef {
         algorithm: ALGORITHM_BLAKE3.to_string(),
         digest_hex: blake3::hash(public_key_bytes).to_hex().to_string(),
     }
+}
+
+/// Explicit bytes and metadata for one composed verification decision.
+#[derive(Debug, Clone, Copy)]
+pub struct Ed25519Evidence<'a> {
+    /// Signer-specific canonical statement.
+    pub statement: &'a ArtifactStatement,
+    /// Key generation asserted by the signature carrier.
+    pub generation: u64,
+    /// Explicit public-key bytes.
+    pub public_key_bytes: &'a [u8],
+    /// Explicit detached-signature bytes.
+    pub signature_bytes: &'a [u8],
+}
+
+/// Verify every supplied signature and immediately evaluate policy over those observations.
+///
+/// This is the normal Ed25519 composition path. Protocol adapters with a different
+/// cryptographic verifier may instead supply observations directly to the core, but
+/// they retain responsibility for the provenance and correctness of those observations.
+#[must_use]
+pub fn verify_and_evaluate(
+    policy: &AuthenticationPolicy,
+    scope: &AuthenticationScope,
+    evidence: &[Ed25519Evidence<'_>],
+) -> AuthenticationDecision {
+    let observations = evidence
+        .iter()
+        .map(|item| SignatureEvidence {
+            statement: item.statement.clone(),
+            generation: item.generation,
+            cryptographic: verify_statement(
+                item.statement,
+                item.public_key_bytes,
+                item.signature_bytes,
+            ),
+        })
+        .collect::<Vec<_>>();
+    evaluate_authentication(policy, scope, &observations)
 }
 
 /// Verify one signature over canonical signer-specific statement bytes.
@@ -124,6 +166,8 @@ mod tests {
 
     const TEST_SEED_BYTE: u8 = 7;
     const CHANGED_SEED_BYTE: u8 = 9;
+    const GENERATION_ONE: u64 = 1;
+    const THRESHOLD_ONE: u16 = 1;
 
     fn reference(profile: &str, seed: &str) -> ArtifactRef {
         ArtifactRef {
@@ -209,6 +253,65 @@ mod tests {
         assert_eq!(
             short_signature.failure_code.as_deref(),
             Some(Ed25519Failure::SignatureLength.code())
+        );
+    }
+
+    // r[verify artifact_auth.ed25519.verify]
+    // r[verify artifact_auth.policy.explicit]
+    #[test]
+    fn composed_verification_cannot_promote_an_invalid_signature() {
+        use artifact_auth_core::{
+            AuthenticationPolicy, KeyCurrentness, POLICY_SCHEMA_V1, TrustedKeyObservation,
+        };
+
+        let signing_key = SigningKey::from_bytes(&[TEST_SEED_BYTE; ED25519_PUBLIC_KEY_BYTES]);
+        let statement = statement(signing_key.verifying_key().as_bytes());
+        let message = canonical_statement_bytes(&statement).expect("valid statement");
+        let signature = signing_key.sign(&message).to_bytes();
+        let policy = AuthenticationPolicy {
+            schema: POLICY_SCHEMA_V1.to_string(),
+            profile_id: statement.scope.profile_id.clone(),
+            threshold: THRESHOLD_ONE,
+            trusted_keys: vec![TrustedKeyObservation {
+                producer_id: statement.producer_id.clone(),
+                key_id: statement.key_id.clone(),
+                key_identity: statement.key_identity.clone(),
+                allowed_purposes: vec![statement.scope.purpose.clone()],
+                generation: GENERATION_ONE,
+                currentness: KeyCurrentness::Current,
+                currentness_ref: reference("currentness.v1", "current"),
+            }],
+        };
+        let valid = verify_and_evaluate(
+            &policy,
+            &statement.scope,
+            &[Ed25519Evidence {
+                statement: &statement,
+                generation: GENERATION_ONE,
+                public_key_bytes: signing_key.verifying_key().as_bytes(),
+                signature_bytes: &signature,
+            }],
+        );
+        assert!(valid.passed, "{:?}", valid.issues);
+
+        let mut invalid_signature = signature;
+        invalid_signature[0] ^= 1;
+        let invalid = verify_and_evaluate(
+            &policy,
+            &statement.scope,
+            &[Ed25519Evidence {
+                statement: &statement,
+                generation: GENERATION_ONE,
+                public_key_bytes: signing_key.verifying_key().as_bytes(),
+                signature_bytes: &invalid_signature,
+            }],
+        );
+        assert!(!invalid.passed);
+        assert!(
+            invalid
+                .issues
+                .iter()
+                .any(|issue| issue.code == "auth.signature_unverified")
         );
     }
 

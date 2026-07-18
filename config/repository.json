@@ -2,7 +2,7 @@
   "license": "MIT OR Apache-2.0",
   "name": "artifact-auth",
   "non_claims": [
-    "Authentication does not prove artifact truth or producer authorization.",
+    "Authentication does not prove artifact truth, verifier correctness, or producer authorization.",
     "Authentication does not prove trust-root correctness or revocation freshness.",
     "Authentication does not prove provenance, lifecycle, build, semantic, deployment, or release correctness."
   ],

@@ -88,7 +88,7 @@ r[artifact_auth.conformance.consumers] Cairn, Mantle, Molten, and Valence mappin
 
 ### Requirement: Authentication claims remain bounded
 
-r[artifact_auth.claims.bounded] Decisions and documentation MUST deny claims of artifact truth, producer authorization, trust-root correctness, revocation freshness, provenance correctness, lifecycle conformance, build correctness, semantic equivalence, deployment safety, and release eligibility.
+r[artifact_auth.claims.bounded] Decisions and documentation MUST deny claims of artifact truth, verifier correctness, producer authorization, trust-root correctness, revocation freshness, provenance correctness, lifecycle conformance, build correctness, semantic equivalence, deployment safety, and release eligibility.
 
 #### Scenario: Passing decision retains non-claims
 

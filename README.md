@@ -31,7 +31,7 @@ Stack-owned references use BLAKE3. Protocol-required SHA-256 references remain e
 
 A passing decision proves only that supplied public-key material verified each exact canonical statement and that supplied key-purpose, generation, currentness, and threshold observations satisfied the selected bounded policy.
 
-It does not prove artifact truth, producer authorization, trust-root correctness, revocation freshness, provenance correctness, lifecycle conformance, build correctness, semantic equivalence, deployment safety, or release eligibility.
+It does not prove artifact truth, verifier correctness, producer authorization, trust-root correctness, revocation freshness, provenance correctness, lifecycle conformance, build correctness, semantic equivalence, deployment safety, or release eligibility.
 
 ## Validation
 

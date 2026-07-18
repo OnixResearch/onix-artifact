@@ -105,19 +105,19 @@
             cargoTestFlags = [ "--workspace" ];
           };
 
-          cargo-clippy =
-            pkgs.runCommand "artifact-auth-clippy"
-              {
-                nativeBuildInputs = [ toolchain ];
-                src = self;
-              }
-              ''
-                set -eu
-                cd "$src"
-                export CARGO_HOME="$TMPDIR/cargo-home"
-                cargo clippy --workspace --all-targets --offline -- -D warnings
-                touch "$out"
-              '';
+          cargo-clippy = rustPlatform.buildRustPackage {
+            pname = "artifact-auth-clippy";
+            version = "0.1.0";
+            src = self;
+            cargoLock.lockFile = ./Cargo.lock;
+            buildPhase = ''
+              cargo clippy --workspace --all-targets --offline -- -D warnings
+            '';
+            doCheck = false;
+            installPhase = ''
+              touch "$out"
+            '';
+          };
 
           cargo-format =
             pkgs.runCommand "artifact-auth-format"

@@ -29,7 +29,7 @@ let Contracts = import "contracts.ncl" in
     "authority-audit",
   ],
   non_claims = [
-    "Authentication does not prove artifact truth or producer authorization.",
+    "Authentication does not prove artifact truth, verifier correctness, or producer authorization.",
     "Authentication does not prove trust-root correctness or revocation freshness.",
     "Authentication does not prove provenance, lifecycle, build, semantic, deployment, or release correctness.",
   ],

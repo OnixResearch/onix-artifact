@@ -43,9 +43,10 @@ pub const DIGEST_HEX_CHARS: usize = 64;
 
 const LENGTH_PREFIX_BYTES_MAX: usize = u32::MAX as usize;
 const ADJACENT_PAIR_WINDOW: usize = 2;
-const REQUIRED_NON_CLAIM_COUNT: usize = 10;
+const REQUIRED_NON_CLAIM_COUNT: usize = 11;
 const REQUIRED_NON_CLAIMS: [&str; REQUIRED_NON_CLAIM_COUNT] = [
     "authentication-does-not-prove-artifact-truth",
+    "authentication-does-not-prove-verifier-correctness",
     "authentication-does-not-prove-producer-authorization",
     "authentication-does-not-prove-trust-root-correctness",
     "authentication-does-not-prove-revocation-freshness",
