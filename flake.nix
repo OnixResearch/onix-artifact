@@ -164,17 +164,25 @@
           cairn-validation =
             pkgs.runCommand "artifact-auth-cairn-validation"
               {
-                nativeBuildInputs = [ cairn.packages.${system}.cairn ];
+                nativeBuildInputs = [
+                  cairn.packages.${system}.cairn
+                  pkgs.nickel
+                ];
                 src = self;
               }
               ''
                 set -eu
-                cairn policy export \
-                  --source "$src/cairn-policy/default.ncl" \
-                  --output "$TMPDIR/cairn-policy.json"
-                cmp "$TMPDIR/cairn-policy.json" "$src/cairn-policy/generated/cairn-policy.json"
-                cairn validate --root "$src"
-                cairn traceability coverage --root "$src" --json > "$TMPDIR/traceability.json"
+                cp -R --no-preserve=mode "$src" work
+                cd work
+                nickel export --format json cairn-policy/default.ncl \
+                  > cairn-policy/generated/cairn-policy.check.json
+                cmp cairn-policy/generated/cairn-policy.check.json cairn-policy/generated/cairn-policy.json
+                rm cairn-policy/generated/cairn-policy.check.json
+                cairn validate --root . --policy cairn-policy/generated/cairn-policy.json
+                cairn traceability coverage \
+                  --root . \
+                  --policy cairn-policy/generated/cairn-policy.json \
+                  --json > "$TMPDIR/traceability.json"
                 touch "$out"
               '';
 
