@@ -1,0 +1,36 @@
+let Contracts = import "contracts.ncl" in
+{
+  name = "artifact-auth",
+  repository = "https://github.com/OnixResearch/artifact-auth",
+  license = "MIT OR Apache-2.0",
+  packages = ["artifact-auth-core", "artifact-auth-ed25519"],
+  schemas = [
+    "artifact-auth.statement.v1",
+    "artifact-auth.statement-preimage.v1",
+    "artifact-auth.policy.v1",
+    "artifact-auth.decision.v1",
+  ],
+  source_cohort = [
+    { consumer = "cairn", revision = "cc4639be24475d80844b091cdec605eb2fef9ff0", role = "typed-observation-boundary" },
+    { consumer = "mantle", revision = "26c6880c08cd730c9e9420f92ea91a87212e492d", role = "full-key-threshold-and-canonicalization" },
+    { consumer = "molten", revision = "70590459a218dc8e66948ab6f305a7c54142b710", role = "purpose-generation-currentness" },
+    { consumer = "valence", revision = "8eccac35fcd8aae8ef64b3d1021e7f1a53656180", role = "protocol-and-authorization-boundary" },
+  ],
+  release_checks = [
+    "cargo-format",
+    "cargo-test",
+    "cargo-clippy",
+    "core-no-std-host",
+    "core-no-std-wasm",
+    "ed25519-no-std-host",
+    "ed25519-no-std-wasm",
+    "nickel-contracts",
+    "cairn-validation",
+    "authority-audit",
+  ],
+  non_claims = [
+    "Authentication does not prove artifact truth or producer authorization.",
+    "Authentication does not prove trust-root correctness or revocation freshness.",
+    "Authentication does not prove provenance, lifecycle, build, semantic, deployment, or release correctness.",
+  ],
+} | Contracts.Repository
