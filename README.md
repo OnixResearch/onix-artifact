@@ -1,5 +1,7 @@
 # artifact-auth
 
+> **Compatibility repository:** historical immutable revisions remain supported by current consumers. New workspace development has moved to [`../artifact/`](../artifact/); consumer migration requires separate reviewed source-identity changes.
+
 Run `cargo test --workspace` first. It checks the product-neutral boundary for canonical artifact statements, Ed25519 verification, key-currentness observations, distinct-key thresholds, and bounded authentication decisions.
 
 ## Start here
@@ -173,6 +175,8 @@ The repository and both packages are available under `MIT OR Apache-2.0`.
 Mantle-derived design and implementation material is included under the owner authorization recorded in [`provenance/SOURCE_GRANT.md`](provenance/SOURCE_GRANT.md). Exact source identities are listed in [`docs/source-inventory.md`](docs/source-inventory.md).
 
 ## References
+
+- [`../artifact/`](../artifact/) — unified workspace for active artifact authentication, transfer, and binding development; historical pins to this repository remain supported during receiver-local migration.
 
 These fixed revisions informed the extraction. They remain consumer references and do not transfer product authority into this repository.
 

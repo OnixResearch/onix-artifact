@@ -1,6 +1,6 @@
 # Agent Notes
 
-`artifact-auth-core` and `artifact-auth-ed25519` are authority-free `#![no_std]` plus `alloc` functional cores. They must not read files, inspect environment state, spawn processes, print, consult clocks, generate or store keys, use network I/O, discover trust, or depend on product repositories.
+This repository remains the immutable compatibility source for existing consumers while new development moves to `../artifact`. `artifact-auth-core` and `artifact-auth-ed25519` are authority-free `#![no_std]` plus `alloc` functional cores. They must not read files, inspect environment state, spawn processes, print, consult clocks, generate or store keys, use network I/O, discover trust, or depend on product repositories.
 
 Consumers own measurement, payload canonicalization, signing, private material, currentness collection, authorization, lifecycle, build, transport, registry, runtime, and release policy.
 
