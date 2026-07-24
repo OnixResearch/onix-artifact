@@ -41,7 +41,7 @@
     "artifact-transfer-core"
   ],
   "project": "artifact",
-  "repository": "https://github.com/OnixResearch/artifact",
+  "repository": "https://github.com/OnixResearch/onix-artifact",
   "required_checks": [
     "cargo-format",
     "cargo-test",
