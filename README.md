@@ -38,6 +38,56 @@ It performs no I/O and owns no authority.
 
 It does not expose signing or private-key APIs.
 
+## Use cases
+
+Use this repository when another system already knows which keys it trusts and needs a deterministic authentication result.
+
+| Use case | What `artifact-auth` checks |
+|---|---|
+| Two-person release approval | Two distinct, current, trusted keys signed statements for the same release scope |
+| Key rotation | A key marked `Current` or `VerificationOverlap` may verify; a `Superseded`, `Revoked`, or `Unknown` key may not |
+| Build or provenance receipts | Signatures bind the exact subject, parent references, purpose, producer, and verifier context |
+| Offline or embedded verification | Both crates work without filesystem, network, clock, or environment access |
+
+Do **not** use this repository to:
+
+- decide whether an artifact is safe or correct;
+- discover which people or keys should be trusted;
+- generate signatures or store private keys; or
+- fetch revocation state or authorize a release.
+
+## Worked example: two-person release approval
+
+A release policy requires signatures from two distinct current keys.
+
+1. The consumer describes `app-v2.tar.gz`, its build receipt, and its release-policy context in one shared scope.
+2. Each approver signs a signer-specific canonical statement containing that scope.
+3. The consumer supplies the trusted keys, currentness observations, and threshold of two.
+4. `verify_and_evaluate` verifies the signatures and evaluates the policy.
+
+| Supplied evidence | Decision | Reason |
+|---|---|---|
+| Two valid signatures from two current trusted keys | Accept | The distinct-key threshold is satisfied |
+| One valid signature | Reject | `auth.distinct_key_threshold_unsatisfied` |
+| The same key supplied twice | Reject | Duplicate evidence does not count twice |
+| A signature from a revoked key | Reject | The key is not current for verification |
+| A signature over a changed artifact digest | Reject | The signature no longer matches the canonical statement |
+
+Run the complete positive-and-negative example:
+
+```console
+cargo run -p artifact-auth-ed25519 --example two_signer_release
+```
+
+Expected output:
+
+```text
+accepted: 2 distinct current keys satisfied threshold 2
+rejected: 1 valid signature did not satisfy threshold 2
+```
+
+Source: [`crates/artifact-auth-ed25519/examples/two_signer_release.rs`](crates/artifact-auth-ed25519/examples/two_signer_release.rs)
+
 ## Consumer responsibilities
 
 Consumers retain:
