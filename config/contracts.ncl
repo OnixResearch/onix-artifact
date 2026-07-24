@@ -1,9 +1,10 @@
-let OwnedPackageCount = 2 in
+let OwnedPackageCount = 3 in
 let OwnedPackages = std.contract.from_predicate (fun value =>
   std.is_array value
   && std.array.length value == OwnedPackageCount
   && std.array.elem "artifact-auth-core" value
   && std.array.elem "artifact-auth-ed25519" value
+  && std.array.elem "artifact-transfer-core" value
 ) in
 let StandaloneLicense = std.contract.from_predicate (fun value =>
   value == "MIT OR Apache-2.0"
@@ -23,10 +24,21 @@ let ExpectedSourceCohort = [
 let SourceCohort = std.contract.from_predicate (fun value =>
   value == ExpectedSourceCohort
 ) in
+let ExpectedPackageDependencies = [
+  { package = "artifact-auth-core", dependencies = [] },
+  { package = "artifact-auth-ed25519", dependencies = ["artifact-auth-core"] },
+  { package = "artifact-transfer-core", dependencies = [] },
+] in
+let PackageDependencies = std.contract.from_predicate (fun value =>
+  value == ExpectedPackageDependencies
+) in
 let ExpectedNonClaims = [
   "Authentication does not prove artifact truth, verifier correctness, or producer authorization.",
   "Authentication does not prove trust-root correctness or revocation freshness.",
   "Authentication does not prove provenance, lifecycle, build, semantic, deployment, or release correctness.",
+  "Transfer geometry does not prove chunk bytes, digest correctness, reconstruction, transport completion, or integrity.",
+  "Binding and reachability decisions do not prove observation completeness, artifact correctness, deployment safety, retirement cleanup, or deletion authority.",
+  "Workspace membership does not transfer authority or make distinct artifact mechanisms semantically interchangeable.",
 ] in
 let NonClaims = std.contract.from_predicate (fun value =>
   value == ExpectedNonClaims
@@ -41,6 +53,8 @@ let RepositoryContract = {
   repository | String,
   license | StandaloneLicense,
   packages | OwnedPackages,
+  package_dependencies | PackageDependencies,
+  mechanisms | Array String,
   schemas | Array String,
   source_cohort | SourceCohort,
   owner_authorization | OwnerAuthorizationContract,

@@ -1,9 +1,15 @@
 let Contracts = import "contracts.ncl" in
 {
-  name = "artifact-auth",
-  repository = "https://github.com/OnixResearch/artifact-auth",
+  name = "artifact",
+  repository = "https://github.com/OnixResearch/onix-artifact",
   license = "MIT OR Apache-2.0",
-  packages = ["artifact-auth-core", "artifact-auth-ed25519"],
+  packages = ["artifact-auth-core", "artifact-auth-ed25519", "artifact-transfer-core"],
+  package_dependencies = [
+    { package = "artifact-auth-core", dependencies = [] },
+    { package = "artifact-auth-ed25519", dependencies = ["artifact-auth-core"] },
+    { package = "artifact-transfer-core", dependencies = [] },
+  ],
+  mechanisms = ["authentication", "transfer-geometry", "versioned-binding-and-retirement"],
   schemas = [
     "artifact-auth.statement.v1",
     "artifact-auth.statement-preimage.v1",
@@ -29,6 +35,8 @@ let Contracts = import "contracts.ncl" in
     "core-no-std-wasm",
     "ed25519-no-std-host",
     "ed25519-no-std-wasm",
+    "transfer-no-std-host",
+    "transfer-no-std-wasm",
     "nickel-contracts",
     "cairn-validation",
     "authority-audit",
@@ -37,5 +45,8 @@ let Contracts = import "contracts.ncl" in
     "Authentication does not prove artifact truth, verifier correctness, or producer authorization.",
     "Authentication does not prove trust-root correctness or revocation freshness.",
     "Authentication does not prove provenance, lifecycle, build, semantic, deployment, or release correctness.",
+    "Transfer geometry does not prove chunk bytes, digest correctness, reconstruction, transport completion, or integrity.",
+    "Binding and reachability decisions do not prove observation completeness, artifact correctness, deployment safety, retirement cleanup, or deletion authority.",
+    "Workspace membership does not transfer authority or make distinct artifact mechanisms semantically interchangeable.",
   ],
 } | Contracts.Repository

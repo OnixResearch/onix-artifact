@@ -24,6 +24,16 @@ This inventory fixes the extraction cohort. Nix SRI BLAKE3 identities bind exact
 | Valence | same | `crates/valence-radicle/src/transport.rs` | `blake3-Xv3lgqtytAoZEukHdsZ4xCEmfuE/pVIv5dSq1H3RlFc=` |
 | Valence | same | `docs/radicle-cob-evidence.md` | `blake3-OmQ8yJUcsyFjO2iXavddFlHxve5mH68Dci5LjtJLxtk=` |
 
+## Workspace migration sources
+
+| Source repository | Revision | Imported material | License in this workspace |
+| --- | --- | --- | --- |
+| `OnixResearch/artifact-auth` | `d42755d29bf12b5c14448e522aaa42cb9c47d310` | Repository history, authentication crates, fixtures, typed config, lifecycle, and release rails | `MIT OR Apache-2.0` |
+| `OnixResearch/artifact-transfer` | `507b10823c4513064710a70fe565f9a1ee592985` | `artifact-transfer-core`, extraction design, adoption gate, and disposable pilot evidence | `MIT OR Apache-2.0` under the owner direction recorded in `provenance/SOURCE_GRANT.md` |
+| local `artifact-binding` design package | working-copy identity `4e91c8868545` | Active Cairn proposal, design, specification, and tasks; no Rust crate or adoption claim | `MIT OR Apache-2.0` for workspace-owned artifacts |
+
+These imports establish local source provenance only. They do not claim that the new `artifact` remote exists, that an immutable workspace revision has been published, or that any consumer has migrated.
+
 ## Semantic classification
 
 | Semantic class | Cairn | Mantle | Molten | Valence | Canonical disposition |

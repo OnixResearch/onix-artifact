@@ -2,7 +2,7 @@ let Contracts = import "contracts.ncl" in
 let PolicySchemaVersion = "cairn.policy-schema.v1" in
 let PolicyFieldSetDigest = "cdbe3adf5778872343f8576e0304e3748dcaf7fb58f59c489599ea9dbac425ef" in
 {
-  name = "artifact-auth-default",
+  name = "artifact-default",
   version = 1,
 
   policy_schema_compatibility = {
