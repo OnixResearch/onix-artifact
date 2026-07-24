@@ -1,19 +1,44 @@
 {
   "license": "MIT OR Apache-2.0",
-  "name": "artifact-auth",
+  "mechanisms": [
+    "authentication",
+    "transfer-geometry",
+    "versioned-binding-and-retirement"
+  ],
+  "name": "artifact",
   "non_claims": [
     "Authentication does not prove artifact truth, verifier correctness, or producer authorization.",
     "Authentication does not prove trust-root correctness or revocation freshness.",
-    "Authentication does not prove provenance, lifecycle, build, semantic, deployment, or release correctness."
+    "Authentication does not prove provenance, lifecycle, build, semantic, deployment, or release correctness.",
+    "Transfer geometry does not prove chunk bytes, digest correctness, reconstruction, transport completion, or integrity.",
+    "Binding and reachability decisions do not prove observation completeness, artifact correctness, deployment safety, retirement cleanup, or deletion authority.",
+    "Workspace membership does not transfer authority or make distinct artifact mechanisms semantically interchangeable."
   ],
   "owner_authorization": {
     "license_grant": "MIT OR Apache-2.0",
     "owner_authorized": true,
     "record": "provenance/SOURCE_GRANT.md"
   },
+  "package_dependencies": [
+    {
+      "dependencies": [],
+      "package": "artifact-auth-core"
+    },
+    {
+      "dependencies": [
+        "artifact-auth-core"
+      ],
+      "package": "artifact-auth-ed25519"
+    },
+    {
+      "dependencies": [],
+      "package": "artifact-transfer-core"
+    }
+  ],
   "packages": [
     "artifact-auth-core",
-    "artifact-auth-ed25519"
+    "artifact-auth-ed25519",
+    "artifact-transfer-core"
   ],
   "release_checks": [
     "cargo-format",
@@ -23,11 +48,13 @@
     "core-no-std-wasm",
     "ed25519-no-std-host",
     "ed25519-no-std-wasm",
+    "transfer-no-std-host",
+    "transfer-no-std-wasm",
     "nickel-contracts",
     "cairn-validation",
     "authority-audit"
   ],
-  "repository": "https://github.com/OnixResearch/artifact-auth",
+  "repository": "https://github.com/OnixResearch/artifact",
   "schemas": [
     "artifact-auth.statement.v1",
     "artifact-auth.statement-preimage.v1",

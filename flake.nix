@@ -1,5 +1,5 @@
 {
-  description = "Product-neutral artifact authentication statements and policy decisions";
+  description = "Product-neutral artifact authentication, transfer geometry, and binding mechanics";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -42,22 +42,23 @@
           };
         in
         {
-          artifact-auth = rustPlatform.buildRustPackage {
-            pname = "artifact-auth";
+          artifact = rustPlatform.buildRustPackage {
+            pname = "artifact";
             version = "0.1.0";
             src = self;
             cargoLock.lockFile = ./Cargo.lock;
             cargoBuildFlags = [ "--workspace" ];
             cargoTestFlags = [ "--workspace" ];
             installPhase = ''
-              mkdir -p "$out/share/artifact-auth" "$out/share/doc/artifact-auth" "$out/share/licenses/artifact-auth"
-              cp config/repository.json "$out/share/artifact-auth/repository.json"
-              cp release/profile.json "$out/share/artifact-auth/release-profile.json"
-              cp README.md docs/*.md "$out/share/doc/artifact-auth/"
-              cp LICENSE LICENSE-MIT LICENSE-APACHE NOTICE "$out/share/licenses/artifact-auth/"
+              mkdir -p "$out/share/artifact" "$out/share/doc/artifact" "$out/share/licenses/artifact"
+              cp config/repository.json "$out/share/artifact/repository.json"
+              cp release/profile.json "$out/share/artifact/release-profile.json"
+              cp README.md "$out/share/doc/artifact/"
+              cp -R docs "$out/share/doc/artifact/"
+              cp LICENSE LICENSE-MIT LICENSE-APACHE NOTICE "$out/share/licenses/artifact/"
             '';
           };
-          default = self.packages.${system}.artifact-auth;
+          default = self.packages.${system}.artifact;
         }
       );
 
@@ -97,7 +98,7 @@
         in
         {
           cargo-test = rustPlatform.buildRustPackage {
-            pname = "artifact-auth-tests";
+            pname = "artifact-workspace-tests";
             version = "0.1.0";
             src = self;
             cargoLock.lockFile = ./Cargo.lock;
@@ -106,7 +107,7 @@
           };
 
           cargo-clippy = rustPlatform.buildRustPackage {
-            pname = "artifact-auth-clippy";
+            pname = "artifact-workspace-clippy";
             version = "0.1.0";
             src = self;
             cargoLock.lockFile = ./Cargo.lock;
@@ -120,7 +121,7 @@
           };
 
           cargo-format =
-            pkgs.runCommand "artifact-auth-format"
+            pkgs.runCommand "artifact-workspace-format"
               {
                 nativeBuildInputs = [ toolchain ];
                 src = self;
@@ -140,9 +141,14 @@
           ed25519-no-std-wasm =
             noStdCheck "artifact-auth-ed25519-no-std-wasm" "artifact-auth-ed25519"
               "wasm32-unknown-unknown";
+          transfer-no-std-host =
+            noStdCheck "artifact-transfer-core-no-std-host" "artifact-transfer-core" null;
+          transfer-no-std-wasm =
+            noStdCheck "artifact-transfer-core-no-std-wasm" "artifact-transfer-core"
+              "wasm32-unknown-unknown";
 
           nickel-contracts =
-            pkgs.runCommand "artifact-auth-nickel-contracts"
+            pkgs.runCommand "artifact-workspace-nickel-contracts"
               {
                 nativeBuildInputs = [ pkgs.nickel ];
                 src = self;
@@ -192,13 +198,17 @@
                   echo "consumer mapping authority loss unexpectedly passed" >&2
                   exit 1
                 fi
+                if nickel export --format json config/fixtures/forbidden-workspace-dependency.ncl > /dev/null 2>&1; then
+                  echo "forbidden cross-mechanism dependency unexpectedly passed" >&2
+                  exit 1
+                fi
                 touch "$out"
               '';
 
           # r[verify artifact_auth.core.authority_free]
           # r[verify artifact_auth.conformance.consumers]
           cairn-validation =
-            pkgs.runCommand "artifact-auth-cairn-validation"
+            pkgs.runCommand "artifact-workspace-cairn-validation"
               {
                 nativeBuildInputs = [
                   cairn.packages.${system}.cairn
@@ -224,17 +234,18 @@
 
           # r[verify artifact_auth.core.authority_free]
           authority-audit =
-            pkgs.runCommand "artifact-auth-authority-audit"
+            pkgs.runCommand "artifact-workspace-authority-audit"
               {
                 nativeBuildInputs = [
                   pkgs.gnugrep
+                  pkgs.jq
                   toolchain
                 ];
                 src = self;
               }
               ''
                 set -eu
-                if grep -R -E 'std::fs|std::env|std::process|std::time|std::net|tokio::|async |println!|eprintln!|pub fn sign|pub struct SigningKey|pub struct SecretKey|rand::' "$src/crates" --include='*.rs'; then
+                if grep -R -E 'std::fs|std::env|std::process|std::time|std::net|tokio::|async |println!|eprintln!|pub fn sign|pub struct SigningKey|pub struct SecretKey|rand::' "$src"/crates/*/src --include='*.rs'; then
                   echo "forbidden authority or private-key dependency found" >&2
                   exit 1
                 fi
@@ -248,10 +259,27 @@
                   --format-version 1 \
                   --no-deps \
                   --offline > "$TMPDIR/metadata.json"
-                expected_package_count=2
+                expected_package_count=3
                 observed_license_count="$(grep -oF '"license":"MIT OR Apache-2.0"' "$TMPDIR/metadata.json" | wc -l)"
                 if [ "$observed_license_count" -ne "$expected_package_count" ]; then
-                  echo "package metadata does not carry the standalone license grant" >&2
+                  echo "package metadata does not carry the workspace license grant" >&2
+                  exit 1
+                fi
+                expected_no_internal_dependencies='[]'
+                expected_verifier_internal_dependencies='["artifact-auth-core"]'
+                auth_core_internal_dependencies="$(jq -c '[.packages[] | select(.name == "artifact-auth-core") | .dependencies[] | select(.name | startswith("artifact-")) | .name] | sort' "$TMPDIR/metadata.json")"
+                verifier_internal_dependencies="$(jq -c '[.packages[] | select(.name == "artifact-auth-ed25519") | .dependencies[] | select(.name | startswith("artifact-")) | .name] | sort' "$TMPDIR/metadata.json")"
+                transfer_internal_dependencies="$(jq -c '[.packages[] | select(.name == "artifact-transfer-core") | .dependencies[] | select(.name | startswith("artifact-")) | .name] | sort' "$TMPDIR/metadata.json")"
+                if [ "$auth_core_internal_dependencies" != "$expected_no_internal_dependencies" ]; then
+                  echo "artifact-auth-core gained a forbidden workspace dependency" >&2
+                  exit 1
+                fi
+                if [ "$verifier_internal_dependencies" != "$expected_verifier_internal_dependencies" ]; then
+                  echo "artifact-auth-ed25519 workspace dependency allowlist changed" >&2
+                  exit 1
+                fi
+                if [ "$transfer_internal_dependencies" != "$expected_no_internal_dependencies" ]; then
+                  echo "artifact-transfer-core gained a forbidden workspace dependency" >&2
                   exit 1
                 fi
                 grep -F 'explicitly authorized reuse, modification, and relicensing' "$src/provenance/SOURCE_GRANT.md" > /dev/null
@@ -259,6 +287,7 @@
                 grep -F 'cc4639be24475d80844b091cdec605eb2fef9ff0' "$src/provenance/SOURCE_GRANT.md" > /dev/null
                 grep -F '70590459a218dc8e66948ab6f305a7c54142b710' "$src/provenance/SOURCE_GRANT.md" > /dev/null
                 grep -F '8eccac35fcd8aae8ef64b3d1021e7f1a53656180' "$src/provenance/SOURCE_GRANT.md" > /dev/null
+                grep -F '507b10823c4513064710a70fe565f9a1ee592985' "$src/provenance/SOURCE_GRANT.md" > /dev/null
                 touch "$out"
               '';
         }

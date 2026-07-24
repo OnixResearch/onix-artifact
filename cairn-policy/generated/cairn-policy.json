@@ -1442,7 +1442,7 @@
       "require_passing_gate": true
     }
   },
-  "name": "artifact-auth-default",
+  "name": "artifact-default",
   "policy_schema_compatibility": {
     "field_set_digest": "cdbe3adf5778872343f8576e0304e3748dcaf7fb58f59c489599ea9dbac425ef",
     "producer": "cairn policy export",

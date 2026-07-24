@@ -6,6 +6,8 @@ On 2026-07-18, the Mantle owner and sole copyright holder explicitly authorized 
 
 This record applies only to owner-controlled Mantle source. It does not relicense third-party dependencies, imported protocol specifications, generated vendored code, or prior external contributions.
 
+On 2026-07-24, the repository owner directed that the owner-controlled `artifact-transfer` source at revision `507b10823c4513064710a70fe565f9a1ee592985` be incorporated into the unified Artifact workspace and offered under `MIT OR Apache-2.0`. The grant covers the transfer geometry core and its repository-owned documentation. It does not alter licenses for dependencies or third-party material.
+
 ## Selected source material
 
 - Mantle `26c6880c08cd730c9e9420f92ea91a87212e492d`:
@@ -18,6 +20,10 @@ This record applies only to owner-controlled Mantle source. It does not relicens
   - domain/purpose/public-key/verifier-context binding and explicit generation/currentness classes from `fabric_crypto_identity`.
 - Valence `8eccac35fcd8aae8ef64b3d1021e7f1a53656180`:
   - compatibility evidence for keeping protocol signature validity separate from actor authorization and Evidence IR identity.
+- Artifact Transfer `507b10823c4513064710a70fe565f9a1ee592985`:
+  - pure fixed, FastCDC-bound, and externally segmented chunk geometry;
+  - explicit BLAKE3 and SHA-256 digest tags;
+  - positive and negative boundary fixtures plus disposable consumer-pilot evidence.
 
 ## Material changes
 

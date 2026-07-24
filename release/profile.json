@@ -2,7 +2,10 @@
   "claim_boundary": [
     "Authentication does not prove artifact truth, verifier correctness, or producer authorization.",
     "Authentication does not prove trust-root correctness or revocation freshness.",
-    "Authentication does not prove provenance, lifecycle, build, semantic, deployment, or release correctness."
+    "Authentication does not prove provenance, lifecycle, build, semantic, deployment, or release correctness.",
+    "Transfer geometry does not prove chunk bytes, digest correctness, reconstruction, transport completion, or integrity.",
+    "Binding and reachability decisions do not prove observation completeness, artifact correctness, deployment safety, retirement cleanup, or deletion authority.",
+    "Workspace membership does not transfer authority or make distinct artifact mechanisms semantically interchangeable."
   ],
   "distribution": {
     "channel": "immutable-git-revision",
@@ -16,12 +19,29 @@
     "owner_authorized": true,
     "record": "provenance/SOURCE_GRANT.md"
   },
+  "package_dependencies": [
+    {
+      "dependencies": [],
+      "package": "artifact-auth-core"
+    },
+    {
+      "dependencies": [
+        "artifact-auth-core"
+      ],
+      "package": "artifact-auth-ed25519"
+    },
+    {
+      "dependencies": [],
+      "package": "artifact-transfer-core"
+    }
+  ],
   "packages": [
     "artifact-auth-core",
-    "artifact-auth-ed25519"
+    "artifact-auth-ed25519",
+    "artifact-transfer-core"
   ],
-  "project": "artifact-auth",
-  "repository": "https://github.com/OnixResearch/artifact-auth",
+  "project": "artifact",
+  "repository": "https://github.com/OnixResearch/artifact",
   "required_checks": [
     "cargo-format",
     "cargo-test",
@@ -30,11 +50,13 @@
     "core-no-std-wasm",
     "ed25519-no-std-host",
     "ed25519-no-std-wasm",
+    "transfer-no-std-host",
+    "transfer-no-std-wasm",
     "nickel-contracts",
     "cairn-validation",
     "authority-audit"
   ],
-  "schema": "artifact-auth.release-profile.v1",
+  "schema": "artifact.release-profile.v1",
   "source_cohort": [
     {
       "consumer": "cairn",
