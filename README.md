@@ -87,6 +87,10 @@ nix run path:../cairn#cairn -- validate --root . --policy cairn-policy/generated
 nix flake check path:$PWD -L
 ```
 
+### Frozen Radicle compatibility source
+
+Historical revision `799459346d5416fbd7b9f55840a7371441b55afa` is served unchanged at `https://git.onix.computer/z4JGYYW7WsesXUq7MXVdx16Fawu2f.git`. Its typed publication receipt is [`evidence/radicle/publication-v1.ncl`](evidence/radicle/publication-v1.ncl). This compatibility publication does not replace the unified `artifact` workspace or claim current-package equivalence.
+
 ## License
 
 <!-- r[verify artifact_workspace.substrate.uniform] r[verify artifact_workspace.claims.bounded] -->

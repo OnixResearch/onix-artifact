@@ -205,6 +205,33 @@
                 touch "$out"
               '';
 
+          radicle-publication =
+            pkgs.runCommand "artifact-auth-radicle-publication"
+              {
+                nativeBuildInputs = [
+                  pkgs.b3sum
+                  pkgs.jq
+                  pkgs.nickel
+                ];
+                src = self;
+              }
+              ''
+                set -eu
+                cd "$src"
+                nickel typecheck evidence/radicle/publication-v1.ncl
+                nickel typecheck lib/radicle-publication-receipt.ncl
+                nickel export --format json tests/radicle-publication.ncl > "$TMPDIR/tests.json"
+                grep -Fq '"tests": true' "$TMPDIR/tests.json"
+                nickel export --format json evidence/radicle/publication-v1.ncl > "$TMPDIR/publication-v1.json"
+                jq -S . "$TMPDIR/publication-v1.json" > "$TMPDIR/publication-v1.normalized.json"
+                jq -S . evidence/radicle/publication-v1.json > "$TMPDIR/evidence.normalized.json"
+                cmp "$TMPDIR/publication-v1.normalized.json" "$TMPDIR/evidence.normalized.json"
+                actual_hash="$(b3sum evidence/radicle/publication-v1.json | cut -d ' ' -f 1)"
+                expected_hash="$(tr -d '\n' < evidence/radicle/publication-v1.blake3)"
+                test "$actual_hash" = "$expected_hash"
+                touch "$out"
+              '';
+
           # r[verify artifact_auth.core.authority_free]
           # r[verify artifact_auth.conformance.consumers]
           cairn-validation =
