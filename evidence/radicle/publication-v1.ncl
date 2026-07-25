@@ -27,8 +27,6 @@ let PublicationReceipt = {
   distribution
     | {
       onix_core_policy_revision | String,
-      onix_core_admission_revision | String,
-      onix_core_admission_receipt_blake3 | String,
       primary_native_seed | String,
       replica_native_seed | String,
       public_https_git | String,
@@ -87,8 +85,6 @@ let receipt | PublicationReceipt = {
   },
   distribution = {
     onix_core_policy_revision = "a3f5a18b36a0c874c1fce0d47acee19932f4d931",
-    onix_core_admission_revision = "9b3849b3782b04bfa3fe0117552210616d965b1b",
-    onix_core_admission_receipt_blake3 = "6f65364675d1ea600c76601a89766e58e734d7b09c446d32063012989dc0174d",
     primary_native_seed = "z6MkfpHAyrqSqhpiSGayy6AjB6L5UWkKLvsZvLh5hYD7XSu8@100.100.103.95:8776",
     replica_native_seed = "z6MkkQCj5EczNiVzDzCkX9ewHNJ7NDEXSKbuRiS1x7o72yeG@100.110.43.11:8776",
     public_https_git = "https://git.onix.computer/z4JGYYW7WsesXUq7MXVdx16Fawu2f.git",
@@ -123,7 +119,7 @@ let receipt | PublicationReceipt = {
     "whole-stack-github-independence",
   ],
   evidence = [
-    "cairn/changes/publish-radicle-compatibility-source/evidence/publication-and-admission-2026-07-25.md",
+    "cairn/archive/2026-07-25-publish-radicle-compatibility-source/evidence/publication-and-admission-2026-07-25.md",
     "evidence/radicle/publication-v1.json",
     "onix-core:evidence/radicle/source-admission-v1.json",
   ],

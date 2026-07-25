@@ -12,7 +12,6 @@ let _expected = {
   commit = "799459346d5416fbd7b9f55840a7371441b55afa",
   source_archive_blake3 = "246a7cad91e7e8a158e22da21f3bff3e61aa0431a58936b5a739178bc62064c7",
   https_git = "https://git.onix.computer/z4JGYYW7WsesXUq7MXVdx16Fawu2f.git",
-  admission_blake3 = "6f65364675d1ea600c76601a89766e58e734d7b09c446d32063012989dc0174d",
   delegates = [
     "did:key:z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx",
     "did:key:z6MkjCqx5ksRqcDeNeuEnz53udbUHebRLHhddCxecWJu9koE",
@@ -109,8 +108,6 @@ let _validate = fun receipt =>
       else
         _error "publication-governance" "delegate, threshold, or signed-reference evidence drifted",
       if receipt.distribution.onix_core_policy_revision == "a3f5a18b36a0c874c1fce0d47acee19932f4d931"
-      && receipt.distribution.onix_core_admission_revision == "9b3849b3782b04bfa3fe0117552210616d965b1b"
-      && receipt.distribution.onix_core_admission_receipt_blake3 == _expected.admission_blake3
       && receipt.distribution.public_https_git == _expected.https_git
       && receipt.distribution.primary_commit == _expected.commit
       && receipt.distribution.replica_commit == _expected.commit

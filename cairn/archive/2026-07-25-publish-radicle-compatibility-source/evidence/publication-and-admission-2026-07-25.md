@@ -4,7 +4,7 @@ The unchanged historical source revision `799459346d5416fbd7b9f55840a7371441b55a
 
 The accepted identity revision `c22900ae6b7b5637aa0e378fe00503cf02c6d1bf` retains the existing author, Bonsai, and Pine delegates with a two-of-three threshold and signed-reference feature level `parent`. The author and Bonsai namespaces sign the exact `main` commit. Pine remained offline; no private delegate material left `/dev/shm`, and only a verified public Git bundle was exported.
 
-Onix Core policy revision `a3f5a18b36a0c874c1fce0d47acee19932f4d931` admitted the RID as the second and only additional source repository. Admission evidence at revision `9b3849b3782b04bfa3fe0117552210616d965b1b` has BLAKE3 `6f65364675d1ea600c76601a89766e58e734d7b09c446d32063012989dc0174d`.
+Onix Core policy revision `a3f5a18b36a0c874c1fce0d47acee19932f4d931` admitted the RID as the second and only additional source repository. Deployment receipts are downstream evidence and do not participate in this source publication receipt's identity.
 
 Fresh single-seed outage clients reproduced the exact commit and source BLAKE3 through Aspen and the native-only desktop replica. Public HTTPS at `https://git.onix.computer/z4JGYYW7WsesXUq7MXVdx16Fawu2f.git` reproduced the same identities. Unknown-RID and receive-pack requests were rejected. CI remains disabled for this source-only repository.
 

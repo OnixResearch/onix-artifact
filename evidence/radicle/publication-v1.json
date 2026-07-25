@@ -10,8 +10,6 @@
     "github_fallback_configured": false,
     "https_commit": "799459346d5416fbd7b9f55840a7371441b55afa",
     "https_source_archive_blake3": "246a7cad91e7e8a158e22da21f3bff3e61aa0431a58936b5a739178bc62064c7",
-    "onix_core_admission_receipt_blake3": "6f65364675d1ea600c76601a89766e58e734d7b09c446d32063012989dc0174d",
-    "onix_core_admission_revision": "9b3849b3782b04bfa3fe0117552210616d965b1b",
     "onix_core_policy_revision": "a3f5a18b36a0c874c1fce0d47acee19932f4d931",
     "primary_client_nid": "z6MkkQEGLf4NPLDzwguTX7LWQYxQvWnbjFvh2mECYHzuPPvb",
     "primary_commit": "799459346d5416fbd7b9f55840a7371441b55afa",
@@ -26,7 +24,7 @@
     "undeclared_rid_rejected": true
   },
   "evidence": [
-    "cairn/changes/publish-radicle-compatibility-source/evidence/publication-and-admission-2026-07-25.md",
+    "cairn/archive/2026-07-25-publish-radicle-compatibility-source/evidence/publication-and-admission-2026-07-25.md",
     "evidence/radicle/publication-v1.json",
     "onix-core:evidence/radicle/source-admission-v1.json"
   ],
