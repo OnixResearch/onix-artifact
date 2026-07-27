@@ -2,6 +2,7 @@
 
 <!-- r[impl durable_file_publication.core.state] -->
 <!-- r[impl durable_file_publication.shell.authority] -->
+<!-- r[impl durable_file_publication.shell.bounds] -->
 <!-- r[impl durable_file_publication.publication.scope] -->
 <!-- r[impl durable_file_publication.publication.replacement] -->
 <!-- r[impl durable_file_publication.publication.durability] -->

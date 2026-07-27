@@ -56,7 +56,7 @@ See the [design](docs/binding/design.md), [adoption guide](docs/binding/adoption
 
 The durable one-file publication candidate remains a disposable fixture. It is not a workspace package and does not change Mantle or OnixOS dependencies.
 
-See the [candidate API](docs/publication/API.md), [source inventory](docs/publication/SOURCE-INVENTORY.md), and [pilot mappings](docs/publication/PILOTS.md).
+See the [candidate API](docs/publication/API.md), [source inventory](docs/publication/SOURCE-INVENTORY.md), [pilot mappings](docs/publication/PILOTS.md), and [extraction decision](docs/publication/DECISION.md).
 
 ## Distribution and compatibility
 

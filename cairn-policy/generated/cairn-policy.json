@@ -3258,7 +3258,7 @@
             "extensions": [
               "md"
             ],
-            "root": "cairn/changes/evaluate-durable-file-publication-extraction/specs",
+            "root": "cairn/specs/durable-file-publication-extraction",
             "source_kind": "accepted_specs"
           }
         ]

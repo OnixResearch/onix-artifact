@@ -238,7 +238,7 @@ let PolicyFieldSetDigest = "cdbe3adf5778872343f8576e0304e3748dcaf7fb58f59c489599
       {
         id = "evaluate-durable-file-publication-extraction",
         requirement_sources = [
-          { root = "cairn/changes/evaluate-durable-file-publication-extraction/specs", source_kind = "accepted_specs", extensions = ["md"] },
+          { root = "cairn/specs/durable-file-publication-extraction", source_kind = "accepted_specs", extensions = ["md"] },
         ],
         evidence_sources = [
           { root = "fixtures/publication-candidate/src", source_kind = "rust_source", extensions = ["rs"] },

@@ -3,6 +3,7 @@
 <!-- r[impl durable_file_publication.pilots.mantle] -->
 <!-- r[impl durable_file_publication.pilots.onixos] -->
 <!-- r[impl durable_file_publication.validation.losslessness] -->
+<!-- r[verify durable_file_publication.validation.corpus] -->
 
 Both disposable adapters use `fixtures/publication-candidate`. They retain the complete mechanical disposition next to the product interpretation.
 
