@@ -10,7 +10,7 @@
 
 Artifact does not add a publication package. Mantle and OnixOS do not gain a dependency in this change.
 
-The reviewed disposable candidate is Artifact commit `fbf9b81d02c8889ca61ed7e4e916aedd312c86b6`.
+The reviewed disposable candidate is Artifact commit `67f14770a82e24eb39d3a751285b908232566e6b`.
 
 ## Why the boundary is viable
 

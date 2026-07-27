@@ -19,7 +19,7 @@ It must not depend on Artifact, Mantle, OnixOS, Valence, Cairn, or another stack
 
 ## Source and license
 
-Start from Artifact pilot commit `fbf9b81d02c8889ca61ed7e4e916aedd312c86b6`.
+Start from Artifact pilot commit `67f14770a82e24eb39d3a751285b908232566e6b`.
 
 Keep a source map for each imported file. Use `AGPL-3.0-or-later` if any AGPL implementation expression is imported. Use another license only after explicit compatibility and copyright review.
 
