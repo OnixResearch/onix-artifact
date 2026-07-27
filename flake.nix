@@ -161,6 +161,20 @@
           # r[verify artifact_binding.reachability.trace]
           # r[verify artifact_binding.retirement.classification]
           # r[verify artifact_binding.diagnostics]
+          publication-incubation = rustPlatform.buildRustPackage {
+            pname = "durable-file-publication-incubation";
+            version = "0.1.0";
+            src = self + /fixtures/publication-candidate;
+            cargoLock.lockFile = ./fixtures/publication-candidate/Cargo.lock;
+            postCheck = ''
+              cargo clippy --all-targets --offline -- --deny warnings
+              cargo check --no-default-features --target wasm32-unknown-unknown --offline
+            '';
+            installPhase = ''
+              touch "$out"
+            '';
+          };
+
           binding-core = rustPlatform.buildRustPackage {
             pname = "artifact-binding-core-check";
             version = "0.1.0";

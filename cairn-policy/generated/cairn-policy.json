@@ -3235,6 +3235,40 @@
             "extensions": [
               "rs"
             ],
+            "root": "fixtures/publication-candidate/src",
+            "source_kind": "rust_source"
+          },
+          {
+            "extensions": [
+              "md"
+            ],
+            "root": "docs/publication",
+            "source_kind": "tool_source"
+          }
+        ],
+        "id": "evaluate-durable-file-publication-extraction",
+        "marker_verbs": [
+          "impl",
+          "verify",
+          "depends",
+          "related"
+        ],
+        "requirement_sources": [
+          {
+            "extensions": [
+              "md"
+            ],
+            "root": "cairn/changes/evaluate-durable-file-publication-extraction/specs",
+            "source_kind": "accepted_specs"
+          }
+        ]
+      },
+      {
+        "evidence_sources": [
+          {
+            "extensions": [
+              "rs"
+            ],
             "root": "src",
             "source_kind": "rust_source"
           },

@@ -52,6 +52,12 @@ The binding core classifies only caller-supplied binding, graph, root, attributi
 
 See the [design](docs/binding/design.md), [adoption guide](docs/binding/adoption.md), and [disposable pilots](docs/binding/pilot.md).
 
+## Publication incubation
+
+The durable one-file publication candidate remains a disposable fixture. It is not a workspace package and does not change Mantle or OnixOS dependencies.
+
+See the [candidate API](docs/publication/API.md), [source inventory](docs/publication/SOURCE-INVENTORY.md), and [pilot mappings](docs/publication/PILOTS.md).
+
 ## Distribution and compatibility
 
 <!-- r[impl artifact_workspace.provenance.imports] r[impl artifact_workspace.migration.receiver_local] -->
@@ -78,6 +84,7 @@ nix develop -c cargo check -p artifact-auth-ed25519 --no-default-features --targ
 nix develop -c cargo check -p artifact-transfer-core --no-default-features --target wasm32-unknown-unknown
 nix develop -c cargo check -p artifact-binding-core --no-default-features --target wasm32-unknown-unknown
 nix develop -c cargo check -p artifact-binding-core --no-default-features --target thumbv7em-none-eabi
+nix develop -c cargo test --manifest-path fixtures/publication-candidate/Cargo.toml
 ```
 
 Full repository gate:
