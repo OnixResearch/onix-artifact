@@ -18,9 +18,7 @@ The workspace shares a Rust toolchain, license, lint policy, dependency resoluti
 | `artifact-auth-core` | Implemented | Canonical signed statements, typed references, explicit currentness/threshold observations, bounded authentication decisions | Trust discovery, signing, authorization, storage, lifecycle, release |
 | `artifact-auth-ed25519` | Implemented | Pure Ed25519 verification over exact core-produced canonical bytes | Private keys, signing, trust, revocation collection, authorization |
 | `artifact-transfer-core` | Implemented | Fixed, FastCDC-bound, and external ordered-part geometry; checked coverage/offsets; explicit BLAKE3/SHA-256 tags | Wire manifests, chunking/hashing bytes, transport, storage, integrity claims |
-| `artifact-binding-core` | Design stage | Planned successor binding, one-snapshot resolution, deterministic reachability, stable pin paths, conservative retirement | Artifact identity, compatibility truth, persistence, atomic swaps, deployment, GC, deletion authority |
-
-`artifact-binding-core` is not a workspace member until its active Cairn change is implemented and validated through disposable Molten and OnixOS pilots.
+| `artifact-binding-core` | Implemented | Checked successor binding, one-snapshot resolution, deterministic reachability, stable pin paths, conservative retirement | Artifact identity, compatibility truth, persistence, atomic swaps, deployment, GC, deletion authority |
 
 ## Workspace invariants
 
@@ -48,9 +46,11 @@ The extraction decision and disposable pilots remain available under [`docs/tran
 
 ## Binding boundary
 
-The planned binding core will classify only caller-supplied binding, graph, root, attribution, and completeness facts. Incomplete or untrusted root inventories cannot produce a definitive retired result. Retirement evidence never grants cleanup or deletion authority.
+<!-- r[impl artifact_binding.core.boundary] -->
 
-The active design package is [`cairn/changes/establish-artifact-binding-core/`](cairn/changes/establish-artifact-binding-core/).
+The binding core classifies only caller-supplied binding, graph, root, attribution, and completeness facts. Incomplete root inventories cannot produce a definitive retired result. Retirement evidence never grants cleanup or deletion authority.
+
+See the [design](docs/binding/design.md), [adoption guide](docs/binding/adoption.md), and [disposable pilots](docs/binding/pilot.md).
 
 ## Distribution and compatibility
 
@@ -76,6 +76,8 @@ Core boundaries:
 nix develop -c cargo check -p artifact-auth-core --no-default-features --target wasm32-unknown-unknown
 nix develop -c cargo check -p artifact-auth-ed25519 --no-default-features --target wasm32-unknown-unknown
 nix develop -c cargo check -p artifact-transfer-core --no-default-features --target wasm32-unknown-unknown
+nix develop -c cargo check -p artifact-binding-core --no-default-features --target wasm32-unknown-unknown
+nix develop -c cargo check -p artifact-binding-core --no-default-features --target thumbv7em-none-eabi
 ```
 
 Full repository gate:

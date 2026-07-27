@@ -3,6 +3,7 @@ resolver = "2"
 members = [
   "crates/artifact-auth-core",
   "crates/artifact-auth-ed25519",
+  "crates/artifact-binding-core",
   "crates/artifact-transfer-core",
 ]
 
@@ -30,3 +31,7 @@ all = { level = "warn", priority = -1 }
 unwrap_used = "deny"
 expect_used = "deny"
 panic = "deny"
+
+[profile.release.package.artifact-binding-core]
+codegen-units = 1
+opt-level = "z"

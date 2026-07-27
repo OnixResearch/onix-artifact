@@ -3201,6 +3201,40 @@
             "extensions": [
               "rs"
             ],
+            "root": "crates/artifact-binding-core",
+            "source_kind": "rust_source"
+          },
+          {
+            "extensions": [
+              "md"
+            ],
+            "root": "docs/binding",
+            "source_kind": "tool_source"
+          }
+        ],
+        "id": "establish-artifact-binding-core",
+        "marker_verbs": [
+          "impl",
+          "verify",
+          "depends",
+          "related"
+        ],
+        "requirement_sources": [
+          {
+            "extensions": [
+              "md"
+            ],
+            "root": "cairn/specs/artifact-binding-core",
+            "source_kind": "accepted_specs"
+          }
+        ]
+      },
+      {
+        "evidence_sources": [
+          {
+            "extensions": [
+              "rs"
+            ],
             "root": "src",
             "source_kind": "rust_source"
           },

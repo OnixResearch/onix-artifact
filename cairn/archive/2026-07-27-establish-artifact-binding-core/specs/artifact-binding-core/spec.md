@@ -1,10 +1,6 @@
 # Artifact Binding Core Specification
 
-## Purpose
-
-Define a product-neutral deterministic core for versioned logical bindings over immutable artifact references and conservative, explainable retirement from explicit reachability facts.
-
-## Requirements
+## ADDED Requirements
 
 ### Requirement: The core is pure and product-neutral
 

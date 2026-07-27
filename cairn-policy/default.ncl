@@ -225,6 +225,17 @@ let PolicyFieldSetDigest = "cdbe3adf5778872343f8576e0304e3748dcaf7fb58f59c489599
         marker_verbs = ["impl", "verify", "depends", "related"],
       },
       {
+        id = "establish-artifact-binding-core",
+        requirement_sources = [
+          { root = "cairn/specs/artifact-binding-core", source_kind = "accepted_specs", extensions = ["md"] },
+        ],
+        evidence_sources = [
+          { root = "crates/artifact-binding-core", source_kind = "rust_source", extensions = ["rs"] },
+          { root = "docs/binding", source_kind = "tool_source", extensions = ["md"] },
+        ],
+        marker_verbs = ["impl", "verify", "depends", "related"],
+      },
+      {
         id = "trellis-rust",
         requirement_sources = [
           { root = "docs/requirements.md", source_kind = "requirements_doc", extensions = ["md"] },

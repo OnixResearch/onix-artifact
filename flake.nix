@@ -142,10 +142,48 @@
             noStdCheck "artifact-auth-ed25519-no-std-wasm" "artifact-auth-ed25519"
               "wasm32-unknown-unknown";
           transfer-no-std-host =
-            noStdCheck "artifact-transfer-core-no-std-host" "artifact-transfer-core" null;
+            noStdCheck "artifact-transfer-core-no-std-host" "artifact-transfer-core"
+              null;
           transfer-no-std-wasm =
             noStdCheck "artifact-transfer-core-no-std-wasm" "artifact-transfer-core"
               "wasm32-unknown-unknown";
+          binding-no-std-host = noStdCheck "artifact-binding-core-no-std-host" "artifact-binding-core" null;
+          binding-no-std-wasm =
+            noStdCheck "artifact-binding-core-no-std-wasm" "artifact-binding-core"
+              "wasm32-unknown-unknown";
+          binding-no-std-thumb =
+            noStdCheck "artifact-binding-core-no-std-thumb" "artifact-binding-core"
+              "thumbv7em-none-eabi";
+
+          # r[verify artifact_binding.binding.transition]
+          # r[verify artifact_binding.binding.resolution]
+          # r[verify artifact_binding.binding.snapshot_consistency]
+          # r[verify artifact_binding.reachability.trace]
+          # r[verify artifact_binding.retirement.classification]
+          # r[verify artifact_binding.diagnostics]
+          binding-core = rustPlatform.buildRustPackage {
+            pname = "artifact-binding-core-check";
+            version = "0.1.0";
+            src = self;
+            cargoLock.lockFile = ./Cargo.lock;
+            cargoBuildFlags = [
+              "-p"
+              "artifact-binding-core"
+              "--no-default-features"
+            ];
+            cargoTestFlags = [
+              "-p"
+              "artifact-binding-core"
+            ];
+            postCheck = ''
+              cargo clippy -p artifact-binding-core --all-targets --offline -- --deny warnings
+              cargo check -p artifact-binding-core --no-default-features --target wasm32-unknown-unknown --offline
+              cargo check -p artifact-binding-core --no-default-features --target thumbv7em-none-eabi --offline
+            '';
+            installPhase = ''
+              touch "$out"
+            '';
+          };
 
           nickel-contracts =
             pkgs.runCommand "artifact-workspace-nickel-contracts"
@@ -286,7 +324,7 @@
                   --format-version 1 \
                   --no-deps \
                   --offline > "$TMPDIR/metadata.json"
-                expected_package_count=3
+                expected_package_count=4
                 observed_license_count="$(grep -oF '"license":"MIT OR Apache-2.0"' "$TMPDIR/metadata.json" | wc -l)"
                 if [ "$observed_license_count" -ne "$expected_package_count" ]; then
                   echo "package metadata does not carry the workspace license grant" >&2
@@ -297,6 +335,7 @@
                 auth_core_internal_dependencies="$(jq -c '[.packages[] | select(.name == "artifact-auth-core") | .dependencies[] | select(.name | startswith("artifact-")) | .name] | sort' "$TMPDIR/metadata.json")"
                 verifier_internal_dependencies="$(jq -c '[.packages[] | select(.name == "artifact-auth-ed25519") | .dependencies[] | select(.name | startswith("artifact-")) | .name] | sort' "$TMPDIR/metadata.json")"
                 transfer_internal_dependencies="$(jq -c '[.packages[] | select(.name == "artifact-transfer-core") | .dependencies[] | select(.name | startswith("artifact-")) | .name] | sort' "$TMPDIR/metadata.json")"
+                binding_internal_dependencies="$(jq -c '[.packages[] | select(.name == "artifact-binding-core") | .dependencies[] | select(.name | startswith("artifact-")) | .name] | sort' "$TMPDIR/metadata.json")"
                 if [ "$auth_core_internal_dependencies" != "$expected_no_internal_dependencies" ]; then
                   echo "artifact-auth-core gained a forbidden workspace dependency" >&2
                   exit 1
@@ -307,6 +346,10 @@
                 fi
                 if [ "$transfer_internal_dependencies" != "$expected_no_internal_dependencies" ]; then
                   echo "artifact-transfer-core gained a forbidden workspace dependency" >&2
+                  exit 1
+                fi
+                if [ "$binding_internal_dependencies" != "$expected_no_internal_dependencies" ]; then
+                  echo "artifact-binding-core gained a forbidden workspace dependency" >&2
                   exit 1
                 fi
                 grep -F 'explicitly authorized reuse, modification, and relicensing' "$src/provenance/SOURCE_GRANT.md" > /dev/null

@@ -33,6 +33,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "artifact-binding-core"
+version = "0.1.0"
+
+[[package]]
 name = "artifact-transfer-core"
 version = "0.1.0"
 
