@@ -64,7 +64,9 @@ See the [candidate API](docs/publication/API.md), [source inventory](docs/public
 
 Packages are distributed from immutable Git revisions and set `publish = false`; crates.io is not a release channel. Product repositories must align Cargo and Nix to the same reviewed source identity.
 
-The historical `artifact-auth` revision `799459346d5416fbd7b9f55840a7371441b55afa` remains a valid compatibility source for Molten, Mantle, and Valence. Moving a consumer to this workspace requires a repo-local Cairn change, exact source/package/license checks, generated Cargo/Nix locks, focused positive and negative tests, and rollback evidence. Workspace creation does not migrate consumers automatically.
+The standalone `artifact-auth`, `artifact-transfer`, and `artifact-binding` repositories are deprecated. Keep their immutable revisions only for source history and rollback. All active development and new consumer pins must use this workspace.
+
+Historical `artifact-auth` revision `799459346d5416fbd7b9f55840a7371441b55afa` remains a valid compatibility source for existing Molten, Mantle, and Valence pins. Moving a consumer to this workspace requires a repo-local Cairn change, exact source/package/license checks, generated Cargo/Nix locks, focused positive and negative tests, and rollback evidence.
 
 ## Validation
 
@@ -110,7 +112,8 @@ The authorization and exact imported source revisions are recorded in [`provenan
 
 ## References
 
-- [OnixResearch/artifact-auth](https://github.com/OnixResearch/artifact-auth) — authentication source history and compatibility revisions retained during migration.
-- [OnixResearch/artifact-transfer](https://github.com/OnixResearch/artifact-transfer) — transfer-geometry source history and disposable consumer evidence imported at revision `507b10823c4513064710a70fe565f9a1ee592985`.
+- [Deprecated artifact-auth history](https://github.com/OnixResearch/artifact-auth) — immutable authentication source and compatibility revisions.
+- [Deprecated artifact-transfer history](https://github.com/OnixResearch/artifact-transfer) — immutable transfer-geometry source and disposable consumer evidence imported at revision `507b10823c4513064710a70fe565f9a1ee592985`.
+- [`../artifact-binding/`](../artifact-binding/) — deprecated local design history with no publication source.
 - [PsychoLlama/ambient](https://github.com/PsychoLlama/ambient) — non-normative design reference for immutable implementations, explicit late binding, semantic handler identity, and generation retirement tracing.
-- [OnixResearch/aspen](https://github.com/OnixResearch/aspen), [Mantle](https://github.com/OnixResearch/mantle), [Valence](https://github.com/OnixResearch/valence), and [OnixOS](https://github.com/OnixResearch/onix-modules) — consumers and pilots that retain product authority.
+- [Molten](https://github.com/brittonr/aspen), [Mantle](https://github.com/OnixResearch/mantle), [Valence](https://github.com/OnixResearch/valence), and [OnixOS](https://github.com/onixcomputer/onix-modules) — consumers and pilots that retain product authority.
