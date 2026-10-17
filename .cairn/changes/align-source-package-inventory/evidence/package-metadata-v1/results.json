@@ -1,0 +1,96 @@
+[
+  {
+    "label": "cargo-package-metadata",
+    "command": [
+      "nix",
+      "develop",
+      "path:/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "--command",
+      "cargo",
+      "metadata",
+      "--locked",
+      "--offline",
+      "--no-deps",
+      "--format-version",
+      "1"
+    ],
+    "exit": 0,
+    "elapsed_s": 2.1184266824275255
+  },
+  {
+    "label": "cargo-source-members-artifact-auth-core",
+    "command": [
+      "nix",
+      "develop",
+      "path:/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "--command",
+      "cargo",
+      "package",
+      "--list",
+      "--locked",
+      "--offline",
+      "--allow-dirty",
+      "-p",
+      "artifact-auth-core"
+    ],
+    "exit": 0,
+    "elapsed_s": 2.068347007036209
+  },
+  {
+    "label": "cargo-source-members-artifact-auth-ed25519",
+    "command": [
+      "nix",
+      "develop",
+      "path:/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "--command",
+      "cargo",
+      "package",
+      "--list",
+      "--locked",
+      "--offline",
+      "--allow-dirty",
+      "-p",
+      "artifact-auth-ed25519"
+    ],
+    "exit": 0,
+    "elapsed_s": 0.41506698448210955
+  },
+  {
+    "label": "cargo-source-members-artifact-binding-core",
+    "command": [
+      "nix",
+      "develop",
+      "path:/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "--command",
+      "cargo",
+      "package",
+      "--list",
+      "--locked",
+      "--offline",
+      "--allow-dirty",
+      "-p",
+      "artifact-binding-core"
+    ],
+    "exit": 0,
+    "elapsed_s": 0.41498013865202665
+  },
+  {
+    "label": "cargo-source-members-artifact-transfer-core",
+    "command": [
+      "nix",
+      "develop",
+      "path:/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "--command",
+      "cargo",
+      "package",
+      "--list",
+      "--locked",
+      "--offline",
+      "--allow-dirty",
+      "-p",
+      "artifact-transfer-core"
+    ],
+    "exit": 0,
+    "elapsed_s": 0.4150392282754183
+  }
+]

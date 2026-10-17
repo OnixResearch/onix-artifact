@@ -8,7 +8,7 @@ Defines the `artifact-workspace` capability.
 
 ### Requirement: Workspace substrate is uniform
 
-r[artifact_workspace.substrate.uniform] The workspace MUST use Rust 1.88 with edition 2024, MUST license every repository-owned package as `MIT OR Apache-2.0`, MUST disable crates.io publication, and MUST apply shared unsafe-code, documentation, and Clippy policy while retaining package-specific behavior and specifications.
+r[artifact_workspace.substrate.uniform] The workspace MUST use Rust 1.88 with edition 2024, MUST license every repository-owned package and new owned source, contracts, schemas, fixtures, templates, documentation and policy as `AGPL-3.0-or-later`, MUST preserve prior grants and immutable provenance, MUST disable crates.io publication, and MUST apply shared unsafe-code, documentation, and Clippy policy while retaining package-specific behavior and specifications.
 
 #### Scenario: Implemented packages conform
 

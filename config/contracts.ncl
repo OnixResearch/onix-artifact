@@ -1,13 +1,14 @@
-let OwnedPackageCount = 3 in
+let OwnedPackageCount = 4 in
 let OwnedPackages = std.contract.from_predicate (fun value =>
   std.is_array value
   && std.array.length value == OwnedPackageCount
   && std.array.elem "artifact-auth-core" value
   && std.array.elem "artifact-auth-ed25519" value
   && std.array.elem "artifact-transfer-core" value
+  && std.array.elem "artifact-binding-core" value
 ) in
 let StandaloneLicense = std.contract.from_predicate (fun value =>
-  value == "MIT OR Apache-2.0"
+  value == "AGPL-3.0-or-later"
 ) in
 let OwnerAuthorized = std.contract.from_predicate (fun value => value == true) in
 let SourceContract = {
@@ -28,6 +29,7 @@ let ExpectedPackageDependencies = [
   { package = "artifact-auth-core", dependencies = [] },
   { package = "artifact-auth-ed25519", dependencies = ["artifact-auth-core"] },
   { package = "artifact-transfer-core", dependencies = [] },
+  { package = "artifact-binding-core", dependencies = [] },
 ] in
 let PackageDependencies = std.contract.from_predicate (fun value =>
   value == ExpectedPackageDependencies

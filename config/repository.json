@@ -1,5 +1,5 @@
 {
-  "license": "MIT OR Apache-2.0",
+  "license": "AGPL-3.0-or-later",
   "mechanisms": [
     "authentication",
     "transfer-geometry",
@@ -15,7 +15,7 @@
     "Workspace membership does not transfer authority or make distinct artifact mechanisms semantically interchangeable."
   ],
   "owner_authorization": {
-    "license_grant": "MIT OR Apache-2.0",
+    "license_grant": "AGPL-3.0-or-later",
     "owner_authorized": true,
     "record": "provenance/SOURCE_GRANT.md"
   },
@@ -33,12 +33,17 @@
     {
       "dependencies": [],
       "package": "artifact-transfer-core"
+    },
+    {
+      "dependencies": [],
+      "package": "artifact-binding-core"
     }
   ],
   "packages": [
     "artifact-auth-core",
     "artifact-auth-ed25519",
-    "artifact-transfer-core"
+    "artifact-transfer-core",
+    "artifact-binding-core"
   ],
   "release_checks": [
     "cargo-format",

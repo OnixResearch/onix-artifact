@@ -1,0 +1,8 @@
+Cargo.lock
+Cargo.toml
+Cargo.toml.orig
+LICENSE
+LICENSE-AGPL
+src/lib.rs
+tests/conformance.rs
+tests/consumer_mappings.rs

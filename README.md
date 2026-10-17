@@ -68,6 +68,18 @@ The standalone `artifact-auth`, `artifact-transfer`, and `artifact-binding` repo
 
 Historical `artifact-auth` revision `799459346d5416fbd7b9f55840a7371441b55afa` remains a valid compatibility source for existing Molten, Mantle, and Valence pins. Moving a consumer to this workspace requires a repo-local Cairn change, exact source/package/license checks, generated Cargo/Nix locks, focused positive and negative tests, and rollback evidence.
 
+The unified workspace's existing canonical identity is
+`rad:z25ySMy8Hh3HpsxP5zcYoYgaMBi99`. It is now public natively, with its existing
+single delegate, threshold one, default branch and native `main` preserved.
+Reviewed consumer revisions `e41340bec587b6d049b5cc518ec7db925dde84be` and
+`c932138d880ddf4c2967f4c024b489b5c0022bf1` are signed on dedicated
+`consumer-pins/<full-revision>` refs. The exact command observations are in
+[`native-publication-and-acquisition.json`](.cairn/changes/publish-required-artifact-source/evidence/native-publication-and-acquisition.json).
+Native publication does not establish a working anonymous HTTPS Git input:
+post-publication exact fetches returned HTTP 500 from the Garden projection and
+repository-not-found from the Onix projection. Neither attempted endpoint is
+admitted for downstream cutover; exact anonymous acquisition remains open.
+
 ## Validation
 
 Fast feedback:
@@ -94,9 +106,25 @@ Full repository gate:
 ```console
 nickel typecheck config/repository.ncl
 nickel typecheck release/profile.ncl
-nix run path:../cairn#cairn -- validate --root . --policy cairn-policy/generated/cairn-policy.json
+nix run --inputs-from . cairn#cairn -- validate --root . --policy cairn-policy/generated/cairn-policy.json
 nix flake check path:$PWD -L
 ```
+
+Native lifecycle content is `.cairn/`; the immutable tool input is Cairn
+`1cacafebbff7b2716a953961a1ebf52bafb352e7`, acquired through authorized Git SSH.
+The pinned tool selects `.cairn/` without relocating lifecycle content or changing
+the checked-in gate policy. SSH acquisition requires an authorized GitHub key;
+it does not establish anonymous source availability. The exact 156-file prepared
+cohort passed the x86_64-linux owner flake checks, native validation and gates,
+and an isolated incomplete-release-inventory rejection. Commands, original
+output and source identities are retained in
+[`owner-acceptance-v1`](.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/complete.json).
+The flake check explicitly omitted aarch64-linux. Separate Cargo metadata and
+source-member observations are in
+[`package-metadata-v1`](.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/complete.json):
+all four packages resolve to AGPL-3.0-or-later, disable crates.io publication,
+and include LICENSE and LICENSE-AGPL. These observations do not establish
+consumer migration, anonymous acquisition, lifecycle archive or release eligibility.
 
 ### Frozen Radicle compatibility source
 
@@ -106,9 +134,9 @@ Historical revision `799459346d5416fbd7b9f55840a7371441b55afa` is served unchang
 
 <!-- r[verify artifact_workspace.substrate.uniform] r[verify artifact_workspace.claims.bounded] -->
 
-The workspace and its repository-owned packages are available under `MIT OR Apache-2.0`.
+All repository-owned packages and new owned source, contracts, schemas, fixtures, templates, documentation and policy are offered under `AGPL-3.0-or-later`; see [`LICENSE`](LICENSE) and [`LICENSE-AGPL`](LICENSE-AGPL).
 
-The authorization and exact imported source revisions are recorded in [`provenance/SOURCE_GRANT.md`](provenance/SOURCE_GRANT.md) and [`docs/source-inventory.md`](docs/source-inventory.md). Third-party dependencies retain their own licenses.
+The authorization and exact imported source revisions are recorded in [`provenance/SOURCE_GRANT.md`](provenance/SOURCE_GRANT.md) and [`docs/source-inventory.md`](docs/source-inventory.md). Prior MIT/Apache grants remain effective for previously granted material, including byte-identical content. Retained permissive texts do not grant permissive terms for new contributions. Immutable baselines, historical receipts and third-party dependencies retain their recorded terms. This source preparation does not publish a revision or migrate consumer pins.
 
 ## References
 

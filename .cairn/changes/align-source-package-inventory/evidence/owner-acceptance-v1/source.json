@@ -1,0 +1,635 @@
+{
+  "archive_blake3": "38659eb1f013b29d4d3553e4c3e27a313a59b7bc38c2bd7771c5c07499781e22",
+  "entries": [
+    {
+      "path": ".cairn/archive/2026-07-24-consolidate-artifact-workspace/design.md",
+      "blake3": "64906ee9de9e3ab8e3bfd74c177dbf30d6f76bf964761805975322b73fc1be9b"
+    },
+    {
+      "path": ".cairn/archive/2026-07-24-consolidate-artifact-workspace/proposal.md",
+      "blake3": "15a98ec934b41cbb2ae83c560d3872fc5d89ca7ca23f7792f9ea27da2d3b7f74"
+    },
+    {
+      "path": ".cairn/archive/2026-07-24-consolidate-artifact-workspace/specs/artifact-transfer/spec.md",
+      "blake3": "77ce4d3cad66a74321041bc86d82950d7768a5ee8ce22370697ff5aba8565d93"
+    },
+    {
+      "path": ".cairn/archive/2026-07-24-consolidate-artifact-workspace/specs/artifact-workspace/spec.md",
+      "blake3": "787fe2034f020b7c50a58a4f54fe1d88d6d49da1aff6de1165a50217c198cb0f"
+    },
+    {
+      "path": ".cairn/archive/2026-07-24-consolidate-artifact-workspace/tasks.md",
+      "blake3": "a7a9d7d78badf95be07bb0bbf440e3c17674d4051ea13cfdb0e93f402bf91d6b"
+    },
+    {
+      "path": ".cairn/archive/2026-07-25-publish-radicle-compatibility-source/design.md",
+      "blake3": "deb70ad790f7e4731def1faf6c6eea485a880fddeedf20fb927e7f0f487aa3e3"
+    },
+    {
+      "path": ".cairn/archive/2026-07-25-publish-radicle-compatibility-source/evidence/publication-and-admission-2026-07-25.md",
+      "blake3": "15d0cc0436ed22146ecf61d6b5e5b56af9e87bb5ad601c157b4248123f498f4a"
+    },
+    {
+      "path": ".cairn/archive/2026-07-25-publish-radicle-compatibility-source/proposal.md",
+      "blake3": "c974f3725f5eef15dc132528880bcd366b3bd33a271e657edda26b6ad2932eae"
+    },
+    {
+      "path": ".cairn/archive/2026-07-25-publish-radicle-compatibility-source/specs/radicle-publication/spec.md",
+      "blake3": "b7d6c4b78e6ce752111e62abbbf30737d126843ba9e68e37184a7984a38eea53"
+    },
+    {
+      "path": ".cairn/archive/2026-07-25-publish-radicle-compatibility-source/tasks.md",
+      "blake3": "4bccfc53c9f7aeefec9f3023cc8e1fb639a9f9c271ad38edec5b84253bfa6228"
+    },
+    {
+      "path": ".cairn/archive/2026-07-27-establish-artifact-binding-core/design.md",
+      "blake3": "9dacd28a42a7b4d55f90dad00df5a9ac1bc4f62b4d2c304ca04d8855cf2e05c8"
+    },
+    {
+      "path": ".cairn/archive/2026-07-27-establish-artifact-binding-core/evidence/validation.md",
+      "blake3": "74fba3d79f64e31a98245ad7287f01361ee7f333fc6d6cf4381a9fde96d393f2"
+    },
+    {
+      "path": ".cairn/archive/2026-07-27-establish-artifact-binding-core/proposal.md",
+      "blake3": "76a176f303854e83b27b2a45ce959578d18c65035385ed6f9d1632cd0acb1399"
+    },
+    {
+      "path": ".cairn/archive/2026-07-27-establish-artifact-binding-core/specs/artifact-binding-core/spec.md",
+      "blake3": "cef9a40b97acd3ceb6885da9dac8920a7040ab056bcee01defc0b1859241b6bf"
+    },
+    {
+      "path": ".cairn/archive/2026-07-27-establish-artifact-binding-core/tasks.md",
+      "blake3": "4eda9fce363b72c342a1607cf7b764bd40a3f0da726ced09f6328f4e4b0c5e1c"
+    },
+    {
+      "path": ".cairn/archive/2026-07-27-evaluate-durable-file-publication-extraction/design.md",
+      "blake3": "2bcf335d116d766197ebb4bce4dfda5dae800e69aeb96174e7b3f0698c0458cf"
+    },
+    {
+      "path": ".cairn/archive/2026-07-27-evaluate-durable-file-publication-extraction/evidence/validation.md",
+      "blake3": "d6f91d66d443c32d1fb7a3aa519fd14183ab3a6f76bec0f735110d9a70348c2d"
+    },
+    {
+      "path": ".cairn/archive/2026-07-27-evaluate-durable-file-publication-extraction/proposal.md",
+      "blake3": "b72fd71128d0735c750b0f3849e2ad85d2f0a7271f7a7d16f9f67ecce4835b43"
+    },
+    {
+      "path": ".cairn/archive/2026-07-27-evaluate-durable-file-publication-extraction/specs/durable-file-publication-extraction/spec.md",
+      "blake3": "c0fc0ea13520992066ea29c0b6e44a190df2ead8a9277b885586ab611e0aa0bd"
+    },
+    {
+      "path": ".cairn/archive/2026-07-27-evaluate-durable-file-publication-extraction/tasks.md",
+      "blake3": "9a90577609f87816293d3cb138727a0f3c8ecb4daf05d5fc51030eeb925becc6"
+    },
+    {
+      "path": ".cairn/changes/adopt-fault-injection-io-tests/design.md",
+      "blake3": "8fa22d11b8933652b793daefadab38a546feab9887d180c74826d6ba9c6dac4b"
+    },
+    {
+      "path": ".cairn/changes/adopt-fault-injection-io-tests/proposal.md",
+      "blake3": "fad0ab2dbdc7e9e06b24bc825f58c21f56169737dcccd90db025c881afc3f2ab"
+    },
+    {
+      "path": ".cairn/changes/adopt-fault-injection-io-tests/specs/io-fault-fixtures/spec.md",
+      "blake3": "f510dbcebba5c6e000ddbb2e3f84c8c0600e5ec561054576f42e17c35ecdb49e"
+    },
+    {
+      "path": ".cairn/changes/adopt-fault-injection-io-tests/tasks.md",
+      "blake3": "0d409cc3116a9d2823d2360d73a899746aea53cd87161a15d9d2e36b70b1620a"
+    },
+    {
+      "path": ".cairn/changes/adopt-owned-source-agpl/design.md",
+      "blake3": "84e6cbec791188edf74961cf3d570adf49a6aa9e1b0fecb02f84eaa2e5acecab"
+    },
+    {
+      "path": ".cairn/changes/adopt-owned-source-agpl/metadata.json",
+      "blake3": "df8b71bae570eb5accd702e7370a816b8ea9f2e4521254c5d75ea82a9cfcf4db"
+    },
+    {
+      "path": ".cairn/changes/adopt-owned-source-agpl/proposal.md",
+      "blake3": "1d3e118732493e243569a88e21b8f4c631e2972ccf86f61af21a0b1851a40978"
+    },
+    {
+      "path": ".cairn/changes/adopt-owned-source-agpl/specs/owned-source-license/spec.md",
+      "blake3": "917d4b8ffd4adeac5e39c99110fbba7719e04030c1ba654a6151c71422b6420f"
+    },
+    {
+      "path": ".cairn/changes/adopt-owned-source-agpl/tasks.md",
+      "blake3": "eae71d0f95624dfacad550392ea1f5ec0f2843edc95e65544645ab6df42a170a"
+    },
+    {
+      "path": ".cairn/changes/align-source-package-inventory/design.md",
+      "blake3": "a613b8b3b7c426abccc13b64379ccaa568cf2153f427af191034888c4f4ec648"
+    },
+    {
+      "path": ".cairn/changes/align-source-package-inventory/metadata.json",
+      "blake3": "df8b71bae570eb5accd702e7370a816b8ea9f2e4521254c5d75ea82a9cfcf4db"
+    },
+    {
+      "path": ".cairn/changes/align-source-package-inventory/proposal.md",
+      "blake3": "2c54ce686fd3d6087ec77da2b542702576d213150824cc3cc3d2d636151cd77c"
+    },
+    {
+      "path": ".cairn/changes/align-source-package-inventory/specs/artifact-workspace/spec.md",
+      "blake3": "5255d973f5dbb507693e2edf053fb80d1866c17fa389f59dd9e8e4be0f014a28"
+    },
+    {
+      "path": ".cairn/changes/align-source-package-inventory/tasks.md",
+      "blake3": "486aa9b9b866b4af8b221ec259d9ce74f5704a3543370bd253f6b020a2412eae"
+    },
+    {
+      "path": ".cairn/changes/publish-required-artifact-source/design.md",
+      "blake3": "505f2e7fd2218155ad1cd22d730cecf522b26f1f8124306d8eec148bdfba691e"
+    },
+    {
+      "path": ".cairn/changes/publish-required-artifact-source/evidence/native-publication-and-acquisition.json",
+      "blake3": "732dda2f473ba5930ce05d716eab4afa12a1391e17df0ecc2549dba3759c0748"
+    },
+    {
+      "path": ".cairn/changes/publish-required-artifact-source/metadata.json",
+      "blake3": "df8b71bae570eb5accd702e7370a816b8ea9f2e4521254c5d75ea82a9cfcf4db"
+    },
+    {
+      "path": ".cairn/changes/publish-required-artifact-source/proposal.md",
+      "blake3": "dded4911ffd66bf994b5136a210d9f1fbda9cbe92aa943ceb2ff1513d3115971"
+    },
+    {
+      "path": ".cairn/changes/publish-required-artifact-source/specs/source-distribution/spec.md",
+      "blake3": "de2c8fbb96bc7d6e589d2a1bb778ccd27c6072253551e1e5806442667d403e5b"
+    },
+    {
+      "path": ".cairn/changes/publish-required-artifact-source/tasks.md",
+      "blake3": "81740e25afb878b7799234365a582d8ab69122bde7a7979236dcfcb26ee843fb"
+    },
+    {
+      "path": ".cairn/specs/artifact-auth/spec.md",
+      "blake3": "e8aedc25c8e118f0751a3b724137682a45c19a68fa9434434ee7525cf8ef7060"
+    },
+    {
+      "path": ".cairn/specs/artifact-binding-core/spec.md",
+      "blake3": "c2a499026ef288f954869c8eb456c8559758435c30ab5cc44c6401ecd78b67aa"
+    },
+    {
+      "path": ".cairn/specs/artifact-transfer/spec.md",
+      "blake3": "5aef0c1248f07d930ad89fc6ba864d4750f117e19a57c44934577e1eb3ff3f49"
+    },
+    {
+      "path": ".cairn/specs/artifact-workspace/spec.md",
+      "blake3": "54f0bad058015b09567b9f210f0ca0bf4db2360c46deb3e12ea69cb7b72d99a4"
+    },
+    {
+      "path": ".cairn/specs/durable-file-publication-extraction/spec.md",
+      "blake3": "a4b569b536c334f77f790460029f4b99f7bbbb26ca31aef4213edbc9044330f5"
+    },
+    {
+      "path": ".cairn/specs/radicle-publication/spec.md",
+      "blake3": "77a2e86a341f70ec3715b611edeabe82edd769ba39857b00a645b82f40ab442d"
+    },
+    {
+      "path": ".gitignore",
+      "blake3": "74545388b64fe70956277855783e4f542784b6f6ec3d1662faec2f790f282277"
+    },
+    {
+      "path": "AGENTS.md",
+      "blake3": "373cd84a77cafbd72bea8309af230bb0e1968e6eb3012d29f1608750ffd97d6f"
+    },
+    {
+      "path": "Cargo.lock",
+      "blake3": "6f02f0b8726c1b82d6aa8cfe66e66d29e8831164b70db0ed97e8522b07e73994"
+    },
+    {
+      "path": "Cargo.toml",
+      "blake3": "266895847105dae7d9f2e942f425060e3860301e4d8f6800218cd7e5919ea593"
+    },
+    {
+      "path": "LICENSE",
+      "blake3": "19b39bc8d7c2af78f6563d402ffa7e2caa2b01616f640356e657991541d69d2b"
+    },
+    {
+      "path": "LICENSE-AGPL",
+      "blake3": "ca0292789c0a0ecba706f4b3f3493007a9951731c1d432c52c4aac1f1abba8ef"
+    },
+    {
+      "path": "LICENSE-APACHE",
+      "blake3": "83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6"
+    },
+    {
+      "path": "LICENSE-MIT",
+      "blake3": "4832be0355265c184eb7a2fc7f24e4d22d353bca2a83f630416ea9c54f994262"
+    },
+    {
+      "path": "NOTICE",
+      "blake3": "e3137fd44c74c9ee0299973a964f662c8f5005b9caf70a4938bc164b2678f812"
+    },
+    {
+      "path": "README.md",
+      "blake3": "3aeef7696c9891188790a0697f62a23fb05d9cb0ab51fc76c6c16786a3cab215"
+    },
+    {
+      "path": "cairn-policy/UPSTREAM.md",
+      "blake3": "30ad6d2f23b86fa4551666e79aee3ded31f6de6f06982f53d54d2fd2a188fca5"
+    },
+    {
+      "path": "cairn-policy/adoption-report.ncl",
+      "blake3": "1a5667aba5a3bd5f992ac4d8b7606500b68a962d1fa82298a41e25511ef93ea9"
+    },
+    {
+      "path": "cairn-policy/contracts.ncl",
+      "blake3": "bc537dc32ff01fc9004dc032b78ad6fb5855c5c6f0158ecda219d5912b46619c"
+    },
+    {
+      "path": "cairn-policy/default.ncl",
+      "blake3": "a22d6f2d1254bdb19a2b44b02d8fa07e9a4868fd2ef9d7e386c24620d450c2b8"
+    },
+    {
+      "path": "cairn-policy/function-address-authentication-profile.ncl",
+      "blake3": "fe834ad37e9896cbe70e049979d26856a7b011c831f7d7dcf9e307cd86a2edf4"
+    },
+    {
+      "path": "cairn-policy/generated/cairn-policy.json",
+      "blake3": "6967ab19f7da5191daa61bf970f975baaa936ef57295b6b7cf438c7b8c9a44d7"
+    },
+    {
+      "path": "cairn-policy/hash-algorithm-policy.ncl",
+      "blake3": "368b77331503c58b3cb358851f08b45a9c642b1fd7711e586889689654765928"
+    },
+    {
+      "path": "cairn-policy/lifecycle-store-contracts.ncl",
+      "blake3": "cfa0842a93d34d87db473c5f3a26b2e6b8285bf4d0fffc6bc9ffc54c77f32b99"
+    },
+    {
+      "path": "cairn-policy/nominal-evidence-identities.ncl",
+      "blake3": "6e4798683072695e0c06feb2ceac31d9aa9fa74f6821c048c875dfe5b4c92b6c"
+    },
+    {
+      "path": "cairn-policy/readiness.ncl",
+      "blake3": "db6f1206bc9580b78a735fe2d9fe07bcad05e77e35e1d03e5b80909d760de77b"
+    },
+    {
+      "path": "cairn-policy/requirement-id-registry.ncl",
+      "blake3": "09bd14fdccdc43ef27819765f2f3b709183d0fb61ef466e5c11d61f98dd794dd"
+    },
+    {
+      "path": "cairn-policy/stack-provenance-authentication-profile.ncl",
+      "blake3": "5e001242f3db2be3010c49f1d4ee2668ffdce00543310251786ea4bbe7d1d01c"
+    },
+    {
+      "path": "cairn-policy/structured-lifecycle-contracts.ncl",
+      "blake3": "fb2a6cb07107a9b34ef2aa2eed7b1b5a0b83dcf005fb95b5abd6d65ed70d5047"
+    },
+    {
+      "path": "cairn-policy/toolchain-profile-matrix.ncl",
+      "blake3": "2fd76cf2834fff14dbc500118f18bfa9a8a5d201ecbb9f4346e55d298245642e"
+    },
+    {
+      "path": "cairn-policy/workspace-contract-matrix.ncl",
+      "blake3": "f0bc1ffc5aac17c5669c56dec5dfe0704022c852d8545f1c803be398b12d7102"
+    },
+    {
+      "path": "config/consumers/cairn.ncl",
+      "blake3": "7992754dd5c96fc15536378addeb208a05569eb3552f525860504bdff26cf22d"
+    },
+    {
+      "path": "config/consumers/mantle.ncl",
+      "blake3": "f091b0c80c7578d340a2a5afe9e6104974e4dd7bb9a45cb6566d8c67392c4371"
+    },
+    {
+      "path": "config/consumers/molten.ncl",
+      "blake3": "017baabd4137a210430c433c3ab536e2239a6d9ade6ed48ff27e88574e8a8657"
+    },
+    {
+      "path": "config/consumers/valence.ncl",
+      "blake3": "76c0e576bf781b66e4254e598b04339d9f3fb219eb9dfa028520b1d37c3aa691"
+    },
+    {
+      "path": "config/contracts.ncl",
+      "blake3": "2f836d1e09f7c39466a6e1ed3834a8a1166023628bf3b97d2c9b6ec9c16a4eef"
+    },
+    {
+      "path": "config/fixtures/false-owner-authorization.ncl",
+      "blake3": "ea3faa2f709f3e309a52691a0d6e74e3771b646cd10111162a561e814e450423"
+    },
+    {
+      "path": "config/fixtures/forbidden-workspace-dependency.ncl",
+      "blake3": "69359c6b241a1f9c18deb6cde9b9a32df0ea52b9a0db8969dba4407308b71b9b"
+    },
+    {
+      "path": "config/fixtures/invalid-license.ncl",
+      "blake3": "190c5238908f047e5fa1089d9b2930d2a99d4c190b87d47d9f58829b173f314c"
+    },
+    {
+      "path": "config/fixtures/mapping-drops-retained-authority.ncl",
+      "blake3": "70cdf2715d4965030e5ebed2e3dcd7ff9024007d3dd967615e9893cc11650d7b"
+    },
+    {
+      "path": "config/fixtures/mismatched-source-provenance.ncl",
+      "blake3": "da7705fba866cfcfd603cfff13a016f643b19c445ac03d4952b64769f9d427e6"
+    },
+    {
+      "path": "config/fixtures/missing-owner-authorization.ncl",
+      "blake3": "2d66bcd4501de04791afc1ca82c9eed2e5431f9ed15d9448ed3474c0f9d4485a"
+    },
+    {
+      "path": "config/fixtures/missing-workspace-package.ncl",
+      "blake3": "0e78e011f40c8a4b833e4e05f87291b576f1f82f02e5413d2d70e4766265552d"
+    },
+    {
+      "path": "config/fixtures/weakened-non-claims.ncl",
+      "blake3": "483a3ba3e567a185072e95908f5b7444a011a678dd3aa3a17b3bfa74455b28a0"
+    },
+    {
+      "path": "config/repository.json",
+      "blake3": "f831903f6b8105d9ea0b8094e2486ee792c73470cd0e85c1131bfd78179095fc"
+    },
+    {
+      "path": "config/repository.ncl",
+      "blake3": "a666e5e1bd5cbe85831bd3b0f7247c6ef88c51ac7e9fa327a8f0dde0a76ea111"
+    },
+    {
+      "path": "crates/artifact-auth-core/Cargo.toml",
+      "blake3": "690faaefa6fb59e99a8413857cfae5dfe8c1a977bbacb0706d35217639912d3b"
+    },
+    {
+      "path": "crates/artifact-auth-core/LICENSE",
+      "blake3": "19b39bc8d7c2af78f6563d402ffa7e2caa2b01616f640356e657991541d69d2b"
+    },
+    {
+      "path": "crates/artifact-auth-core/LICENSE-AGPL",
+      "blake3": "ca0292789c0a0ecba706f4b3f3493007a9951731c1d432c52c4aac1f1abba8ef"
+    },
+    {
+      "path": "crates/artifact-auth-core/src/lib.rs",
+      "blake3": "839ea3e35429e2a1252020dd779b46ebd185b6911674036820da118d487d1d21"
+    },
+    {
+      "path": "crates/artifact-auth-core/tests/conformance.rs",
+      "blake3": "03addbd50685d2f7325be6f238c85d4c927bd84a858a3e42f04dd628ca4a1930"
+    },
+    {
+      "path": "crates/artifact-auth-core/tests/consumer_mappings.rs",
+      "blake3": "ad368a2ba9eaaf97cc820f535544c5697e050e6c2bcb2e15f6ea78517863eb4c"
+    },
+    {
+      "path": "crates/artifact-auth-ed25519/Cargo.toml",
+      "blake3": "01dd398461d7e2c616511e1bc29cdb066ffadb68f422236111e604817a930347"
+    },
+    {
+      "path": "crates/artifact-auth-ed25519/LICENSE",
+      "blake3": "19b39bc8d7c2af78f6563d402ffa7e2caa2b01616f640356e657991541d69d2b"
+    },
+    {
+      "path": "crates/artifact-auth-ed25519/LICENSE-AGPL",
+      "blake3": "ca0292789c0a0ecba706f4b3f3493007a9951731c1d432c52c4aac1f1abba8ef"
+    },
+    {
+      "path": "crates/artifact-auth-ed25519/examples/two_signer_release.rs",
+      "blake3": "b8ab93ad78bf662d73359f6122ef23bdd85c77b5633b99725cc236433bb3a4d9"
+    },
+    {
+      "path": "crates/artifact-auth-ed25519/src/lib.rs",
+      "blake3": "7fd3987fe3ddc6d30efca37878952135f19905a00b52f349db237054be6b3633"
+    },
+    {
+      "path": "crates/artifact-binding-core/Cargo.toml",
+      "blake3": "22357f0ab56bcb8cf87ea4057183a7a1d4d4be5de8670e2f1a1fc3872e9073f4"
+    },
+    {
+      "path": "crates/artifact-binding-core/LICENSE",
+      "blake3": "19b39bc8d7c2af78f6563d402ffa7e2caa2b01616f640356e657991541d69d2b"
+    },
+    {
+      "path": "crates/artifact-binding-core/LICENSE-AGPL",
+      "blake3": "ca0292789c0a0ecba706f4b3f3493007a9951731c1d432c52c4aac1f1abba8ef"
+    },
+    {
+      "path": "crates/artifact-binding-core/src/id.rs",
+      "blake3": "c15bd7896684e7146197f9675adb95a8f175d9e94d56a0bc311d36b54e9fc455"
+    },
+    {
+      "path": "crates/artifact-binding-core/src/lib.rs",
+      "blake3": "71443dc54a3b3a3f6d5ff2c6bc0f34d5c13ec3545a67ffe0963a9a91ebfff8ed"
+    },
+    {
+      "path": "crates/artifact-binding-core/src/reachability.rs",
+      "blake3": "0a226e8fe6b1a7df7f835e71a1dee6b672d8936600aad09787f1e57b0f829368"
+    },
+    {
+      "path": "crates/artifact-binding-core/src/resolution.rs",
+      "blake3": "c0f0f32a441c17a4eb23ab1c3daee87beb2f733c16106c0d0cf69415f1b062fb"
+    },
+    {
+      "path": "crates/artifact-binding-core/src/retirement.rs",
+      "blake3": "3a1555128b0c465976f30d829461b5dad11dbf641d872fbdffca4711cd89cc62"
+    },
+    {
+      "path": "crates/artifact-binding-core/src/transition.rs",
+      "blake3": "259022609c2a179ec38ac1382f869e8ca9e0b5133d3759159379bd7fcf7eb790"
+    },
+    {
+      "path": "crates/artifact-binding-core/tests/pilots.rs",
+      "blake3": "956c003d1e89e66e0ad70101966ae0b5555bf4318bbb7fa6e592acd45ef6d434"
+    },
+    {
+      "path": "crates/artifact-transfer-core/Cargo.toml",
+      "blake3": "4adaee95ea3fc5366e5a8019700d27a9d6e69e9db4a06990f2aee000b4d83146"
+    },
+    {
+      "path": "crates/artifact-transfer-core/LICENSE",
+      "blake3": "19b39bc8d7c2af78f6563d402ffa7e2caa2b01616f640356e657991541d69d2b"
+    },
+    {
+      "path": "crates/artifact-transfer-core/LICENSE-AGPL",
+      "blake3": "ca0292789c0a0ecba706f4b3f3493007a9951731c1d432c52c4aac1f1abba8ef"
+    },
+    {
+      "path": "crates/artifact-transfer-core/src/lib.rs",
+      "blake3": "3e680108e25253edc1d2e332e2d53e5d68ab6537b4680c15f80ac4d920eb1679"
+    },
+    {
+      "path": "docs/baseline-vectors.md",
+      "blake3": "8b7312a91549a58acce38931240d83a37ebdc0c5f7e58ede2c0543df401c9af5"
+    },
+    {
+      "path": "docs/binding/adoption.md",
+      "blake3": "f1a7b2d1c85b834e6eef715da6e2d5d30a375ec7665ccf4bf1bac40ae0e258b1"
+    },
+    {
+      "path": "docs/binding/design.md",
+      "blake3": "6a2c90d439d3a13fe43ea6ad4f9911792041b8ad95fde67e6d9753b4651dd2eb"
+    },
+    {
+      "path": "docs/binding/pilot.md",
+      "blake3": "faf9f07e9b14e5fae6d7f87763d23db38315bc5ff94988fcf66115626aff9213"
+    },
+    {
+      "path": "docs/consumer-mappings.md",
+      "blake3": "5efe876f38917466e6d356e88d5cbbb112d6c2c3276cc4e152205104670a2160"
+    },
+    {
+      "path": "docs/migration.md",
+      "blake3": "5b2b64c4b5f3fefa985a130d0b1f934139f75c818bf7e0ab8b86d2edaac61eeb"
+    },
+    {
+      "path": "docs/publication/API.md",
+      "blake3": "dcc892cd31591fa1adb13285f949015378e39d732cb45506580ccd3bd10307c0"
+    },
+    {
+      "path": "docs/publication/DECISION.md",
+      "blake3": "95e10011f2f8417e4f0c74ba94e66d481d9120c64d902ab07684c0cfd1beca54"
+    },
+    {
+      "path": "docs/publication/HANDOFF.md",
+      "blake3": "49f1dbb1c0894f4668c4eb8f6c9e6287133f65fd7869152062cdd05f6ac8b128"
+    },
+    {
+      "path": "docs/publication/PILOTS.md",
+      "blake3": "b1a30193bf431a7b8ab5874d8a178977d92fb36291d88083e7a48b72c663791a"
+    },
+    {
+      "path": "docs/publication/SOURCE-INVENTORY.md",
+      "blake3": "d93d67c91554384cb56c91bc9d3befeef92bd6a8ed8cb9fa752d61eee1461c04"
+    },
+    {
+      "path": "docs/security.md",
+      "blake3": "786ccc11c85b325cbdfaadb09ef314ac835bb8cfef7895be59dec48c1e8d2c54"
+    },
+    {
+      "path": "docs/source-inventory.md",
+      "blake3": "e50b288642eead5d3dc408baf1b723bb78a427e71ce58bf610c065f7fe9fce0c"
+    },
+    {
+      "path": "docs/transfer/adoption.md",
+      "blake3": "ef9d132e6d298be7d133bc1066092c46034822af7006d4009ae05cf87a8cf508"
+    },
+    {
+      "path": "docs/transfer/design.md",
+      "blake3": "9012254bc90be11b3dac4bee96effbb5ae91716ed9a5ee9c0b3a98a0b1ca8e76"
+    },
+    {
+      "path": "docs/transfer/pilot.md",
+      "blake3": "09b394cfcee4a5fe0a483253a6a1e5d421a101688741bdd6b08e1bd18c2b22e8"
+    },
+    {
+      "path": "evidence/radicle/publication-v1.blake3",
+      "blake3": "4c622fe29684e1896a7f888b0a0f196311742eed2dbd15ca0b598dff1f4911f2"
+    },
+    {
+      "path": "evidence/radicle/publication-v1.json",
+      "blake3": "e58a3de4d6b3b32a547c3cfe5c3e829292cda73891c7776f214f5d4edce10b1c"
+    },
+    {
+      "path": "evidence/radicle/publication-v1.ncl",
+      "blake3": "2310dfeb7037c6f890f78a05a6eebe4724a28ce020faf79a93c29a6675e6ae1b"
+    },
+    {
+      "path": "fixtures/baselines/cairn-signature-message.json",
+      "blake3": "65268c8bf653065b42f916ef79212513fbee3cc690f18c80a3b975021d7367ef"
+    },
+    {
+      "path": "fixtures/baselines/mantle-trust-statement.json",
+      "blake3": "d6adc008cce03ea5b39560b0a5586dc6523479e70cb1f7e93d57ec6ee230fbb4"
+    },
+    {
+      "path": "fixtures/conformance/cases.json",
+      "blake3": "9196a11fbeb491d86f3c0b0452b992ed6c8262af17f07e513926033c97710af2"
+    },
+    {
+      "path": "fixtures/consumers/cairn.json",
+      "blake3": "34082f9a256fbbb40df4a75c0515d1e2f2bab7ddcfa734324f00f844ced5fc11"
+    },
+    {
+      "path": "fixtures/consumers/mantle.json",
+      "blake3": "a0f0b1f7d528529f4d2dd93989ddd23f8c71f9ca3d07895aa3a0cad17bbc87ca"
+    },
+    {
+      "path": "fixtures/consumers/molten.json",
+      "blake3": "e2bf8aaed21aa6d88e6e7c25b8391f0999883eb2fddf2772b97ab6f1c349b7a9"
+    },
+    {
+      "path": "fixtures/consumers/valence.json",
+      "blake3": "6f23a4f1ac5eeaf87b4fdb69a5a96e218d90fda285e46d448e71f05368712471"
+    },
+    {
+      "path": "fixtures/publication-candidate/Cargo.lock",
+      "blake3": "3d415eff4893e3262e38eb141c2f6a997044d3bc6056e98fd8165a74062c3fa0"
+    },
+    {
+      "path": "fixtures/publication-candidate/Cargo.toml",
+      "blake3": "5668ce17264d49d6ea02a9b8bdf3e0ae3a1bcd5e14a6794a4a56af52eb4b5482"
+    },
+    {
+      "path": "fixtures/publication-candidate/LICENSE",
+      "blake3": "19b39bc8d7c2af78f6563d402ffa7e2caa2b01616f640356e657991541d69d2b"
+    },
+    {
+      "path": "fixtures/publication-candidate/LICENSE-AGPL",
+      "blake3": "ca0292789c0a0ecba706f4b3f3493007a9951731c1d432c52c4aac1f1abba8ef"
+    },
+    {
+      "path": "fixtures/publication-candidate/examples/corpus_identity.rs",
+      "blake3": "a3f59e1b2494c791af9dad1f154b239482ecc6e95688fab36d1b3f50cacd9b1a"
+    },
+    {
+      "path": "fixtures/publication-candidate/src/core.rs",
+      "blake3": "ae4a3ee7940b6b782082e9370587f219913e545a3cdbfaeaa9d7eca856b95fec"
+    },
+    {
+      "path": "fixtures/publication-candidate/src/corpus.rs",
+      "blake3": "d02379677341b7408b636906c4bee4910ef3835cc81261373194ef84678b27da"
+    },
+    {
+      "path": "fixtures/publication-candidate/src/lib.rs",
+      "blake3": "60e4e2d13d4bdbf8b3b2268b2ae747976176f2d7019914aa49ccc5b91425e716"
+    },
+    {
+      "path": "fixtures/publication-candidate/src/pilot.rs",
+      "blake3": "4e8fbd66b02e0d3306aa9483e383c579a4287e87a9537e49e32c62d6ed576193"
+    },
+    {
+      "path": "fixtures/publication-candidate/src/shell.rs",
+      "blake3": "a9a4fcf75f555d2b2dd9bdac0f2363a359c86d1b496cd556d5dd1edd2ed97ea7"
+    },
+    {
+      "path": "flake.lock",
+      "blake3": "28a8466c9105a2861ee4e4bab8a5842b89aca7b5e23761867cf4385a30b29068"
+    },
+    {
+      "path": "flake.nix",
+      "blake3": "b94b4c3e0126ec2bb7a58f2d56c2b787b7a74f6310603246136dfa4e0e4a4f83"
+    },
+    {
+      "path": "lib/radicle-publication-receipt.ncl",
+      "blake3": "971d3235a0e54d7584e1dfb76248ac4542365d009e4a2716761e1ce3700f0aa5"
+    },
+    {
+      "path": "provenance/SOURCE_GRANT.md",
+      "blake3": "1802b16b3cc70eed34800f7e00bd6a912822a9ed051a18dc2303c55271f4ebf7"
+    },
+    {
+      "path": "release/evidence.md",
+      "blake3": "ca423e83176cd4c70548702853dc167cbf276d4154f11e761fdc016d31c44629"
+    },
+    {
+      "path": "release/profile.json",
+      "blake3": "c9921d54bd9ca175f094513e14daa91aba0e626a7129090a9f30bbf1726fdc4d"
+    },
+    {
+      "path": "release/profile.ncl",
+      "blake3": "3ec6a77361708209aeaa1233a6e03e7b303ae48e2f460857b70085fc60077083"
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "blake3": "dc13d8b7dfdabace8c3146e3d4cd4bcecf51cf0390b88a6fff5d597e57f50969"
+    },
+    {
+      "path": "tests/radicle-publication.ncl",
+      "blake3": "901ce910e310872e43f8692fe135f9d4710b731448595725ae3e46393591ca05"
+    }
+  ],
+  "cairn_revision": "1cacafebbff7b2716a953961a1ebf52bafb352e7",
+  "cairn_nar_hash": "sha256-6E1pRuETFkOiBrIJjincvvofw+UzUKhZaqVdBEz+84w=",
+  "admitted_cairn_source": "/nix/store/5m8gl9mjxz03d80jslh9ka3q65zlbv0x-source",
+  "anonymous_acquisition": false,
+  "consumer_migration": false,
+  "publication": false
+}

@@ -2,12 +2,13 @@ let Contracts = import "../contracts.ncl" in
 {
   name = "artifact",
   repository = "https://github.com/OnixResearch/onix-artifact",
-  license = "MIT OR Apache-2.0",
-  packages = ["artifact-auth-core", "artifact-auth-ed25519", "artifact-transfer-core"],
+  license = "AGPL-3.0-or-later",
+  packages = ["artifact-auth-core", "artifact-auth-ed25519", "artifact-transfer-core", "artifact-binding-core"],
   package_dependencies = [
     { package = "artifact-auth-core", dependencies = [] },
     { package = "artifact-auth-ed25519", dependencies = ["artifact-auth-core"] },
     { package = "artifact-transfer-core", dependencies = ["artifact-auth-core"] },
+    { package = "artifact-binding-core", dependencies = [] },
   ],
   mechanisms = ["authentication", "transfer-geometry", "versioned-binding-and-retirement"],
   schemas = [
@@ -25,7 +26,7 @@ let Contracts = import "../contracts.ncl" in
   owner_authorization = {
     owner_authorized = true,
     record = "provenance/SOURCE_GRANT.md",
-    license_grant = "MIT OR Apache-2.0",
+    license_grant = "AGPL-3.0-or-later",
   },
   release_checks = [
     "cargo-format",

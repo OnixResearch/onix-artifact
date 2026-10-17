@@ -1,0 +1,541 @@
+{
+  "kind": "scoped-publication-command-observations",
+  "observed_at": "2026-10-16T21:19:53.393Z",
+  "rid": "rad:z25ySMy8Hh3HpsxP5zcYoYgaMBi99",
+  "status": "native-public-anonymous-projection-unresolved",
+  "required_revisions": [
+    "e41340bec587b6d049b5cc518ec7db925dde84be",
+    "c932138d880ddf4c2967f4c024b489b5c0022bf1"
+  ],
+  "admission": [
+    {
+      "argv": [
+        "/nix/store/kp30jr43dplxzlrgmkq3f3q380mvdgks-cairn-0.1.0/bin/cairn",
+        "gate",
+        "proposal",
+        "publish-required-artifact-source",
+        "--root",
+        "/home/brittonr/git/OnixResearch/artifact",
+        "--policy",
+        "/home/brittonr/git/OnixResearch/artifact/cairn-policy/generated/cairn-policy.json"
+      ],
+      "exit": 0,
+      "result": {
+        "acceptance_ids": [],
+        "change": "publish-required-artifact-source",
+        "evidence_summary": {
+          "docs_only": 0,
+          "fixture": 0,
+          "formal": 0,
+          "mode": "advisory",
+          "model": 0,
+          "probe": 0,
+          "property": 0
+        },
+        "input_hash": "f328f301fae5b59948cf7f1841efc3a8be8f186c4849a0dd7f07948ab0dc6060",
+        "issues": [],
+        "layout": "cairn",
+        "non_claims": [
+          "workflow state proves only the selected policy graph and observed structural artifact facts",
+          "workflow instructions do not prove artifact truth, review quality, or implementation correctness",
+          "workflow state does not satisfy proposal, design, tasks, sync, archive, evidence, or release gates",
+          "workflow commands are read-only and do not create, edit, delete, or approve lifecycle artifacts"
+        ],
+        "policy": "artifact-default",
+        "policy_hash": "e49e1e82637cbc9d87c9b047eab92a935e764c88944eb249f0678438985a8532",
+        "probe_evidence": null,
+        "profile_identity_hash": "2043a1ed60440847e66581e6e5e3a770c7215790d8d68dfadf0b3903400f86cd",
+        "receipt_hash": "b64f51e0ce39978c7d9291dbb96d7727868497b00a4fb034c73b20578e1c7c82",
+        "review_receipt_hashes": [],
+        "spec_effect": "delta",
+        "stage": "proposal",
+        "substance": [
+          {
+            "checkbox_tasks": 0,
+            "kind": "proposal",
+            "malformed_dependency_markers": 0,
+            "path": "/home/brittonr/git/OnixResearch/artifact/.cairn/changes/publish-required-artifact-source/proposal.md",
+            "requirement_blocks": 0,
+            "scenario_blocks": 0,
+            "substantive_lines": 8,
+            "substantive_requirement_blocks": 0,
+            "substantive_tasks": 0,
+            "task_done": 0,
+            "task_in_progress": 0,
+            "task_todo": 0
+          }
+        ],
+        "task_ordering": null,
+        "valid": true,
+        "verdict": "PASS",
+        "workflow_profile": "spec-driven",
+        "workflow_profile_compatibility_fallback": false,
+        "workflow_profile_source": "change_create",
+        "workflow_profile_version": 1
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/nix/store/kp30jr43dplxzlrgmkq3f3q380mvdgks-cairn-0.1.0/bin/cairn",
+        "gate",
+        "design",
+        "publish-required-artifact-source",
+        "--root",
+        "/home/brittonr/git/OnixResearch/artifact",
+        "--policy",
+        "/home/brittonr/git/OnixResearch/artifact/cairn-policy/generated/cairn-policy.json"
+      ],
+      "exit": 0,
+      "result": {
+        "acceptance_ids": [],
+        "change": "publish-required-artifact-source",
+        "evidence_summary": {
+          "docs_only": 0,
+          "fixture": 0,
+          "formal": 0,
+          "mode": "advisory",
+          "model": 0,
+          "probe": 0,
+          "property": 0
+        },
+        "input_hash": "590fdcd7ace230ebc47b46ed54ba91df4d249f6e1f5691934ccc7e3cb341fdc6",
+        "issues": [],
+        "layout": "cairn",
+        "non_claims": [
+          "workflow state proves only the selected policy graph and observed structural artifact facts",
+          "workflow instructions do not prove artifact truth, review quality, or implementation correctness",
+          "workflow state does not satisfy proposal, design, tasks, sync, archive, evidence, or release gates",
+          "workflow commands are read-only and do not create, edit, delete, or approve lifecycle artifacts"
+        ],
+        "policy": "artifact-default",
+        "policy_hash": "e49e1e82637cbc9d87c9b047eab92a935e764c88944eb249f0678438985a8532",
+        "probe_evidence": null,
+        "profile_identity_hash": "2043a1ed60440847e66581e6e5e3a770c7215790d8d68dfadf0b3903400f86cd",
+        "receipt_hash": "285cc51e70481050a3f6093c82df048487511d76f730f65db25646f246001380",
+        "review_receipt_hashes": [],
+        "spec_effect": "delta",
+        "stage": "design",
+        "substance": [
+          {
+            "checkbox_tasks": 0,
+            "kind": "design",
+            "malformed_dependency_markers": 0,
+            "path": "/home/brittonr/git/OnixResearch/artifact/.cairn/changes/publish-required-artifact-source/design.md",
+            "requirement_blocks": 0,
+            "scenario_blocks": 0,
+            "substantive_lines": 9,
+            "substantive_requirement_blocks": 0,
+            "substantive_tasks": 0,
+            "task_done": 0,
+            "task_in_progress": 0,
+            "task_todo": 0
+          },
+          {
+            "checkbox_tasks": 0,
+            "kind": "proposal",
+            "malformed_dependency_markers": 0,
+            "path": "/home/brittonr/git/OnixResearch/artifact/.cairn/changes/publish-required-artifact-source/proposal.md",
+            "requirement_blocks": 0,
+            "scenario_blocks": 0,
+            "substantive_lines": 8,
+            "substantive_requirement_blocks": 0,
+            "substantive_tasks": 0,
+            "task_done": 0,
+            "task_in_progress": 0,
+            "task_todo": 0
+          },
+          {
+            "checkbox_tasks": 0,
+            "kind": "delta_spec",
+            "malformed_dependency_markers": 0,
+            "path": "/home/brittonr/git/OnixResearch/artifact/.cairn/changes/publish-required-artifact-source/specs/source-distribution/spec.md",
+            "requirement_blocks": 3,
+            "scenario_blocks": 5,
+            "substantive_lines": 21,
+            "substantive_requirement_blocks": 3,
+            "substantive_tasks": 0,
+            "task_done": 0,
+            "task_in_progress": 0,
+            "task_todo": 0
+          }
+        ],
+        "task_ordering": null,
+        "valid": true,
+        "verdict": "PASS",
+        "workflow_profile": "spec-driven",
+        "workflow_profile_compatibility_fallback": false,
+        "workflow_profile_source": "change_create",
+        "workflow_profile_version": 1
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/nix/store/kp30jr43dplxzlrgmkq3f3q380mvdgks-cairn-0.1.0/bin/cairn",
+        "gate",
+        "tasks",
+        "publish-required-artifact-source",
+        "--root",
+        "/home/brittonr/git/OnixResearch/artifact",
+        "--policy",
+        "/home/brittonr/git/OnixResearch/artifact/cairn-policy/generated/cairn-policy.json"
+      ],
+      "exit": 0,
+      "result": {
+        "acceptance_ids": [],
+        "change": "publish-required-artifact-source",
+        "evidence_summary": {
+          "docs_only": 0,
+          "fixture": 0,
+          "formal": 0,
+          "mode": "advisory",
+          "model": 0,
+          "probe": 0,
+          "property": 0
+        },
+        "input_hash": "ec2a3a7d292ce6601848760c1b5cc7a7566a5b2c769d8135cbb2daee9920e8c0",
+        "issues": [],
+        "layout": "cairn",
+        "non_claims": [
+          "workflow state proves only the selected policy graph and observed structural artifact facts",
+          "workflow instructions do not prove artifact truth, review quality, or implementation correctness",
+          "workflow state does not satisfy proposal, design, tasks, sync, archive, evidence, or release gates",
+          "workflow commands are read-only and do not create, edit, delete, or approve lifecycle artifacts"
+        ],
+        "policy": "artifact-default",
+        "policy_hash": "e49e1e82637cbc9d87c9b047eab92a935e764c88944eb249f0678438985a8532",
+        "probe_evidence": {
+          "declarations_present": false,
+          "probes": []
+        },
+        "profile_identity_hash": "2043a1ed60440847e66581e6e5e3a770c7215790d8d68dfadf0b3903400f86cd",
+        "receipt_hash": "07ef63a82d8d022d7ff969f445bb4963286045c10b8333d1bd9d3383e24774d0",
+        "review_receipt_hashes": [],
+        "spec_effect": "delta",
+        "stage": "tasks",
+        "substance": [
+          {
+            "checkbox_tasks": 0,
+            "kind": "design",
+            "malformed_dependency_markers": 0,
+            "path": "/home/brittonr/git/OnixResearch/artifact/.cairn/changes/publish-required-artifact-source/design.md",
+            "requirement_blocks": 0,
+            "scenario_blocks": 0,
+            "substantive_lines": 9,
+            "substantive_requirement_blocks": 0,
+            "substantive_tasks": 0,
+            "task_done": 0,
+            "task_in_progress": 0,
+            "task_todo": 0
+          },
+          {
+            "checkbox_tasks": 0,
+            "kind": "proposal",
+            "malformed_dependency_markers": 0,
+            "path": "/home/brittonr/git/OnixResearch/artifact/.cairn/changes/publish-required-artifact-source/proposal.md",
+            "requirement_blocks": 0,
+            "scenario_blocks": 0,
+            "substantive_lines": 8,
+            "substantive_requirement_blocks": 0,
+            "substantive_tasks": 0,
+            "task_done": 0,
+            "task_in_progress": 0,
+            "task_todo": 0
+          },
+          {
+            "checkbox_tasks": 0,
+            "kind": "delta_spec",
+            "malformed_dependency_markers": 0,
+            "path": "/home/brittonr/git/OnixResearch/artifact/.cairn/changes/publish-required-artifact-source/specs/source-distribution/spec.md",
+            "requirement_blocks": 3,
+            "scenario_blocks": 5,
+            "substantive_lines": 21,
+            "substantive_requirement_blocks": 3,
+            "substantive_tasks": 0,
+            "task_done": 0,
+            "task_in_progress": 0,
+            "task_todo": 0
+          },
+          {
+            "checkbox_tasks": 5,
+            "kind": "tasks",
+            "malformed_dependency_markers": 0,
+            "path": "/home/brittonr/git/OnixResearch/artifact/.cairn/changes/publish-required-artifact-source/tasks.md",
+            "requirement_blocks": 0,
+            "scenario_blocks": 0,
+            "substantive_lines": 5,
+            "substantive_requirement_blocks": 0,
+            "substantive_tasks": 5,
+            "task_done": 2,
+            "task_in_progress": 0,
+            "task_todo": 3
+          }
+        ],
+        "task_ordering": {
+          "active": false,
+          "edges": [],
+          "issues": [],
+          "nodes": [],
+          "order": [],
+          "ready_tasks": [],
+          "valid": true
+        },
+        "valid": true,
+        "verdict": "PASS",
+        "workflow_profile": "spec-driven",
+        "workflow_profile_compatibility_fallback": false,
+        "workflow_profile_source": "change_create",
+        "workflow_profile_version": 1
+      },
+      "stderr": ""
+    }
+  ],
+  "exposure_review": {
+    "source": "RequiredPublicationSafety-2 exact historical-source adjudication",
+    "supplied_scanner_rows": 52,
+    "false_positive_rows": 52,
+    "operational_secret_candidates_remaining": 0,
+    "scope": "Supplied native and owner scanner candidates only; no whole-history security certification or license/governance waiver."
+  },
+  "source_push": {
+    "argv": [
+      "git",
+      "push",
+      "--porcelain",
+      "rad",
+      "e41340bec587b6d049b5cc518ec7db925dde84be:refs/heads/consumer-pins/e41340bec587b6d049b5cc518ec7db925dde84be",
+      "c932138d880ddf4c2967f4c024b489b5c0022bf1:refs/heads/consumer-pins/c932138d880ddf4c2967f4c024b489b5c0022bf1"
+    ],
+    "observed_at": "2026-10-16T21:05:46.531Z",
+    "exit": 0,
+    "stdout": "To rad://z25ySMy8Hh3HpsxP5zcYoYgaMBi99/z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx\n*\te41340bec587b6d049b5cc518ec7db925dde84be:refs/heads/consumer-pins/e41340bec587b6d049b5cc518ec7db925dde84be\t[new branch]\n*\tc932138d880ddf4c2967f4c024b489b5c0022bf1:refs/heads/consumer-pins/c932138d880ddf4c2967f4c024b489b5c0022bf1\t[new branch]\nDone\n",
+    "stderr": "No seeds found for rad:z25ySMy8Hh3HpsxP5zcYoYgaMBi99.\n"
+  },
+  "native_refs_after_push": {
+    "argv": [
+      "git",
+      "-C",
+      "/home/brittonr/.radicle/storage/z25ySMy8Hh3HpsxP5zcYoYgaMBi99",
+      "for-each-ref",
+      "--format=%(refname) %(objectname)",
+      "refs/namespaces/z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx/refs/heads",
+      "refs/namespaces/z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx/refs/rad"
+    ],
+    "exit": 0,
+    "stdout": "refs/namespaces/z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx/refs/heads/consumer-pins/c932138d880ddf4c2967f4c024b489b5c0022bf1 c932138d880ddf4c2967f4c024b489b5c0022bf1\nrefs/namespaces/z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx/refs/heads/consumer-pins/e41340bec587b6d049b5cc518ec7db925dde84be e41340bec587b6d049b5cc518ec7db925dde84be\nrefs/namespaces/z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx/refs/heads/main eb85ddcd9d5c782044a81ed980c1824438bb46c1\nrefs/namespaces/z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx/refs/rad/id fca874dd6adfdda3d02fe622210fbc8521c3bc04\nrefs/namespaces/z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx/refs/rad/root fca874dd6adfdda3d02fe622210fbc8521c3bc04\nrefs/namespaces/z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx/refs/rad/sigrefs 240acb8369d8a2721ff119d463cb3ed818122e2e\n",
+    "stderr": ""
+  },
+  "publish": {
+    "argv": [
+      "rad",
+      "publish",
+      "rad:z25ySMy8Hh3HpsxP5zcYoYgaMBi99"
+    ],
+    "observed_at": "2026-10-16T21:06:26.675Z",
+    "exit": 0,
+    "stdout": "✓ Updating inventory..\n✓ Repository is now public\n",
+    "stderr": ""
+  },
+  "announcement": {
+    "argv": [
+      "rad",
+      "sync",
+      "--announce",
+      "--timeout",
+      "60s",
+      "rad:z25ySMy8Hh3HpsxP5zcYoYgaMBi99"
+    ],
+    "observed_at": "2026-10-16T21:07:18.645Z",
+    "exit": 0,
+    "stdout": "✓ Nothing to announce, already in sync with 1 seed(s) (see `rad sync status`)\n",
+    "stderr": ""
+  },
+  "readbacks": [
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/home/brittonr/.radicle/storage/z25ySMy8Hh3HpsxP5zcYoYgaMBi99",
+        "rev-parse",
+        "refs/namespaces/z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx/refs/rad/id"
+      ],
+      "exit": 0,
+      "stdout": "918974c9e5647f38b1381390c2bc4c380c0b823f\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/home/brittonr/.radicle/storage/z25ySMy8Hh3HpsxP5zcYoYgaMBi99",
+        "show",
+        "refs/namespaces/z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx/refs/rad/id:embeds/radicle.json"
+      ],
+      "exit": 0,
+      "stdout": "{\"delegates\":[\"did:key:z6MksnXbFoE8zkCkGWhHc8zuxpnEUhrJHv2KECRV4GSv9gkx\"],\"payload\":{\"xyz.radicle.project\":{\"defaultBranch\":\"main\",\"description\":\"artifact (OnixResearch)\",\"name\":\"artifact\"}},\"threshold\":1}",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "rad",
+        "sync",
+        "rad:z25ySMy8Hh3HpsxP5zcYoYgaMBi99",
+        "status"
+      ],
+      "exit": 0,
+      "stdout": "╭───────────────────────────────────────────────────────────────────────╮\n│ Node ID           Alias                  ?   SigRefs   Timestamp      │\n├───────────────────────────────────────────────────────────────────────┤\n│ (you)             brittonr               !   984e0f7   1 month ago    │\n│ z6Mkmqo…4ebScxo   rosa.radicle.network   ✓   984e0f7   34 seconds ago │\n╰───────────────────────────────────────────────────────────────────────╯\n✗ Hint: \n   ? … Status:\n       ✓ … in sync          ✗ … out of sync\n       ! … not announced    • … unknown\n",
+      "stderr": ""
+    }
+  ],
+  "anonymous_environment": {
+    "PATH": "Inherited executable search path only; no credential/proxy/token environment inherited.",
+    "HOME": "/tmp/artifact-anonymous-public-20261016.YycIvG",
+    "XDG_CONFIG_HOME": "/tmp/artifact-anonymous-public-20261016.YycIvG/xdg",
+    "GIT_CONFIG_NOSYSTEM": "1",
+    "GIT_CONFIG_GLOBAL": "/dev/null",
+    "GIT_TERMINAL_PROMPT": "0",
+    "GIT_ASKPASS": "/bin/false",
+    "SSH_ASKPASS": "/bin/false",
+    "GIT_SSH_COMMAND": "/bin/false",
+    "GIT_ALLOW_PROTOCOL": "https",
+    "GIT_CONFIG_COUNT": "2",
+    "GIT_CONFIG_KEY_0": "credential.helper",
+    "GIT_CONFIG_VALUE_0": "",
+    "GIT_CONFIG_KEY_1": "core.askPass",
+    "GIT_CONFIG_VALUE_1": "/bin/false",
+    "SSL_CERT_FILE": "/etc/ssl/certs/ca-certificates.crt"
+  },
+  "anonymous_fetches": [
+    {
+      "revision": "e41340bec587b6d049b5cc518ec7db925dde84be",
+      "endpoint": "https://seed.radicle.garden/z25ySMy8Hh3HpsxP5zcYoYgaMBi99.git",
+      "repo": "/tmp/artifact-anonymous-public-20261016.YycIvG/e41340bec587b6d049b5cc518ec7db925dde84be.git",
+      "init": {
+        "argv": [
+          "git",
+          "init",
+          "--bare",
+          "/tmp/artifact-anonymous-public-20261016.YycIvG/e41340bec587b6d049b5cc518ec7db925dde84be.git"
+        ],
+        "exit": 0,
+        "stdout": "Initialized empty Git repository in /tmp/artifact-anonymous-public-20261016.YycIvG/e41340bec587b6d049b5cc518ec7db925dde84be.git/\n",
+        "stderr": "hint: Using 'master' as the name for the initial branch. This default branch name\nhint: will change to \"main\" in Git 3.0. To configure the initial branch name\nhint: to use in all of your new repositories, which will suppress this warning,\nhint: call:\nhint:\nhint: \tgit config --global init.defaultBranch <name>\nhint:\nhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\nhint: 'development'. The just-created branch can be renamed via this command:\nhint:\nhint: \tgit branch -m <name>\nhint:\nhint: Disable this message with \"git config set advice.defaultBranchName false\"\n"
+      },
+      "fetch": {
+        "argv": [
+          "git",
+          "fetch",
+          "--no-tags",
+          "--depth=1",
+          "https://seed.radicle.garden/z25ySMy8Hh3HpsxP5zcYoYgaMBi99.git",
+          "e41340bec587b6d049b5cc518ec7db925dde84be"
+        ],
+        "exit": 128,
+        "stdout": "",
+        "stderr": "fatal: unable to access 'https://seed.radicle.garden/z25ySMy8Hh3HpsxP5zcYoYgaMBi99.git/': The requested URL returned error: 500\n"
+      },
+      "verify": null,
+      "exact": false
+    },
+    {
+      "revision": "c932138d880ddf4c2967f4c024b489b5c0022bf1",
+      "endpoint": "https://seed.radicle.garden/z25ySMy8Hh3HpsxP5zcYoYgaMBi99.git",
+      "repo": "/tmp/artifact-anonymous-public-20261016.YycIvG/c932138d880ddf4c2967f4c024b489b5c0022bf1.git",
+      "init": {
+        "argv": [
+          "git",
+          "init",
+          "--bare",
+          "/tmp/artifact-anonymous-public-20261016.YycIvG/c932138d880ddf4c2967f4c024b489b5c0022bf1.git"
+        ],
+        "exit": 0,
+        "stdout": "Initialized empty Git repository in /tmp/artifact-anonymous-public-20261016.YycIvG/c932138d880ddf4c2967f4c024b489b5c0022bf1.git/\n",
+        "stderr": "hint: Using 'master' as the name for the initial branch. This default branch name\nhint: will change to \"main\" in Git 3.0. To configure the initial branch name\nhint: to use in all of your new repositories, which will suppress this warning,\nhint: call:\nhint:\nhint: \tgit config --global init.defaultBranch <name>\nhint:\nhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\nhint: 'development'. The just-created branch can be renamed via this command:\nhint:\nhint: \tgit branch -m <name>\nhint:\nhint: Disable this message with \"git config set advice.defaultBranchName false\"\n"
+      },
+      "fetch": {
+        "argv": [
+          "git",
+          "fetch",
+          "--no-tags",
+          "--depth=1",
+          "https://seed.radicle.garden/z25ySMy8Hh3HpsxP5zcYoYgaMBi99.git",
+          "c932138d880ddf4c2967f4c024b489b5c0022bf1"
+        ],
+        "exit": 128,
+        "stdout": "",
+        "stderr": "fatal: unable to access 'https://seed.radicle.garden/z25ySMy8Hh3HpsxP5zcYoYgaMBi99.git/': The requested URL returned error: 500\n"
+      },
+      "verify": null,
+      "exact": false
+    },
+    {
+      "revision": "e41340bec587b6d049b5cc518ec7db925dde84be",
+      "endpoint": "https://git.onix.computer/z25ySMy8Hh3HpsxP5zcYoYgaMBi99.git",
+      "repo": "/tmp/artifact-anonymous-public-20261016.YycIvG/onix-e41340bec587b6d049b5cc518ec7db925dde84be.git",
+      "init": {
+        "argv": [
+          "git",
+          "init",
+          "--bare",
+          "/tmp/artifact-anonymous-public-20261016.YycIvG/onix-e41340bec587b6d049b5cc518ec7db925dde84be.git"
+        ],
+        "exit": 0,
+        "stdout": "Initialized empty Git repository in /tmp/artifact-anonymous-public-20261016.YycIvG/onix-e41340bec587b6d049b5cc518ec7db925dde84be.git/\n",
+        "stderr": "hint: Using 'master' as the name for the initial branch. This default branch name\nhint: will change to \"main\" in Git 3.0. To configure the initial branch name\nhint: to use in all of your new repositories, which will suppress this warning,\nhint: call:\nhint:\nhint: \tgit config --global init.defaultBranch <name>\nhint:\nhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\nhint: 'development'. The just-created branch can be renamed via this command:\nhint:\nhint: \tgit branch -m <name>\nhint:\nhint: Disable this message with \"git config set advice.defaultBranchName false\"\n"
+      },
+      "fetch": {
+        "argv": [
+          "git",
+          "fetch",
+          "--no-tags",
+          "--depth=1",
+          "https://git.onix.computer/z25ySMy8Hh3HpsxP5zcYoYgaMBi99.git",
+          "e41340bec587b6d049b5cc518ec7db925dde84be"
+        ],
+        "exit": 128,
+        "stdout": "",
+        "stderr": "fatal: repository 'https://git.onix.computer/z25ySMy8Hh3HpsxP5zcYoYgaMBi99.git/' not found\n"
+      },
+      "verify": null,
+      "exact": false
+    },
+    {
+      "revision": "c932138d880ddf4c2967f4c024b489b5c0022bf1",
+      "endpoint": "https://git.onix.computer/z25ySMy8Hh3HpsxP5zcYoYgaMBi99.git",
+      "repo": "/tmp/artifact-anonymous-public-20261016.YycIvG/onix-c932138d880ddf4c2967f4c024b489b5c0022bf1.git",
+      "init": {
+        "argv": [
+          "git",
+          "init",
+          "--bare",
+          "/tmp/artifact-anonymous-public-20261016.YycIvG/onix-c932138d880ddf4c2967f4c024b489b5c0022bf1.git"
+        ],
+        "exit": 0,
+        "stdout": "Initialized empty Git repository in /tmp/artifact-anonymous-public-20261016.YycIvG/onix-c932138d880ddf4c2967f4c024b489b5c0022bf1.git/\n",
+        "stderr": "hint: Using 'master' as the name for the initial branch. This default branch name\nhint: will change to \"main\" in Git 3.0. To configure the initial branch name\nhint: to use in all of your new repositories, which will suppress this warning,\nhint: call:\nhint:\nhint: \tgit config --global init.defaultBranch <name>\nhint:\nhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\nhint: 'development'. The just-created branch can be renamed via this command:\nhint:\nhint: \tgit branch -m <name>\nhint:\nhint: Disable this message with \"git config set advice.defaultBranchName false\"\n"
+      },
+      "fetch": {
+        "argv": [
+          "git",
+          "fetch",
+          "--no-tags",
+          "--depth=1",
+          "https://git.onix.computer/z25ySMy8Hh3HpsxP5zcYoYgaMBi99.git",
+          "c932138d880ddf4c2967f4c024b489b5c0022bf1"
+        ],
+        "exit": 128,
+        "stdout": "",
+        "stderr": "fatal: repository 'https://git.onix.computer/z25ySMy8Hh3HpsxP5zcYoYgaMBi99.git/' not found\n"
+      },
+      "verify": null,
+      "exact": false
+    }
+  ],
+  "non_claims": [
+    "No repository creation, default-branch overwrite, history rewrite, delegate change or threshold change.",
+    "Public native identity and replica synchronization do not establish working HTTPS projection or anonymous exact acquisition.",
+    "Neither attempted HTTPS endpoint is admitted as a source input.",
+    "No future availability, source correctness, runtime authority or release-readiness claim."
+  ]
+}

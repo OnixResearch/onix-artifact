@@ -1,0 +1,87 @@
+{
+  "acceptance_ids": [],
+  "change": "align-source-package-inventory",
+  "evidence_summary": {
+    "docs_only": 0,
+    "fixture": 0,
+    "formal": 0,
+    "mode": "advisory",
+    "model": 0,
+    "probe": 0,
+    "property": 0
+  },
+  "input_hash": "76b54cbd4933b95af48f301d779e0f06d8732a7c56c7a751573c98ad71016d49",
+  "issues": [],
+  "layout": "cairn",
+  "non_claims": [
+    "workflow state proves only the selected policy graph and observed structural artifact facts",
+    "workflow instructions do not prove artifact truth, review quality, or implementation correctness",
+    "workflow state does not satisfy proposal, design, tasks, sync, archive, evidence, or release gates",
+    "workflow commands are read-only and do not create, edit, delete, or approve lifecycle artifacts"
+  ],
+  "policy": "artifact-default",
+  "policy_hash": "e49e1e82637cbc9d87c9b047eab92a935e764c88944eb249f0678438985a8532",
+  "policy_selection": {
+    "blake3": "6967ab19f7da5191daa61bf970f975baaa936ef57295b6b7cf438c7b8c9a44d7",
+    "installation_receipt": false,
+    "locator": "cairn-policy/generated/cairn-policy.json",
+    "source": "explicit"
+  },
+  "probe_evidence": null,
+  "profile_identity_hash": "7b575f9875efa2f98ac5ca345c953af8a06bc0c30f28fbd3345ede9badd21a0a",
+  "receipt_hash": "25c7302bef681f00f48e9eb7b4e15693837b740fee3fbb60b7c9eafb81ae0c04",
+  "review_receipt_hashes": [],
+  "spec_effect": "delta",
+  "stage": "design",
+  "substance": [
+    {
+      "checkbox_tasks": 0,
+      "kind": "design",
+      "malformed_dependency_markers": 0,
+      "path": "./.cairn/changes/align-source-package-inventory/design.md",
+      "requirement_blocks": 0,
+      "scenario_blocks": 0,
+      "substantive_lines": 20,
+      "substantive_requirement_blocks": 0,
+      "substantive_tasks": 0,
+      "task_done": 0,
+      "task_in_progress": 0,
+      "task_todo": 0
+    },
+    {
+      "checkbox_tasks": 0,
+      "kind": "proposal",
+      "malformed_dependency_markers": 0,
+      "path": "./.cairn/changes/align-source-package-inventory/proposal.md",
+      "requirement_blocks": 0,
+      "scenario_blocks": 0,
+      "substantive_lines": 8,
+      "substantive_requirement_blocks": 0,
+      "substantive_tasks": 0,
+      "task_done": 0,
+      "task_in_progress": 0,
+      "task_todo": 0
+    },
+    {
+      "checkbox_tasks": 0,
+      "kind": "delta_spec",
+      "malformed_dependency_markers": 0,
+      "path": "./.cairn/changes/align-source-package-inventory/specs/artifact-workspace/spec.md",
+      "requirement_blocks": 1,
+      "scenario_blocks": 4,
+      "substantive_lines": 13,
+      "substantive_requirement_blocks": 1,
+      "substantive_tasks": 0,
+      "task_done": 0,
+      "task_in_progress": 0,
+      "task_todo": 0
+    }
+  ],
+  "task_ordering": null,
+  "valid": true,
+  "verdict": "PASS",
+  "workflow_profile": "spec-driven",
+  "workflow_profile_compatibility_fallback": false,
+  "workflow_profile_source": "change_create",
+  "workflow_profile_version": 1
+}

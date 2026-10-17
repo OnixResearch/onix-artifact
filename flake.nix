@@ -8,7 +8,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     cairn = {
-      url = "github:OnixResearch/cairn/cf5c4a5c10361ca20a13addf14954407d6857028";
+      url = "git+ssh://git@github.com/OnixResearch/cairn.git?rev=1cacafebbff7b2716a953961a1ebf52bafb352e7";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -55,8 +55,9 @@
               cp release/profile.json "$out/share/artifact/release-profile.json"
               cp README.md "$out/share/doc/artifact/"
               cp -R docs "$out/share/doc/artifact/"
-              cp LICENSE LICENSE-MIT LICENSE-APACHE NOTICE "$out/share/licenses/artifact/"
+              cp LICENSE LICENSE-AGPL LICENSE-MIT LICENSE-APACHE NOTICE "$out/share/licenses/artifact/"
             '';
+            meta.license = pkgs.lib.licenses.agpl3Plus;
           };
           default = self.packages.${system}.artifact;
         }
@@ -97,6 +98,13 @@
             };
         in
         {
+          # These declared links identify tests run here, not recorded passing results.
+          # r[verify artifact_auth.statement.canonical]
+          # r[verify artifact_auth.ed25519.verify]
+          # r[verify artifact_auth.policy.explicit]
+          # r[verify artifact_auth.claims.bounded]
+          # r[verify artifact_transfer.geometry.explicit]
+          # r[verify artifact_transfer.digest.tagged]
           cargo-test = rustPlatform.buildRustPackage {
             pname = "artifact-workspace-tests";
             version = "0.1.0";
@@ -155,12 +163,6 @@
             noStdCheck "artifact-binding-core-no-std-thumb" "artifact-binding-core"
               "thumbv7em-none-eabi";
 
-          # r[verify artifact_binding.binding.transition]
-          # r[verify artifact_binding.binding.resolution]
-          # r[verify artifact_binding.binding.snapshot_consistency]
-          # r[verify artifact_binding.reachability.trace]
-          # r[verify artifact_binding.retirement.classification]
-          # r[verify artifact_binding.diagnostics]
           publication-incubation = rustPlatform.buildRustPackage {
             pname = "durable-file-publication-incubation";
             version = "0.1.0";
@@ -175,6 +177,14 @@
             '';
           };
 
+          # r[verify artifact_binding.binding.transition]
+          # r[verify artifact_binding.binding.resolution]
+          # r[verify artifact_binding.binding.snapshot_consistency]
+          # r[verify artifact_binding.reachability.trace]
+          # r[verify artifact_binding.retirement.classification]
+          # r[verify artifact_binding.diagnostics]
+          # r[verify artifact_binding.binding.compatibility]
+          # r[verify artifact_binding.retirement.attribution]
           binding-core = rustPlatform.buildRustPackage {
             pname = "artifact-binding-core-check";
             version = "0.1.0";
@@ -200,6 +210,20 @@
           };
 
           nickel-contracts =
+            # The source-inventory delta is not an accepted requirement until native sync.
+            # r[verify artifact_workspace.substrate.uniform]
+            # r[verify artifact_workspace.dependencies.narrow]
+            let
+              workspace = (builtins.fromTOML (builtins.readFile ./Cargo.toml)).workspace;
+              packageNames = map (
+                member: (builtins.fromTOML (builtins.readFile (./. + "/${member}/Cargo.toml"))).package.name
+              ) workspace.members;
+              repository = builtins.fromJSON (builtins.readFile ./config/repository.json);
+              release = builtins.fromJSON (builtins.readFile ./release/profile.json);
+              sorted = builtins.sort builtins.lessThan;
+            in
+            assert sorted packageNames == sorted repository.packages;
+            assert sorted packageNames == sorted release.packages;
             pkgs.runCommand "artifact-workspace-nickel-contracts"
               {
                 nativeBuildInputs = [ pkgs.nickel ];
@@ -252,6 +276,10 @@
                 fi
                 if nickel export --format json config/fixtures/forbidden-workspace-dependency.ncl > /dev/null 2>&1; then
                   echo "forbidden cross-mechanism dependency unexpectedly passed" >&2
+                  exit 1
+                fi
+                if nickel export --format json config/fixtures/missing-workspace-package.ncl > /dev/null 2>&1; then
+                  echo "incomplete source package inventory unexpectedly passed" >&2
                   exit 1
                 fi
                 touch "$out"
@@ -307,7 +335,7 @@
                 cairn traceability coverage \
                   --root . \
                   --policy cairn-policy/generated/cairn-policy.json \
-                  --json > "$TMPDIR/traceability.json"
+                  --json
                 touch "$out"
               '';
 
@@ -339,7 +367,7 @@
                   --no-deps \
                   --offline > "$TMPDIR/metadata.json"
                 expected_package_count=4
-                observed_license_count="$(grep -oF '"license":"MIT OR Apache-2.0"' "$TMPDIR/metadata.json" | wc -l)"
+                observed_license_count="$(grep -oF '"license":"AGPL-3.0-or-later"' "$TMPDIR/metadata.json" | wc -l)"
                 if [ "$observed_license_count" -ne "$expected_package_count" ]; then
                   echo "package metadata does not carry the workspace license grant" >&2
                   exit 1

@@ -1,0 +1,1195 @@
+evaluating flake...
+checking flake output 'packages'...
+checking derivation packages.x86_64-linux.artifact...
+derivation evaluated to /nix/store/nrmwb7yxgpcnyz5n9iw1majs1wykm42f-artifact-0.1.0.drv
+checking derivation packages.x86_64-linux.default...
+derivation evaluated to /nix/store/nrmwb7yxgpcnyz5n9iw1majs1wykm42f-artifact-0.1.0.drv
+checking flake output 'checks'...
+checking derivation checks.x86_64-linux.cargo-test...
+derivation evaluated to /nix/store/bwd6da12450285x21w0q20924n3pciaw-artifact-workspace-tests-0.1.0.drv
+checking derivation checks.x86_64-linux.cargo-clippy...
+derivation evaluated to /nix/store/5mdl1db5y04n1r1m8iriliw9x7qhhgxg-artifact-workspace-clippy-0.1.0.drv
+checking derivation checks.x86_64-linux.cargo-format...
+derivation evaluated to /nix/store/zka4l8k5669xkrm375czzl68k9vh6mq0-artifact-workspace-format.drv
+checking derivation checks.x86_64-linux.core-no-std-host...
+derivation evaluated to /nix/store/g28waalikjg1fl70254d5gz6h3a04wyr-artifact-auth-core-no-std-host-0.1.0.drv
+checking derivation checks.x86_64-linux.core-no-std-wasm...
+derivation evaluated to /nix/store/70spx255i2p6f4hw36jhvxwdcg30i9b1-artifact-auth-core-no-std-wasm-0.1.0.drv
+checking derivation checks.x86_64-linux.ed25519-no-std-host...
+derivation evaluated to /nix/store/b2w313p4dfy0w15rby58xazxjjkh13kz-artifact-auth-ed25519-no-std-host-0.1.0.drv
+checking derivation checks.x86_64-linux.ed25519-no-std-wasm...
+derivation evaluated to /nix/store/98p5188dxirxi7i84s8csdypbk8i85f7-artifact-auth-ed25519-no-std-wasm-0.1.0.drv
+checking derivation checks.x86_64-linux.transfer-no-std-host...
+derivation evaluated to /nix/store/w3252ibngvx55bdzsxp98mkb1zd6qs0n-artifact-transfer-core-no-std-host-0.1.0.drv
+checking derivation checks.x86_64-linux.transfer-no-std-wasm...
+derivation evaluated to /nix/store/2nyz9fldb35lm9g0i3f246gz0gl3ry66-artifact-transfer-core-no-std-wasm-0.1.0.drv
+checking derivation checks.x86_64-linux.binding-no-std-host...
+derivation evaluated to /nix/store/g9rik0g5kws2ang18idgdlkhbsnzn91g-artifact-binding-core-no-std-host-0.1.0.drv
+checking derivation checks.x86_64-linux.binding-no-std-wasm...
+derivation evaluated to /nix/store/x746jrrw5960m6mfhxywbsa78f2gv3ya-artifact-binding-core-no-std-wasm-0.1.0.drv
+checking derivation checks.x86_64-linux.binding-no-std-thumb...
+derivation evaluated to /nix/store/kr3s5b6fp1da64pxximycy56ryb0r2vs-artifact-binding-core-no-std-thumb-0.1.0.drv
+checking derivation checks.x86_64-linux.publication-incubation...
+derivation evaluated to /nix/store/5k0rchf3fn194w99nmcxi246rv47pd10-durable-file-publication-incubation-0.1.0.drv
+checking derivation checks.x86_64-linux.binding-core...
+derivation evaluated to /nix/store/7mhhpjyidsf6wrql44jgam7w4zqc4ry5-artifact-binding-core-check-0.1.0.drv
+checking derivation checks.x86_64-linux.nickel-contracts...
+derivation evaluated to /nix/store/wba52qbnkjccpl2l5wgj55if5migyzh5-artifact-workspace-nickel-contracts.drv
+checking derivation checks.x86_64-linux.radicle-publication...
+derivation evaluated to /nix/store/9p8lnmm35k6381fdzbw9x9ssddrqihb7-artifact-auth-radicle-publication.drv
+checking derivation checks.x86_64-linux.cairn-validation...
+derivation evaluated to /nix/store/czp1m1a0sydm2dj02p04crv57n0haaj4-artifact-workspace-cairn-validation.drv
+checking derivation checks.x86_64-linux.authority-audit...
+derivation evaluated to /nix/store/mvmd6b35yjki6a82krjsdgyis2cis4dh-artifact-workspace-authority-audit.drv
+checking flake output 'devShells'...
+checking derivation devShells.x86_64-linux.default...
+derivation evaluated to /nix/store/837dvdipcc8l8qs4jp0c98dijqs8jijs-nix-shell.drv
+running 18 flake checks...
+building '/nix/store/g28waalikjg1fl70254d5gz6h3a04wyr-artifact-auth-core-no-std-host-0.1.0.drv'...
+building '/nix/store/70spx255i2p6f4hw36jhvxwdcg30i9b1-artifact-auth-core-no-std-wasm-0.1.0.drv'...
+building '/nix/store/b2w313p4dfy0w15rby58xazxjjkh13kz-artifact-auth-ed25519-no-std-host-0.1.0.drv'...
+building '/nix/store/98p5188dxirxi7i84s8csdypbk8i85f7-artifact-auth-ed25519-no-std-wasm-0.1.0.drv'...
+building '/nix/store/9p8lnmm35k6381fdzbw9x9ssddrqihb7-artifact-auth-radicle-publication.drv'...
+building '/nix/store/7mhhpjyidsf6wrql44jgam7w4zqc4ry5-artifact-binding-core-check-0.1.0.drv'...
+building '/nix/store/g9rik0g5kws2ang18idgdlkhbsnzn91g-artifact-binding-core-no-std-host-0.1.0.drv'...
+building '/nix/store/kr3s5b6fp1da64pxximycy56ryb0r2vs-artifact-binding-core-no-std-thumb-0.1.0.drv'...
+building '/nix/store/x746jrrw5960m6mfhxywbsa78f2gv3ya-artifact-binding-core-no-std-wasm-0.1.0.drv'...
+building '/nix/store/w3252ibngvx55bdzsxp98mkb1zd6qs0n-artifact-transfer-core-no-std-host-0.1.0.drv'...
+building '/nix/store/2nyz9fldb35lm9g0i3f246gz0gl3ry66-artifact-transfer-core-no-std-wasm-0.1.0.drv'...
+building '/nix/store/mvmd6b35yjki6a82krjsdgyis2cis4dh-artifact-workspace-authority-audit.drv'...
+building '/nix/store/czp1m1a0sydm2dj02p04crv57n0haaj4-artifact-workspace-cairn-validation.drv'...
+building '/nix/store/5mdl1db5y04n1r1m8iriliw9x7qhhgxg-artifact-workspace-clippy-0.1.0.drv'...
+building '/nix/store/zka4l8k5669xkrm375czzl68k9vh6mq0-artifact-workspace-format.drv'...
+building '/nix/store/wba52qbnkjccpl2l5wgj55if5migyzh5-artifact-workspace-nickel-contracts.drv'...
+artifact-auth-core-no-std-host> Running phase: unpackPhase
+artifact-auth-core-no-std-host> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source
+artifact-auth-core-no-std-host> source root is source
+artifact-auth-core-no-std-host> Executing cargoSetupPostUnpackHook
+artifact-auth-core-no-std-host> Finished cargoSetupPostUnpackHook
+artifact-auth-core-no-std-host> Running phase: patchPhase
+artifact-auth-core-no-std-host> Executing cargoSetupPostPatchHook
+artifact-auth-core-no-std-host> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+artifact-auth-core-no-std-host> Finished cargoSetupPostPatchHook
+artifact-auth-core-no-std-host> Running phase: updateAutotoolsGnuConfigScriptsPhase
+artifact-auth-core-no-std-host> Running phase: configurePhase
+artifact-auth-core-no-std-host> Running phase: buildPhase
+artifact-auth-core-no-std-host> Executing cargoBuildHook
+artifact-auth-core-no-std-host> cargoBuildHook flags: -j 256 --target x86_64-unknown-linux-gnu --offline --profile release -p artifact-auth-core --no-default-features
+artifact-auth-core-no-std-wasm> Running phase: unpackPhase
+artifact-auth-core-no-std-wasm> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source
+artifact-auth-core-no-std-wasm> source root is source
+artifact-auth-core-no-std-wasm> Executing cargoSetupPostUnpackHook
+artifact-auth-core-no-std-wasm> Finished cargoSetupPostUnpackHook
+artifact-auth-core-no-std-wasm> Running phase: patchPhase
+artifact-auth-core-no-std-wasm> Executing cargoSetupPostPatchHook
+artifact-auth-core-no-std-wasm> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+artifact-auth-core-no-std-wasm> Finished cargoSetupPostPatchHook
+artifact-auth-core-no-std-wasm> Running phase: updateAutotoolsGnuConfigScriptsPhase
+artifact-auth-core-no-std-wasm> Running phase: configurePhase
+artifact-auth-core-no-std-wasm> Running phase: buildPhase
+artifact-auth-core-no-std-wasm> Executing cargoBuildHook
+artifact-auth-core-no-std-wasm> cargoBuildHook flags: -j 256 --target x86_64-unknown-linux-gnu --offline --profile release -p artifact-auth-core --no-default-features --target wasm32-unknown-unknown
+artifact-auth-ed25519-no-std-host> Running phase: unpackPhase
+artifact-auth-ed25519-no-std-host> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source
+artifact-auth-ed25519-no-std-host> source root is source
+artifact-auth-ed25519-no-std-host> Executing cargoSetupPostUnpackHook
+artifact-auth-ed25519-no-std-host> Finished cargoSetupPostUnpackHook
+artifact-auth-ed25519-no-std-host> Running phase: patchPhase
+artifact-auth-ed25519-no-std-host> Executing cargoSetupPostPatchHook
+artifact-auth-ed25519-no-std-host> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+artifact-auth-ed25519-no-std-host> Finished cargoSetupPostPatchHook
+artifact-auth-ed25519-no-std-host> Running phase: updateAutotoolsGnuConfigScriptsPhase
+artifact-auth-ed25519-no-std-host> Running phase: configurePhase
+artifact-auth-ed25519-no-std-host> Running phase: buildPhase
+artifact-auth-ed25519-no-std-host> Executing cargoBuildHook
+artifact-auth-ed25519-no-std-host> cargoBuildHook flags: -j 256 --target x86_64-unknown-linux-gnu --offline --profile release -p artifact-auth-ed25519 --no-default-features
+artifact-auth-ed25519-no-std-wasm> Running phase: unpackPhase
+artifact-auth-ed25519-no-std-wasm> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source
+artifact-auth-ed25519-no-std-wasm> source root is source
+artifact-auth-ed25519-no-std-wasm> Executing cargoSetupPostUnpackHook
+artifact-auth-ed25519-no-std-wasm> Finished cargoSetupPostUnpackHook
+artifact-auth-ed25519-no-std-wasm> Running phase: patchPhase
+artifact-auth-ed25519-no-std-wasm> Executing cargoSetupPostPatchHook
+artifact-auth-ed25519-no-std-wasm> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+artifact-auth-ed25519-no-std-wasm> Finished cargoSetupPostPatchHook
+artifact-auth-ed25519-no-std-wasm> Running phase: updateAutotoolsGnuConfigScriptsPhase
+artifact-binding-core-check> Running phase: unpackPhase
+artifact-binding-core-check> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source
+artifact-binding-core-check> source root is source
+artifact-binding-core-check> Executing cargoSetupPostUnpackHook
+artifact-binding-core-no-std-host> Running phase: unpackPhase
+artifact-binding-core-no-std-host> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source
+artifact-binding-core-no-std-host> source root is source
+artifact-binding-core-no-std-host> Executing cargoSetupPostUnpackHook
+artifact-binding-core-no-std-thumb> Running phase: unpackPhase
+artifact-binding-core-no-std-thumb> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source
+artifact-binding-core-no-std-thumb> source root is source
+artifact-binding-core-no-std-thumb> Executing cargoSetupPostUnpackHook
+artifact-binding-core-no-std-wasm> Running phase: unpackPhase
+artifact-binding-core-no-std-wasm> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source
+artifact-binding-core-no-std-wasm> source root is source
+artifact-binding-core-no-std-wasm> Executing cargoSetupPostUnpackHook
+artifact-transfer-core-no-std-host> Running phase: unpackPhase
+artifact-transfer-core-no-std-host> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source
+artifact-transfer-core-no-std-host> source root is source
+artifact-transfer-core-no-std-host> Executing cargoSetupPostUnpackHook
+artifact-transfer-core-no-std-wasm> Running phase: unpackPhase
+artifact-transfer-core-no-std-wasm> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source
+building '/nix/store/bwd6da12450285x21w0q20924n3pciaw-artifact-workspace-tests-0.1.0.drv'...
+artifact-auth-core-no-std-host>    Compiling find-msvc-tools v0.1.9
+artifact-auth-core-no-std-host>    Compiling shlex v2.0.1
+artifact-auth-core-no-std-host>    Compiling arrayvec v0.7.8
+artifact-auth-core-no-std-host>    Compiling cpufeatures v0.3.0
+artifact-auth-core-no-std-host>    Compiling arrayref v0.3.9
+artifact-auth-core-no-std-host>    Compiling cfg-if v1.0.4
+artifact-auth-core-no-std-host>    Compiling constant_time_eq v0.4.2
+artifact-auth-ed25519-no-std-wasm> Running phase: configurePhase
+artifact-auth-ed25519-no-std-wasm> Running phase: buildPhase
+artifact-auth-ed25519-no-std-wasm> Executing cargoBuildHook
+artifact-auth-ed25519-no-std-wasm> cargoBuildHook flags: -j 256 --target x86_64-unknown-linux-gnu --offline --profile release -p artifact-auth-ed25519 --no-default-features --target wasm32-unknown-unknown
+artifact-binding-core-check> Finished cargoSetupPostUnpackHook
+artifact-binding-core-check> Running phase: patchPhase
+artifact-binding-core-check> Executing cargoSetupPostPatchHook
+artifact-binding-core-check> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+artifact-transfer-core-no-std-wasm> source root is source
+artifact-transfer-core-no-std-wasm> Executing cargoSetupPostUnpackHook
+artifact-binding-core-check> Finished cargoSetupPostPatchHook
+artifact-binding-core-check> Running phase: updateAutotoolsGnuConfigScriptsPhase
+artifact-binding-core-no-std-host> Finished cargoSetupPostUnpackHook
+artifact-binding-core-no-std-host> Running phase: patchPhase
+artifact-auth-core-no-std-wasm>    Compiling shlex v2.0.1
+artifact-auth-core-no-std-wasm>    Compiling find-msvc-tools v0.1.9
+artifact-auth-core-no-std-wasm>    Compiling cfg-if v1.0.4
+artifact-auth-core-no-std-wasm>    Compiling arrayvec v0.7.8
+artifact-auth-core-no-std-wasm>    Compiling arrayref v0.3.9
+artifact-auth-core-no-std-wasm>    Compiling constant_time_eq v0.4.2
+artifact-auth-core-no-std-wasm>    Compiling cpufeatures v0.3.0
+artifact-binding-core-check> Running phase: configurePhase
+artifact-binding-core-no-std-host> Executing cargoSetupPostPatchHook
+artifact-binding-core-no-std-host> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+artifact-binding-core-no-std-host> Finished cargoSetupPostPatchHook
+artifact-binding-core-no-std-thumb> Finished cargoSetupPostUnpackHook
+artifact-binding-core-no-std-host> Running phase: updateAutotoolsGnuConfigScriptsPhase
+artifact-binding-core-check> Running phase: buildPhase
+artifact-workspace-clippy> Running phase: unpackPhase
+artifact-binding-core-check> Executing cargoBuildHook
+artifact-workspace-clippy> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source
+artifact-binding-core-check> cargoBuildHook flags: -j 256 --target x86_64-unknown-linux-gnu --offline --profile release -p artifact-binding-core --no-default-features
+artifact-binding-core-no-std-thumb> Running phase: patchPhase
+artifact-binding-core-no-std-host> Running phase: configurePhase
+artifact-binding-core-no-std-thumb> Executing cargoSetupPostPatchHook
+artifact-binding-core-no-std-thumb> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+artifact-binding-core-no-std-thumb> Finished cargoSetupPostPatchHook
+artifact-auth-ed25519-no-std-host>    Compiling version_check v0.9.5
+artifact-auth-ed25519-no-std-host>    Compiling typenum v1.20.1
+artifact-auth-ed25519-no-std-host>    Compiling proc-macro2 v1.0.107
+artifact-auth-ed25519-no-std-host>    Compiling unicode-ident v1.0.24
+artifact-binding-core-no-std-thumb> Running phase: updateAutotoolsGnuConfigScriptsPhase
+artifact-auth-ed25519-no-std-host>    Compiling quote v1.0.47
+artifact-auth-ed25519-no-std-host>    Compiling shlex v2.0.1
+artifact-auth-ed25519-no-std-host>    Compiling cfg-if v1.0.4
+artifact-auth-ed25519-no-std-host>    Compiling find-msvc-tools v0.1.9
+artifact-auth-ed25519-no-std-host>    Compiling semver v1.0.28
+artifact-binding-core-no-std-host> Running phase: buildPhase
+artifact-auth-ed25519-no-std-host>    Compiling cpufeatures v0.2.17
+artifact-workspace-clippy> source root is source
+artifact-auth-ed25519-no-std-host>    Compiling subtle v2.6.1
+artifact-auth-ed25519-no-std-host>    Compiling constant_time_eq v0.4.2
+artifact-auth-ed25519-no-std-host>    Compiling arrayvec v0.7.8
+artifact-auth-ed25519-no-std-host>    Compiling cpufeatures v0.3.0
+artifact-binding-core-no-std-host> Executing cargoBuildHook
+artifact-auth-core-no-std-host>    Compiling cc v1.4.0
+artifact-auth-ed25519-no-std-host>    Compiling signature v2.2.0
+artifact-binding-core-no-std-host> cargoBuildHook flags: -j 256 --target x86_64-unknown-linux-gnu --offline --profile release -p artifact-binding-core --no-default-features
+artifact-auth-ed25519-no-std-host>    Compiling arrayref v0.3.9
+artifact-workspace-clippy> Executing cargoSetupPostUnpackHook
+building '/nix/store/5k0rchf3fn194w99nmcxi246rv47pd10-durable-file-publication-incubation-0.1.0.drv'...
+artifact-auth-core-no-std-wasm>    Compiling cc v1.4.0
+artifact-auth-ed25519-no-std-host>    Compiling ed25519 v2.2.3
+artifact-binding-core-no-std-thumb> Running phase: configurePhase
+artifact-binding-core-no-std-thumb> Running phase: buildPhase
+artifact-binding-core-no-std-thumb> Executing cargoBuildHook
+artifact-binding-core-no-std-thumb> cargoBuildHook flags: -j 256 --target x86_64-unknown-linux-gnu --offline --profile release -p artifact-binding-core --no-default-features --target thumbv7em-none-eabi
+artifact-binding-core-no-std-wasm> Finished cargoSetupPostUnpackHook
+artifact-binding-core-no-std-wasm> Running phase: patchPhase
+artifact-binding-core-no-std-wasm> Executing cargoSetupPostPatchHook
+artifact-binding-core-no-std-wasm> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+artifact-binding-core-no-std-wasm> Finished cargoSetupPostPatchHook
+artifact-binding-core-no-std-wasm> Running phase: updateAutotoolsGnuConfigScriptsPhase
+artifact-transfer-core-no-std-host> Finished cargoSetupPostUnpackHook
+artifact-workspace-cairn-validation> {
+artifact-workspace-cairn-validation>   "change_issues": [],
+artifact-workspace-cairn-validation>   "changes": 4,
+artifact-workspace-cairn-validation>   "cross_repo_dependencies": [],
+artifact-workspace-cairn-validation>   "cross_repo_evidence_issues": [],
+artifact-workspace-cairn-validation>   "findings": [],
+artifact-workspace-cairn-validation>   "issues": [],
+artifact-workspace-cairn-validation>   "layout": "cairn",
+artifact-workspace-cairn-validation>   "policy": "artifact-default",
+artifact-workspace-cairn-validation>   "policy_selection": {
+artifact-workspace-cairn-validation>     "blake3": "6967ab19f7da5191daa61bf970f975baaa936ef57295b6b7cf438c7b8c9a44d7",
+artifact-workspace-cairn-validation>     "installation_receipt": false,
+artifact-workspace-cairn-validation>     "locator": "cairn-policy/generated/cairn-policy.json",
+artifact-workspace-cairn-validation>     "source": "explicit"
+artifact-workspace-cairn-validation>   },
+artifact-workspace-cairn-validation>   "profile_issues": [],
+artifact-workspace-cairn-validation>   "receipt_hash": "95f0f912e2d2c2ee8a938fcb1d2ce7c9e7b5e36f9fdf023fda9f13a5d141f493",
+artifact-workspace-cairn-validation>   "resolution": {
+artifact-workspace-cairn-validation>     "diagnostics": [],
+artifact-workspace-cairn-validation>     "locator_consulted": false,
+artifact-workspace-cairn-validation>     "registry_lookup": "local_locator_only",
+artifact-workspace-cairn-validation>     "selected": {
+artifact-workspace-cairn-validation>       "project_identity": null,
+artifact-workspace-cairn-validation>       "root": ".",
+artifact-workspace-cairn-validation>       "source": "explicit_root",
+artifact-workspace-cairn-validation>       "store_id": null,
+artifact-workspace-cairn-validation>       "store_identity": null
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     "valid": true
+artifact-workspace-cairn-validation>   },
+artifact-workspace-cairn-validation>   "spec_findings": [],
+artifact-workspace-cairn-validation>   "spec_issues": [],
+artifact-workspace-cairn-validation>   "spec_substance": [
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-fault-injection-io-tests/specs/io-fault-fixtures/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 4,
+artifact-workspace-cairn-validation>       "scenario_blocks": 6,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 4
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-owned-source-agpl/specs/owned-source-license/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 1,
+artifact-workspace-cairn-validation>       "scenario_blocks": 2,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 1
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/align-source-package-inventory/specs/artifact-workspace/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 1,
+artifact-workspace-cairn-validation>       "scenario_blocks": 4,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 1
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/publish-required-artifact-source/specs/source-distribution/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 3,
+artifact-workspace-cairn-validation>       "scenario_blocks": 5,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 3
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/specs/artifact-auth/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 6,
+artifact-workspace-cairn-validation>       "scenario_blocks": 12,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 6
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/specs/artifact-binding-core/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 10,
+artifact-workspace-cairn-validation>       "scenario_blocks": 19,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 10
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/specs/artifact-transfer/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 3,
+artifact-workspace-cairn-validation>       "scenario_blocks": 6,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 3
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/specs/artifact-workspace/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 5,
+artifact-workspace-cairn-validation>       "scenario_blocks": 10,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 5
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/specs/durable-file-publication-extraction/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 16,
+artifact-workspace-cairn-validation>       "scenario_blocks": 32,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 16
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/specs/radicle-publication/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 5,
+artifact-workspace-cairn-validation>       "scenario_blocks": 10,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 5
+artifact-workspace-cairn-validation>     }
+artifact-workspace-cairn-validation>   ],
+artifact-workspace-cairn-validation>   "specs_validated": 10,
+artifact-workspace-cairn-validation>   "substance": [
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "design",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-fault-injection-io-tests/design.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 13,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "proposal",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-fault-injection-io-tests/proposal.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 13,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "delta_spec",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-fault-injection-io-tests/specs/io-fault-fixtures/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 4,
+artifact-workspace-cairn-validation>       "scenario_blocks": 6,
+artifact-workspace-cairn-validation>       "substantive_lines": 25,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 4,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 10,
+artifact-workspace-cairn-validation>       "kind": "tasks",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-fault-injection-io-tests/tasks.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 10,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 10,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 10
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "design",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-owned-source-agpl/design.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 8,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "proposal",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-owned-source-agpl/proposal.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 5,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "delta_spec",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-owned-source-agpl/specs/owned-source-license/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 1,
+artifact-workspace-cairn-validation>       "scenario_blocks": 2,
+artifact-workspace-cairn-validation>       "substantive_lines": 7,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 1,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 5,
+artifact-workspace-cairn-validation>       "kind": "tasks",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-owned-source-agpl/tasks.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 5,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 5,
+artifact-workspace-cairn-validation>       "task_done": 3,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 2
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "design",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/align-source-package-inventory/design.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 20,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "proposal",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/align-source-package-inventory/proposal.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 8,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "delta_spec",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/align-source-package-inventory/specs/artifact-workspace/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 1,
+artifact-workspace-cairn-validation>       "scenario_blocks": 4,
+artifact-workspace-cairn-validation>       "substantive_lines": 13,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 1,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 5,
+artifact-workspace-cairn-validation>       "kind": "tasks",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/align-source-package-inventory/tasks.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 5,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 5,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 5
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "design",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/publish-required-artifact-source/design.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 9,
+artifact-transfer-core-no-std-host> Running phase: patchPhase
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "proposal",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/publish-required-artifact-source/proposal.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 8,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "delta_spec",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/publish-required-artifact-source/specs/source-distribution/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 3,
+artifact-workspace-cairn-validation>       "scenario_blocks": 5,
+artifact-workspace-cairn-validation>       "substantive_lines": 21,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 3,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 5,
+artifact-workspace-cairn-validation>       "kind": "tasks",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/publish-required-artifact-source/tasks.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 5,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 5,
+artifact-workspace-cairn-validation>       "task_done": 4,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 1
+artifact-workspace-cairn-validation>     }
+artifact-workspace-cairn-validation>   ],
+artifact-workspace-cairn-validation>   "substance_findings": [],
+artifact-workspace-cairn-validation>   "substance_issues": [],
+artifact-workspace-cairn-validation>   "valid": true,
+artifact-workspace-cairn-validation>   "workflow_profiles": [
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "acceptance_ids": [],
+artifact-workspace-cairn-validation>       "non_claims": [
+artifact-workspace-cairn-validation>         "workflow state proves only the selected policy graph and observed structural artifact facts",
+artifact-workspace-cairn-validation>         "workflow instructions do not prove artifact truth, review quality, or implementation correctness",
+artifact-workspace-cairn-validation>         "workflow state does not satisfy proposal, design, tasks, sync, archive, evidence, or release gates",
+artifact-workspace-cairn-validation>         "workflow commands are read-only and do not create, edit, delete, or approve lifecycle artifacts"
+artifact-workspace-cairn-validation>       ],
+artifact-workspace-cairn-validation>       "profile_identity_hash": "ad38ddc0c6601e14836e8c0817f180d6b46ce3403346ca65d0436270159941c4",
+artifact-workspace-cairn-validation>       "review_receipt_hashes": [],
+artifact-workspace-cairn-validation>       "spec_effect": "delta",
+artifact-workspace-cairn-validation>       "workflow_profile": "spec-driven",
+artifact-workspace-cairn-validation>       "workflow_profile_compatibility_fallback": false,
+artifact-workspace-cairn-validation>       "workflow_profile_source": "change_create",
+artifact-workspace-cairn-validation>       "workflow_profile_version": 1
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "acceptance_ids": [],
+artifact-workspace-cairn-validation>       "non_claims": [
+artifact-workspace-cairn-validation>         "workflow state proves only the selected policy graph and observed structural artifact facts",
+artifact-workspace-cairn-validation>         "workflow instructions do not prove artifact truth, review quality, or implementation correctness",
+artifact-workspace-cairn-validation>         "workflow state does not satisfy proposal, design, tasks, sync, archive, evidence, or release gates",
+artifact-workspace-cairn-validation>         "workflow commands are read-only and do not create, edit, delete, or approve lifecycle artifacts"
+artifact-workspace-cairn-validation>       ],
+artifact-workspace-cairn-validation>       "profile_identity_hash": "7b575f9875efa2f98ac5ca345c953af8a06bc0c30f28fbd3345ede9badd21a0a",
+artifact-workspace-cairn-validation>       "review_receipt_hashes": [],
+artifact-workspace-cairn-validation>       "spec_effect": "delta",
+artifact-workspace-cairn-validation>       "workflow_profile": "spec-driven",
+artifact-workspace-cairn-validation>       "workflow_profile_compatibility_fallback": false,
+artifact-workspace-cairn-validation>       "workflow_profile_source": "change_create",
+artifact-workspace-cairn-validation>       "workflow_profile_version": 1
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "acceptance_ids": [],
+artifact-workspace-cairn-validation>       "non_claims": [
+artifact-workspace-cairn-validation>         "workflow state proves only the selected policy graph and observed structural artifact facts",
+artifact-workspace-cairn-validation>         "workflow instructions do not prove artifact truth, review quality, or implementation correctness",
+artifact-workspace-cairn-validation>         "workflow state does not satisfy proposal, design, tasks, sync, archive, evidence, or release gates",
+artifact-workspace-cairn-validation>         "workflow commands are read-only and do not create, edit, delete, or approve lifecycle artifacts"
+artifact-workspace-cairn-validation>       ],
+artifact-workspace-cairn-validation>       "profile_identity_hash": "df8dd498e68658a48cf1be9c89d62a4f18b7cb127f9eba32f1179037658c6a69",
+artifact-workspace-cairn-validation>       "review_receipt_hashes": [],
+artifact-workspace-cairn-validation>       "spec_effect": "delta",
+artifact-workspace-cairn-validation>       "workflow_profile": "spec-driven",
+artifact-workspace-cairn-validation>       "workflow_profile_compatibility_fallback": false,
+artifact-workspace-cairn-validation>       "workflow_profile_source": "change_create",
+artifact-workspace-cairn-validation>       "workflow_profile_version": 1
+artifact-workspace-cairn-validation>     }
+artifact-workspace-cairn-validation>   ]
+artifact-workspace-cairn-validation> }
+artifact-binding-core-no-std-wasm> Running phase: configurePhase
+artifact-auth-ed25519-no-std-wasm>    Compiling version_check v0.9.5
+artifact-auth-ed25519-no-std-wasm>    Compiling shlex v2.0.1
+artifact-auth-ed25519-no-std-wasm>    Compiling find-msvc-tools v0.1.9
+artifact-auth-ed25519-no-std-wasm>    Compiling semver v1.0.28
+artifact-auth-ed25519-no-std-wasm>    Compiling typenum v1.20.1
+artifact-auth-ed25519-no-std-wasm>    Compiling proc-macro2 v1.0.107
+artifact-transfer-core-no-std-host> Executing cargoSetupPostPatchHook
+artifact-auth-ed25519-no-std-wasm>    Compiling quote v1.0.47
+artifact-transfer-core-no-std-host> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+artifact-auth-ed25519-no-std-wasm>    Compiling unicode-ident v1.0.24
+artifact-auth-ed25519-no-std-wasm>    Compiling cfg-if v1.0.4
+artifact-transfer-core-no-std-host> Finished cargoSetupPostPatchHook
+artifact-binding-core-no-std-wasm> Running phase: buildPhase
+artifact-workspace-cairn-validation> {
+artifact-workspace-cairn-validation>   "command": "traceability coverage",
+artifact-workspace-cairn-validation>   "dangling": [],
+artifact-workspace-cairn-validation>   "input_hash": "e4e1545f0743fff86bb6a5e1f5ad97234f917f2be4d19d3e56ebbd30bec53590",
+artifact-workspace-cairn-validation>   "missing": [],
+artifact-workspace-cairn-validation>   "policy": "artifact-default",
+artifact-workspace-cairn-validation>   "policy_hash": "e49e1e82637cbc9d87c9b047eab92a935e764c88944eb249f0678438985a8532",
+artifact-workspace-cairn-validation>   "profile": {
+artifact-workspace-cairn-validation>     "anchor_kind": "exact_marker_bytes",
+artifact-workspace-cairn-validation>     "assurance_level": "declared",
+artifact-workspace-cairn-validation>     "evidence_sources": [
+artifact-workspace-cairn-validation>       {
+artifact-workspace-cairn-validation>         "extensions": [
+artifact-workspace-cairn-validation>           "ncl"
+artifact-workspace-cairn-validation>         ],
+artifact-workspace-cairn-validation>         "root": "config",
+artifact-workspace-cairn-validation>         "source_kind": "nickel_source"
+artifact-workspace-cairn-validation>       },
+artifact-workspace-cairn-validation>       {
+artifact-workspace-cairn-validation>         "extensions": [
+artifact-workspace-cairn-validation>           "ncl"
+artifact-workspace-cairn-validation>         ],
+artifact-workspace-cairn-validation>         "root": "release",
+artifact-workspace-cairn-validation>         "source_kind": "nickel_source"
+artifact-workspace-cairn-validation>       },
+artifact-workspace-cairn-validation>       {
+artifact-workspace-cairn-validation>         "extensions": [
+artifact-workspace-cairn-validation>           "md"
+artifact-workspace-cairn-validation>         ],
+artifact-workspace-cairn-validation>         "root": "README.md",
+artifact-workspace-cairn-validation>         "source_kind": "tool_source"
+artifact-workspace-cairn-validation>       },
+artifact-workspace-cairn-validation>       {
+artifact-workspace-cairn-validation>         "extensions": [
+artifact-workspace-cairn-validation>           "md"
+artifact-workspace-cairn-validation>         ],
+artifact-workspace-cairn-validation>         "root": "docs",
+artifact-workspace-cairn-validation>         "source_kind": "tool_source"
+artifact-workspace-cairn-validation>       },
+artifact-workspace-cairn-validation>       {
+artifact-workspace-cairn-validation>         "extensions": [
+artifact-workspace-cairn-validation>           "nix"
+artifact-workspace-cairn-validation>         ],
+artifact-workspace-cairn-validation>         "root": "flake.nix",
+artifact-workspace-cairn-validation>         "source_kind": "tool_source"
+artifact-workspace-cairn-validation>       }
+artifact-workspace-cairn-validation>     ],
+artifact-workspace-cairn-validation>     "id": "cairn-default",
+artifact-workspace-cairn-validation>     "marker_verbs": [
+artifact-workspace-cairn-validation>       "impl",
+artifact-workspace-cairn-validation>       "verify",
+artifact-workspace-cairn-validation>       "depends",
+artifact-workspace-cairn-validation>       "related"
+artifact-workspace-cairn-validation>     ],
+artifact-workspace-cairn-validation>     "requirement_sources": [
+artifact-workspace-cairn-validation>       {
+artifact-workspace-cairn-validation>         "extensions": [
+artifact-workspace-cairn-validation>           "md"
+artifact-workspace-cairn-validation>         ],
+artifact-workspace-cairn-validation>         "root": ".cairn/specs",
+artifact-workspace-cairn-validation>         "source_kind": "accepted_specs"
+artifact-workspace-cairn-validation>       }
+artifact-workspace-cairn-validation>     ]
+artifact-workspace-cairn-validation>   },
+artifact-workspace-cairn-validation>   "profile_id": "cairn-default",
+artifact-workspace-cairn-validation>   "receipt_hash": "67e97c9717b07e651a04b9ef0f08b46366bdfc76b9682e43cab24c379fa78d69",
+artifact-workspace-cairn-validation>   "referenced": 40,
+artifact-workspace-cairn-validation>   "requirements": 40,
+artifact-workspace-cairn-validation>   "root": ".",
+artifact-workspace-cairn-validation>   "source_summary": {
+artifact-workspace-cairn-validation>     "evidence_files": 33,
+artifact-workspace-cairn-validation>     "evidence_manifest_hash": "a4620e1a37c111d7e09289eff009227984b8258fd7b2ac8a96717a70e350a55a",
+artifact-workspace-cairn-validation>     "requirement_files": 6,
+artifact-workspace-cairn-validation>     "requirement_manifest_hash": "ffafedb95bffc1c9d68e3d12f6e403008f53d1ac59122f6c94bb49384b158e7a"
+artifact-workspace-cairn-validation>   },
+artifact-workspace-cairn-validation>   "valid": true,
+artifact-workspace-cairn-validation>   "verdict": "pass"
+artifact-workspace-cairn-validation> }
+artifact-auth-ed25519-no-std-wasm>    Compiling cpufeatures v0.2.17
+artifact-auth-ed25519-no-std-wasm>    Compiling arrayref v0.3.9
+artifact-auth-ed25519-no-std-wasm>    Compiling subtle v2.6.1
+artifact-transfer-core-no-std-host> Running phase: updateAutotoolsGnuConfigScriptsPhase
+artifact-auth-ed25519-no-std-wasm>    Compiling signature v2.2.0
+artifact-binding-core-no-std-wasm> Executing cargoBuildHook
+artifact-workspace-tests> Running phase: unpackPhase
+artifact-auth-ed25519-no-std-host>    Compiling cc v1.4.0
+artifact-auth-ed25519-no-std-wasm>    Compiling arrayvec v0.7.8
+artifact-auth-ed25519-no-std-wasm>    Compiling constant_time_eq v0.4.2
+artifact-auth-ed25519-no-std-wasm>    Compiling cpufeatures v0.3.0
+artifact-binding-core-check>    Compiling artifact-binding-core v0.1.0 (/build/source/crates/artifact-binding-core)
+artifact-binding-core-no-std-wasm> cargoBuildHook flags: -j 256 --target x86_64-unknown-linux-gnu --offline --profile release -p artifact-binding-core --no-default-features --target wasm32-unknown-unknown
+artifact-transfer-core-no-std-host> Running phase: configurePhase
+artifact-transfer-core-no-std-wasm> Finished cargoSetupPostUnpackHook
+artifact-transfer-core-no-std-wasm> Running phase: patchPhase
+artifact-workspace-tests> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source
+artifact-transfer-core-no-std-wasm> Executing cargoSetupPostPatchHook
+artifact-transfer-core-no-std-wasm> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+artifact-transfer-core-no-std-host> Running phase: buildPhase
+artifact-transfer-core-no-std-wasm> Finished cargoSetupPostPatchHook
+artifact-workspace-tests> source root is source
+artifact-transfer-core-no-std-wasm> Running phase: updateAutotoolsGnuConfigScriptsPhase
+artifact-transfer-core-no-std-host> Executing cargoBuildHook
+artifact-transfer-core-no-std-host> cargoBuildHook flags: -j 256 --target x86_64-unknown-linux-gnu --offline --profile release -p artifact-transfer-core --no-default-features
+artifact-workspace-tests> Executing cargoSetupPostUnpackHookartifact-auth-ed25519-no-std-wasm>    Compiling ed25519 v2.2.3
+artifact-binding-core-no-std-host>    Compiling artifact-binding-core v0.1.0 (/build/source/crates/artifact-binding-core)
+artifact-transfer-core-no-std-wasm> Running phase: configurePhase
+artifact-transfer-core-no-std-wasm> Running phase: buildPhase
+artifact-transfer-core-no-std-wasm> Executing cargoBuildHook
+artifact-transfer-core-no-std-wasm> cargoBuildHook flags: -j 256 --target x86_64-unknown-linux-gnu --offline --profile release -p artifact-transfer-core --no-default-features --target wasm32-unknown-unknown
+artifact-auth-ed25519-no-std-host>    Compiling rustc_version v0.4.1
+artifact-auth-ed25519-no-std-host>    Compiling generic-array v0.14.7
+artifact-auth-ed25519-no-std-wasm>    Compiling cc v1.4.0
+artifact-binding-core-no-std-thumb>    Compiling artifact-binding-core v0.1.0 (/build/source/crates/artifact-binding-core)
+artifact-workspace-clippy> Finished cargoSetupPostUnpackHook
+artifact-workspace-clippy> Running phase: patchPhase
+durable-file-publication-incubation> Running phase: unpackPhase
+artifact-workspace-clippy> Executing cargoSetupPostPatchHook
+artifact-workspace-clippy> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+artifact-workspace-clippy> Finished cargoSetupPostPatchHook
+durable-file-publication-incubation> unpacking source archive /nix/store/l04jxsfjr0x5f9sgn156w9vikz4296pn-source/fixtures/publication-candidate
+artifact-workspace-clippy> Running phase: updateAutotoolsGnuConfigScriptsPhase
+durable-file-publication-incubation> source root is publication-candidate
+artifact-binding-core-no-std-wasm>    Compiling artifact-binding-core v0.1.0 (/build/source/crates/artifact-binding-core)
+durable-file-publication-incubation> Executing cargoSetupPostUnpackHook
+artifact-workspace-clippy> Running phase: configurePhase
+artifact-auth-ed25519-no-std-wasm>    Compiling generic-array v0.14.7
+artifact-transfer-core-no-std-host>    Compiling artifact-transfer-core v0.1.0 (/build/source/crates/artifact-transfer-core)
+artifact-auth-ed25519-no-std-wasm>    Compiling rustc_version v0.4.1
+artifact-workspace-clippy> Running phase: buildPhase
+artifact-workspace-tests> Finished cargoSetupPostUnpackHook
+artifact-transfer-core-no-std-wasm>    Compiling artifact-transfer-core v0.1.0 (/build/source/crates/artifact-transfer-core)
+artifact-workspace-tests> Running phase: patchPhase
+artifact-workspace-tests> Executing cargoSetupPostPatchHook
+artifact-workspace-tests> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+artifact-workspace-tests> Finished cargoSetupPostPatchHook
+artifact-workspace-tests> Running phase: updateAutotoolsGnuConfigScriptsPhase
+artifact-auth-ed25519-no-std-host>    Compiling curve25519-dalek v4.1.3
+artifact-workspace-tests> Running phase: configurePhase
+artifact-workspace-tests> Running phase: buildPhase
+artifact-workspace-tests> Executing cargoBuildHook
+artifact-workspace-tests> cargoBuildHook flags: -j 256 --target x86_64-unknown-linux-gnu --offline --profile release --workspace
+artifact-workspace-clippy>    Compiling proc-macro2 v1.0.107
+artifact-workspace-clippy>    Compiling unicode-ident v1.0.24
+artifact-workspace-clippy>    Compiling quote v1.0.47
+artifact-workspace-clippy>    Compiling version_check v0.9.5
+artifact-workspace-clippy>    Compiling shlex v2.0.1
+artifact-workspace-clippy>    Compiling find-msvc-tools v0.1.9
+artifact-workspace-clippy>     Checking cfg-if v1.0.4
+artifact-workspace-clippy>    Compiling serde_core v1.0.229
+artifact-workspace-clippy>     Checking typenum v1.20.1
+artifact-workspace-clippy>    Compiling serde v1.0.229
+artifact-workspace-clippy>     Checking constant_time_eq v0.4.2
+artifact-workspace-clippy>    Compiling semver v1.0.28
+artifact-workspace-clippy>     Checking arrayvec v0.7.8
+artifact-workspace-clippy>     Checking arrayref v0.3.9
+artifact-workspace-clippy>     Checking cpufeatures v0.3.0
+artifact-workspace-clippy>     Checking cpufeatures v0.2.17
+artifact-workspace-clippy>    Compiling zmij v1.0.23
+artifact-workspace-clippy>    Compiling serde_json v1.0.151
+artifact-workspace-clippy>     Checking subtle v2.6.1
+artifact-workspace-clippy>     Checking signature v2.2.0
+artifact-workspace-clippy>     Checking rand_core v0.6.4
+artifact-workspace-clippy>     Checking memchr v2.8.3
+artifact-workspace-clippy>     Checking itoa v1.0.18
+artifact-workspace-clippy>     Checking artifact-binding-core v0.1.0 (/build/source/crates/artifact-binding-core)
+artifact-workspace-clippy>     Checking artifact-transfer-core v0.1.0 (/build/source/crates/artifact-transfer-core)
+artifact-transfer-core-no-std-host>     Finished `release` profile [optimized] target(s) in 0.26s
+artifact-auth-ed25519-no-std-wasm>    Compiling curve25519-dalek v4.1.3
+artifact-transfer-core-no-std-host> Finished cargoBuildHook
+artifact-transfer-core-no-std-host> Running phase: installPhase
+artifact-transfer-core-no-std-host> Running phase: fixupPhase
+artifact-workspace-clippy>     Checking ed25519 v2.2.3
+artifact-transfer-core-no-std-host> shrinking RPATHs of ELF executables and libraries in /nix/store/ldlvn8jfr40iijbcz7din4j0l1swzvc4-artifact-transfer-core-no-std-host-0.1.0
+artifact-transfer-core-no-std-host> checking for references to /build/ in /nix/store/ldlvn8jfr40iijbcz7din4j0l1swzvc4-artifact-transfer-core-no-std-host-0.1.0...
+artifact-transfer-core-no-std-wasm>     Finished `release` profile [optimized] target(s) in 0.28s
+artifact-transfer-core-no-std-wasm> Finished cargoBuildHook
+artifact-transfer-core-no-std-wasm> Running phase: installPhase
+artifact-transfer-core-no-std-host> patching script interpreter paths in /nix/store/ldlvn8jfr40iijbcz7din4j0l1swzvc4-artifact-transfer-core-no-std-host-0.1.0
+artifact-transfer-core-no-std-wasm> Running phase: fixupPhase
+artifact-workspace-clippy>    Compiling cc v1.4.0
+artifact-workspace-tests>    Compiling proc-macro2 v1.0.107
+artifact-workspace-tests>    Compiling quote v1.0.47
+artifact-workspace-tests>    Compiling unicode-ident v1.0.24
+artifact-workspace-tests>    Compiling version_check v0.9.5
+artifact-workspace-tests>    Compiling typenum v1.20.1
+artifact-workspace-tests>    Compiling shlex v2.0.1
+artifact-workspace-tests>    Compiling semver v1.0.28
+artifact-workspace-tests>    Compiling find-msvc-tools v0.1.9
+artifact-workspace-tests>    Compiling cfg-if v1.0.4
+artifact-workspace-tests>    Compiling serde_core v1.0.229
+artifact-workspace-tests>    Compiling serde v1.0.229
+artifact-workspace-tests>    Compiling cpufeatures v0.2.17
+artifact-workspace-tests>    Compiling arrayvec v0.7.8
+artifact-workspace-tests>    Compiling signature v2.2.0
+artifact-transfer-core-no-std-wasm> shrinking RPATHs of ELF executables and libraries in /nix/store/40dh5xda886xkz71l4mldngmy7hj1vx7-artifact-transfer-core-no-std-wasm-0.1.0
+artifact-transfer-core-no-std-wasm> checking for references to /build/ in /nix/store/40dh5xda886xkz71l4mldngmy7hj1vx7-artifact-transfer-core-no-std-wasm-0.1.0...
+artifact-transfer-core-no-std-wasm> patching script interpreter paths in /nix/store/40dh5xda886xkz71l4mldngmy7hj1vx7-artifact-transfer-core-no-std-wasm-0.1.0
+artifact-workspace-clippy>    Compiling generic-array v0.14.7
+artifact-workspace-clippy>    Compiling rustc_version v0.4.1
+artifact-workspace-tests>    Compiling cpufeatures v0.3.0
+artifact-workspace-tests>    Compiling constant_time_eq v0.4.2
+artifact-workspace-tests>    Compiling subtle v2.6.1
+artifact-workspace-tests>    Compiling arrayref v0.3.9
+artifact-workspace-tests>    Compiling artifact-binding-core v0.1.0 (/build/source/crates/artifact-binding-core)
+artifact-workspace-tests>    Compiling artifact-transfer-core v0.1.0 (/build/source/crates/artifact-transfer-core)
+artifact-workspace-tests>    Compiling ed25519 v2.2.3
+durable-file-publication-incubation> Finished cargoSetupPostUnpackHook
+durable-file-publication-incubation> Running phase: patchPhase
+durable-file-publication-incubation> Executing cargoSetupPostPatchHook
+durable-file-publication-incubation> Validating consistency between /build/publication-candidate/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+durable-file-publication-incubation> Finished cargoSetupPostPatchHook
+durable-file-publication-incubation> Running phase: updateAutotoolsGnuConfigScriptsPhase
+durable-file-publication-incubation> Running phase: configurePhase
+artifact-workspace-tests>    Compiling cc v1.4.0
+artifact-workspace-tests>    Compiling generic-array v0.14.7
+artifact-workspace-tests>    Compiling rustc_version v0.4.1
+durable-file-publication-incubation> Running phase: buildPhase
+durable-file-publication-incubation> Executing cargoBuildHook
+durable-file-publication-incubation> cargoBuildHook flags: -j 256 --target x86_64-unknown-linux-gnu --offline --profile release
+durable-file-publication-incubation>    Compiling rustix v1.1.4
+durable-file-publication-incubation>    Compiling linux-raw-sys v0.12.1
+durable-file-publication-incubation>    Compiling bitflags v2.13.1
+artifact-workspace-clippy>    Compiling curve25519-dalek v4.1.3
+artifact-workspace-tests>    Compiling curve25519-dalek v4.1.3
+artifact-auth-core-no-std-host>    Compiling blake3 v1.8.5
+artifact-auth-core-no-std-wasm>    Compiling blake3 v1.8.5
+artifact-auth-ed25519-no-std-host>    Compiling syn v2.0.119
+artifact-auth-ed25519-no-std-host>    Compiling blake3 v1.8.5
+artifact-auth-ed25519-no-std-wasm>    Compiling syn v2.0.119
+artifact-auth-ed25519-no-std-wasm>    Compiling blake3 v1.8.5
+artifact-auth-ed25519-no-std-host>    Compiling block-buffer v0.10.4
+artifact-auth-ed25519-no-std-host>    Compiling crypto-common v0.1.7
+artifact-auth-ed25519-no-std-wasm>    Compiling block-buffer v0.10.4
+artifact-auth-ed25519-no-std-wasm>    Compiling crypto-common v0.1.7
+artifact-auth-ed25519-no-std-host>    Compiling digest v0.10.7
+artifact-auth-ed25519-no-std-wasm>    Compiling digest v0.10.7
+artifact-workspace-clippy>    Compiling syn v3.0.3
+artifact-workspace-clippy>    Compiling syn v2.0.119
+artifact-auth-ed25519-no-std-host>    Compiling sha2 v0.10.9
+artifact-workspace-clippy>    Compiling blake3 v1.8.5
+artifact-auth-ed25519-no-std-wasm>    Compiling sha2 v0.10.9
+artifact-workspace-tests>    Compiling syn v3.0.3
+artifact-workspace-tests>    Compiling syn v2.0.119
+artifact-workspace-clippy>     Checking crypto-common v0.1.7
+artifact-workspace-clippy>     Checking block-buffer v0.10.4
+artifact-workspace-tests>    Compiling blake3 v1.8.5
+artifact-workspace-clippy>     Checking digest v0.10.7
+artifact-auth-core-no-std-wasm>    Compiling artifact-auth-core v0.1.0 (/build/source/crates/artifact-auth-core)
+artifact-workspace-clippy>     Checking sha2 v0.10.9
+artifact-workspace-tests>    Compiling crypto-common v0.1.7
+artifact-workspace-tests>    Compiling block-buffer v0.10.4
+artifact-auth-ed25519-no-std-wasm>    Compiling artifact-auth-core v0.1.0 (/build/source/crates/artifact-auth-core)
+artifact-workspace-tests>    Compiling digest v0.10.7
+artifact-auth-ed25519-no-std-wasm>    Compiling ed25519-dalek v2.2.0
+artifact-workspace-tests>    Compiling sha2 v0.10.9
+artifact-auth-ed25519-no-std-wasm>    Compiling artifact-auth-ed25519 v0.1.0 (/build/source/crates/artifact-auth-ed25519)
+artifact-auth-core-no-std-host>    Compiling artifact-auth-core v0.1.0 (/build/source/crates/artifact-auth-core)
+artifact-auth-ed25519-no-std-host>    Compiling artifact-auth-core v0.1.0 (/build/source/crates/artifact-auth-core)
+artifact-binding-core-check>     Finished `release` profile [optimized] target(s) in 2.35s
+artifact-binding-core-check> Finished cargoBuildHook
+artifact-binding-core-check> Running phase: checkPhase
+artifact-binding-core-no-std-host>     Finished `release` profile [optimized] target(s) in 2.33s
+artifact-binding-core-check> Executing cargoCheckHook
+artifact-binding-core-no-std-host> Finished cargoBuildHook
+artifact-binding-core-no-std-host> Running phase: installPhase
+artifact-binding-core-check> cargoCheckHook flags: -j 256 --profile release --target x86_64-unknown-linux-gnu --offline -p artifact-binding-core --
+artifact-binding-core-no-std-host> Running phase: fixupPhase
+artifact-binding-core-no-std-host> shrinking RPATHs of ELF executables and libraries in /nix/store/znwh9xlgbbjzgkayxwgkankbs4b8k9wl-artifact-binding-core-no-std-host-0.1.0
+artifact-binding-core-no-std-host> checking for references to /build/ in /nix/store/znwh9xlgbbjzgkayxwgkankbs4b8k9wl-artifact-binding-core-no-std-host-0.1.0...
+artifact-binding-core-check>    Compiling artifact-binding-core v0.1.0 (/build/source/crates/artifact-binding-core)
+artifact-binding-core-no-std-host> patching script interpreter paths in /nix/store/znwh9xlgbbjzgkayxwgkankbs4b8k9wl-artifact-binding-core-no-std-host-0.1.0
+artifact-binding-core-no-std-wasm>     Finished `release` profile [optimized] target(s) in 2.38s
+artifact-binding-core-no-std-wasm> Finished cargoBuildHook
+artifact-binding-core-no-std-wasm> Running phase: installPhase
+artifact-binding-core-no-std-wasm> Running phase: fixupPhase
+artifact-binding-core-no-std-wasm> shrinking RPATHs of ELF executables and libraries in /nix/store/da5dfggxdkzlf1bj82k3zwr4z0zr8hdb-artifact-binding-core-no-std-wasm-0.1.0
+artifact-binding-core-no-std-wasm> checking for references to /build/ in /nix/store/da5dfggxdkzlf1bj82k3zwr4z0zr8hdb-artifact-binding-core-no-std-wasm-0.1.0...
+artifact-binding-core-no-std-thumb>     Finished `release` profile [optimized] target(s) in 2.49s
+artifact-binding-core-no-std-wasm> patching script interpreter paths in /nix/store/da5dfggxdkzlf1bj82k3zwr4z0zr8hdb-artifact-binding-core-no-std-wasm-0.1.0
+artifact-binding-core-no-std-thumb> Finished cargoBuildHook
+artifact-binding-core-no-std-thumb> Running phase: installPhase
+artifact-binding-core-no-std-thumb> Running phase: fixupPhase
+artifact-binding-core-no-std-thumb> shrinking RPATHs of ELF executables and libraries in /nix/store/9268m6bsqh33h1rmi9jbl8vy1pcma1rw-artifact-binding-core-no-std-thumb-0.1.0
+artifact-binding-core-no-std-thumb> checking for references to /build/ in /nix/store/9268m6bsqh33h1rmi9jbl8vy1pcma1rw-artifact-binding-core-no-std-thumb-0.1.0...
+artifact-binding-core-no-std-thumb> patching script interpreter paths in /nix/store/9268m6bsqh33h1rmi9jbl8vy1pcma1rw-artifact-binding-core-no-std-thumb-0.1.0
+durable-file-publication-incubation>    Compiling durable-file-publication-candidate v0.1.0 (/build/publication-candidate)
+artifact-auth-core-no-std-host>     Finished `release` profile [optimized] target(s) in 3.16s
+artifact-auth-core-no-std-wasm>     Finished `release` profile [optimized] target(s) in 3.14s
+artifact-auth-core-no-std-host> Finished cargoBuildHook
+artifact-auth-core-no-std-host> Running phase: installPhase
+artifact-auth-core-no-std-wasm> Finished cargoBuildHook
+artifact-auth-core-no-std-wasm> Running phase: installPhase
+artifact-auth-core-no-std-host> Running phase: fixupPhase
+artifact-auth-core-no-std-wasm> Running phase: fixupPhase
+artifact-auth-core-no-std-host> shrinking RPATHs of ELF executables and libraries in /nix/store/yj91jylsjlwy4yklvjw9dl7mprl0ywqb-artifact-auth-core-no-std-host-0.1.0
+artifact-auth-core-no-std-host> checking for references to /build/ in /nix/store/yj91jylsjlwy4yklvjw9dl7mprl0ywqb-artifact-auth-core-no-std-host-0.1.0...
+artifact-auth-core-no-std-wasm> shrinking RPATHs of ELF executables and libraries in /nix/store/3ad28vdllsi0vasmawvya66y1g4lzc7b-artifact-auth-core-no-std-wasm-0.1.0
+artifact-auth-core-no-std-wasm> checking for references to /build/ in /nix/store/3ad28vdllsi0vasmawvya66y1g4lzc7b-artifact-auth-core-no-std-wasm-0.1.0...
+artifact-auth-core-no-std-host> patching script interpreter paths in /nix/store/yj91jylsjlwy4yklvjw9dl7mprl0ywqb-artifact-auth-core-no-std-host-0.1.0
+artifact-auth-core-no-std-wasm> patching script interpreter paths in /nix/store/3ad28vdllsi0vasmawvya66y1g4lzc7b-artifact-auth-core-no-std-wasm-0.1.0
+artifact-workspace-clippy>    Compiling serde_derive v1.0.229
+artifact-workspace-tests>    Compiling serde_derive v1.0.229
+durable-file-publication-incubation>     Finished `release` profile [optimized] target(s) in 2.75s
+durable-file-publication-incubation> Finished cargoBuildHook
+durable-file-publication-incubation> Running phase: checkPhase
+durable-file-publication-incubation> Executing cargoCheckHook
+durable-file-publication-incubation> cargoCheckHook flags: -j 256 --profile release --target x86_64-unknown-linux-gnu --offline --
+artifact-auth-ed25519-no-std-host>    Compiling curve25519-dalek-derive v0.1.1
+durable-file-publication-incubation>    Compiling shlex v2.0.1
+durable-file-publication-incubation>    Compiling libc v0.2.189
+durable-file-publication-incubation>    Compiling find-msvc-tools v0.1.9
+durable-file-publication-incubation>    Compiling cfg-if v1.0.4
+durable-file-publication-incubation>    Compiling getrandom v0.4.3
+durable-file-publication-incubation>    Compiling once_cell v1.21.4
+durable-file-publication-incubation>    Compiling constant_time_eq v0.4.2
+durable-file-publication-incubation>    Compiling arrayref v0.3.9
+durable-file-publication-incubation>    Compiling cpufeatures v0.3.0
+durable-file-publication-incubation>    Compiling arrayvec v0.7.8
+durable-file-publication-incubation>    Compiling fastrand v2.5.0
+artifact-auth-ed25519-no-std-wasm>    Compiling curve25519-dalek-derive v0.1.1
+durable-file-publication-incubation>    Compiling cc v1.4.0
+artifact-workspace-clippy>    Compiling curve25519-dalek-derive v0.1.1
+artifact-workspace-tests>    Compiling curve25519-dalek-derive v0.1.1
+durable-file-publication-incubation>    Compiling blake3 v1.8.5
+artifact-auth-ed25519-no-std-host>    Compiling ed25519-dalek v2.2.0
+artifact-auth-ed25519-no-std-host>    Compiling artifact-auth-ed25519 v0.1.0 (/build/source/crates/artifact-auth-ed25519)
+durable-file-publication-incubation>    Compiling tempfile v3.27.0
+artifact-workspace-clippy>     Checking ed25519-dalek v2.2.0
+artifact-auth-ed25519-no-std-host>     Finished `release` profile [optimized] target(s) in 5.17s
+artifact-auth-ed25519-no-std-host> Finished cargoBuildHook
+artifact-auth-ed25519-no-std-host> Running phase: installPhase
+artifact-auth-ed25519-no-std-host> Running phase: fixupPhase
+artifact-auth-ed25519-no-std-wasm>     Finished `release` profile [optimized] target(s) in 5.16s
+artifact-auth-ed25519-no-std-host> shrinking RPATHs of ELF executables and libraries in /nix/store/06xi2i1f2vv7hc84nk4wal7arcfqy6xk-artifact-auth-ed25519-no-std-host-0.1.0
+artifact-auth-ed25519-no-std-host> checking for references to /build/ in /nix/store/06xi2i1f2vv7hc84nk4wal7arcfqy6xk-artifact-auth-ed25519-no-std-host-0.1.0...
+artifact-auth-ed25519-no-std-wasm> Finished cargoBuildHook
+artifact-auth-ed25519-no-std-wasm> Running phase: installPhase
+artifact-workspace-tests>    Compiling ed25519-dalek v2.2.0
+artifact-auth-ed25519-no-std-host> patching script interpreter paths in /nix/store/06xi2i1f2vv7hc84nk4wal7arcfqy6xk-artifact-auth-ed25519-no-std-host-0.1.0
+artifact-auth-ed25519-no-std-wasm> Running phase: fixupPhase
+artifact-auth-ed25519-no-std-wasm> shrinking RPATHs of ELF executables and libraries in /nix/store/zi6l5z44lrdg98l9h95gds95inksvi6x-artifact-auth-ed25519-no-std-wasm-0.1.0
+artifact-auth-ed25519-no-std-wasm> checking for references to /build/ in /nix/store/zi6l5z44lrdg98l9h95gds95inksvi6x-artifact-auth-ed25519-no-std-wasm-0.1.0...
+artifact-auth-ed25519-no-std-wasm> patching script interpreter paths in /nix/store/zi6l5z44lrdg98l9h95gds95inksvi6x-artifact-auth-ed25519-no-std-wasm-0.1.0
+artifact-workspace-clippy>     Checking artifact-auth-core v0.1.0 (/build/source/crates/artifact-auth-core)
+artifact-workspace-tests>    Compiling artifact-auth-core v0.1.0 (/build/source/crates/artifact-auth-core)
+durable-file-publication-incubation>    Compiling durable-file-publication-candidate v0.1.0 (/build/publication-candidate)
+artifact-workspace-tests>    Compiling artifact-auth-ed25519 v0.1.0 (/build/source/crates/artifact-auth-ed25519)
+artifact-workspace-clippy>     Checking artifact-auth-ed25519 v0.1.0 (/build/source/crates/artifact-auth-ed25519)
+artifact-binding-core-check>     Finished `release` profile [optimized] target(s) in 3.91s
+artifact-binding-core-check>      Running unittests src/lib.rs (target/x86_64-unknown-linux-gnu/release/deps/artifact_binding_core-44aa7a96ca01f9cc)
+artifact-binding-core-check> 
+artifact-binding-core-check> running 18 tests
+artifact-binding-core-check> test id::tests::revision_successor_is_checked ... ok
+artifact-binding-core-check> test id::tests::typed_ids_preserve_exact_bounded_text ... ok
+artifact-binding-core-check> test id::tests::typed_ids_reject_empty_oversized_and_ambiguous_text ... ok
+artifact-binding-core-check> test reachability::tests::bounded_rotation_exploration_preserves_canonical_trace ... ok
+artifact-binding-core-check> test reachability::tests::cycles_duplicates_and_input_permutations_are_deterministic ... ok
+artifact-binding-core-check> test reachability::tests::diagnostic_output_is_explicitly_bounded ... ok
+artifact-binding-core-check> test resolution::tests::missing_ambiguous_mixed_stale_and_oversized_resolution_fail_closed ... ok
+artifact-binding-core-check> test reachability::tests::explicit_root_edge_node_and_path_bounds_fail_closed ... ok
+artifact-binding-core-check> test retirement::tests::complete_shared_artifact_does_not_keep_old_generation_live ... ok
+artifact-binding-core-check> test resolution::tests::pinned_and_late_bound_resolution_return_exact_facts ... ok
+artifact-binding-core-check> test retirement::tests::incomplete_and_contradictory_inputs_never_classify_retired ... ok
+artifact-binding-core-check> test retirement::tests::mixed_snapshot_facts_fail_closed ... ok
+artifact-binding-core-check> test retirement::tests::retirement_bounds_fail_before_classification ... ok
+artifact-binding-core-check> test retirement::tests::retirement_is_invariant_under_root_edge_and_attribution_order ... ok
+artifact-binding-core-check> test retirement::tests::scoped_root_and_exclusive_artifact_keep_generation_live_with_paths ... ok
+artifact-binding-core-check> test transition::tests::compatibility_snapshot_and_reachability_fail_closed ... ok
+artifact-binding-core-check> test transition::tests::exact_successor_and_rollback_as_successor_are_planned ... ok
+artifact-binding-core-check> test transition::tests::stale_skipped_reversed_and_overflowing_revisions_fail_separately ... ok
+artifact-binding-core-check> 
+artifact-binding-core-check> test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-binding-core-check> 
+artifact-binding-core-check>      Running tests/pilots.rs (target/x86_64-unknown-linux-gnu/release/deps/pilots-514521e997b48a36)
+artifact-binding-core-check> 
+artifact-binding-core-check> running 2 tests
+artifact-binding-core-check> test molten_system_extension_mapping_supports_transition_resolution_and_retirement ... ok
+artifact-binding-core-check> test onixos_active_rollback_descriptor_mapping_preserves_successor_rules ... ok
+artifact-binding-core-check> 
+artifact-binding-core-check> test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-binding-core-check> 
+artifact-binding-core-check>    Doc-tests artifact_binding_core
+artifact-binding-core-check> 
+artifact-binding-core-check> running 0 tests
+artifact-binding-core-check> 
+artifact-binding-core-check> test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-binding-core-check> 
+artifact-binding-core-check> Finished cargoCheckHook
+artifact-workspace-clippy>     Finished `dev` profile [unoptimized + debuginfo] target(s) in 6.10s
+artifact-workspace-clippy> Running phase: installPhase
+artifact-workspace-clippy> Running phase: fixupPhase
+artifact-workspace-clippy> shrinking RPATHs of ELF executables and libraries in /nix/store/xxh23hmsk5h5wpi8033y8fc5757h5cnx-artifact-workspace-clippy-0.1.0
+artifact-workspace-clippy> checking for references to /build/ in /nix/store/xxh23hmsk5h5wpi8033y8fc5757h5cnx-artifact-workspace-clippy-0.1.0...
+artifact-workspace-clippy> patching script interpreter paths in /nix/store/xxh23hmsk5h5wpi8033y8fc5757h5cnx-artifact-workspace-clippy-0.1.0
+artifact-binding-core-check>     Checking artifact-binding-core v0.1.0 (/build/source/crates/artifact-binding-core)
+durable-file-publication-incubation>     Finished `release` profile [optimized] target(s) in 3.10s
+durable-file-publication-incubation>      Running unittests src/lib.rs (target/x86_64-unknown-linux-gnu/release/deps/durable_file_publication_candidate-46d17122b01d1e79)
+durable-file-publication-incubation> 
+durable-file-publication-incubation> running 6 tests
+durable-file-publication-incubation> test tests::both_pilots_retain_exact_mechanical_outcomes ... ok
+durable-file-publication-incubation> test tests::consumer_request_mappings_preserve_owned_policy_without_product_fields ... ok
+durable-file-publication-incubation> test tests::malformed_requests_and_impossible_phase_order_mutate_nothing ... ok
+durable-file-publication-incubation> test tests::mantle_existing_content_interpretation_stays_in_the_adapter ... ok
+durable-file-publication-incubation> test tests::shared_corpus_preserves_commit_cleanup_and_preflight_state ... ok
+durable-file-publication-incubation> test tests::linux::real_open_directory_supports_replace_no_replace_permissions_and_parent_sync ... ok
+durable-file-publication-incubation> 
+durable-file-publication-incubation> test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+durable-file-publication-incubation> 
+durable-file-publication-incubation>    Doc-tests durable_file_publication_candidate
+durable-file-publication-incubation> 
+durable-file-publication-incubation> running 0 tests
+durable-file-publication-incubation> 
+durable-file-publication-incubation> test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+durable-file-publication-incubation> 
+durable-file-publication-incubation> Finished cargoCheckHook
+durable-file-publication-incubation>    Compiling libc v0.2.189
+durable-file-publication-incubation>    Compiling find-msvc-tools v0.1.9
+durable-file-publication-incubation>    Compiling shlex v2.0.1
+durable-file-publication-incubation>    Compiling rustix v1.1.4
+durable-file-publication-incubation>    Compiling getrandom v0.4.3
+durable-file-publication-incubation>     Checking cfg-if v1.0.4
+durable-file-publication-incubation>     Checking linux-raw-sys v0.12.1
+durable-file-publication-incubation>     Checking bitflags v2.13.1
+durable-file-publication-incubation>     Checking once_cell v1.21.4
+durable-file-publication-incubation>     Checking arrayref v0.3.9
+durable-file-publication-incubation>     Checking arrayvec v0.7.8
+durable-file-publication-incubation>     Checking fastrand v2.5.0
+durable-file-publication-incubation>     Checking cpufeatures v0.3.0
+durable-file-publication-incubation>     Checking constant_time_eq v0.4.2
+artifact-workspace-tests>     Finished `release` profile [optimized] target(s) in 6.41s
+artifact-workspace-tests> Executing cargoInstallPostBuildHook
+artifact-workspace-tests> Finished cargoInstallPostBuildHook
+artifact-workspace-tests> Finished cargoBuildHook
+artifact-workspace-tests> Running phase: checkPhase
+durable-file-publication-incubation>    Compiling cc v1.4.0
+artifact-workspace-tests> Executing cargoCheckHook
+artifact-workspace-tests> cargoCheckHook flags: -j 256 --profile release --target x86_64-unknown-linux-gnu --offline --workspace --
+artifact-workspace-tests>    Compiling zmij v1.0.23
+artifact-workspace-tests>    Compiling serde_json v1.0.151
+artifact-workspace-tests>    Compiling rand_core v0.6.4
+artifact-workspace-tests>    Compiling memchr v2.8.3
+artifact-workspace-tests>    Compiling itoa v1.0.18
+artifact-workspace-tests>    Compiling artifact-binding-core v0.1.0 (/build/source/crates/artifact-binding-core)
+artifact-workspace-tests>    Compiling artifact-transfer-core v0.1.0 (/build/source/crates/artifact-transfer-core)
+artifact-workspace-tests>    Compiling ed25519-dalek v2.2.0
+artifact-workspace-tests>    Compiling artifact-auth-ed25519 v0.1.0 (/build/source/crates/artifact-auth-ed25519)
+artifact-binding-core-check>     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.74s
+artifact-binding-core-check>     Checking artifact-binding-core v0.1.0 (/build/source/crates/artifact-binding-core)
+artifact-binding-core-check>     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.33s
+artifact-binding-core-check>     Checking artifact-binding-core v0.1.0 (/build/source/crates/artifact-binding-core)
+durable-file-publication-incubation>    Compiling blake3 v1.8.5
+artifact-binding-core-check>     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.29s
+artifact-binding-core-check> Running phase: installPhase
+artifact-binding-core-check> Running phase: fixupPhase
+artifact-binding-core-check> shrinking RPATHs of ELF executables and libraries in /nix/store/cfy4z6xn21fq33drh75bxz1dpkpm9lzx-artifact-binding-core-check-0.1.0
+artifact-binding-core-check> checking for references to /build/ in /nix/store/cfy4z6xn21fq33drh75bxz1dpkpm9lzx-artifact-binding-core-check-0.1.0...
+artifact-binding-core-check> patching script interpreter paths in /nix/store/cfy4z6xn21fq33drh75bxz1dpkpm9lzx-artifact-binding-core-check-0.1.0
+durable-file-publication-incubation>     Checking tempfile v3.27.0
+durable-file-publication-incubation>     Checking durable-file-publication-candidate v0.1.0 (/build/publication-candidate)
+artifact-workspace-tests>    Compiling artifact-auth-core v0.1.0 (/build/source/crates/artifact-auth-core)
+durable-file-publication-incubation>     Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.56s
+durable-file-publication-incubation>     Checking durable-file-publication-candidate v0.1.0 (/build/publication-candidate)
+durable-file-publication-incubation>     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.21s
+durable-file-publication-incubation> Running phase: installPhase
+durable-file-publication-incubation> Running phase: fixupPhase
+durable-file-publication-incubation> shrinking RPATHs of ELF executables and libraries in /nix/store/bzlqlac7l3g3bn90f8px61qhmjfsajd9-durable-file-publication-incubation-0.1.0
+durable-file-publication-incubation> checking for references to /build/ in /nix/store/bzlqlac7l3g3bn90f8px61qhmjfsajd9-durable-file-publication-incubation-0.1.0...
+durable-file-publication-incubation> patching script interpreter paths in /nix/store/bzlqlac7l3g3bn90f8px61qhmjfsajd9-durable-file-publication-incubation-0.1.0
+artifact-workspace-tests>     Finished `release` profile [optimized] target(s) in 3.86s
+artifact-workspace-tests>      Running unittests src/lib.rs (target/x86_64-unknown-linux-gnu/release/deps/artifact_auth_core-d2b525d3c9f388f2)
+artifact-workspace-tests> 
+artifact-workspace-tests> running 5 tests
+artifact-workspace-tests> test tests::canonical_statement_is_parent_order_independent_and_domain_bound ... ok
+artifact-workspace-tests> test tests::distinct_current_keys_satisfy_threshold ... ok
+artifact-workspace-tests> test tests::duplicate_key_cannot_inflate_threshold ... ok
+artifact-workspace-tests> test tests::malformed_and_duplicate_references_are_rejected ... ok
+artifact-workspace-tests> test tests::revoked_stale_wrong_purpose_and_failed_crypto_fail_closed ... ok
+artifact-workspace-tests> 
+artifact-workspace-tests> test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-workspace-tests> 
+artifact-workspace-tests>      Running tests/conformance.rs (target/x86_64-unknown-linux-gnu/release/deps/conformance-dae6da3afea1c5a4)
+artifact-workspace-tests> 
+artifact-workspace-tests> running 2 tests
+artifact-workspace-tests> test legacy_statement_bytes_and_identities_are_frozen ... ok
+artifact-workspace-tests> test positive_and_negative_conformance_corpus_is_stable ... ok
+artifact-workspace-tests> 
+artifact-workspace-tests> test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-workspace-tests> 
+artifact-workspace-tests>      Running tests/consumer_mappings.rs (target/x86_64-unknown-linux-gnu/release/deps/consumer_mappings-8bd45672dabac0ab)
+artifact-workspace-tests> 
+artifact-workspace-tests> running 2 tests
+artifact-workspace-tests> test dropping_one_required_authority_is_rejected ... ok
+artifact-workspace-tests> test typed_consumer_mappings_preserve_required_authority ... ok
+artifact-workspace-tests> 
+artifact-workspace-tests> test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-workspace-tests> 
+artifact-workspace-tests>      Running unittests src/lib.rs (target/x86_64-unknown-linux-gnu/release/deps/artifact_auth_ed25519-5b01888f92aa896a)
+artifact-workspace-tests> 
+artifact-workspace-tests> running 4 tests
+artifact-workspace-tests> test tests::malformed_statement_fails_before_cryptographic_admission ... ok
+artifact-workspace-tests> test tests::matching_signature_verifies_and_binds_full_key_identity ... ok
+artifact-workspace-tests> test tests::composed_verification_cannot_promote_an_invalid_signature ... ok
+artifact-workspace-tests> test tests::changed_statement_wrong_key_and_malformed_lengths_fail ... ok
+artifact-workspace-tests> 
+artifact-workspace-tests> test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-workspace-tests> 
+artifact-workspace-tests>      Running unittests src/lib.rs (target/x86_64-unknown-linux-gnu/release/deps/artifact_binding_core-44aa7a96ca01f9cc)
+artifact-workspace-tests> 
+artifact-workspace-tests> running 18 tests
+artifact-workspace-tests> test id::tests::revision_successor_is_checked ... ok
+artifact-workspace-tests> test id::tests::typed_ids_preserve_exact_bounded_text ... ok
+artifact-workspace-tests> test id::tests::typed_ids_reject_empty_oversized_and_ambiguous_text ... ok
+artifact-workspace-tests> test reachability::tests::cycles_duplicates_and_input_permutations_are_deterministic ... ok
+artifact-workspace-tests> test reachability::tests::bounded_rotation_exploration_preserves_canonical_trace ... ok
+artifact-workspace-tests> test reachability::tests::diagnostic_output_is_explicitly_bounded ... ok
+artifact-workspace-tests> test reachability::tests::explicit_root_edge_node_and_path_bounds_fail_closed ... ok
+artifact-workspace-tests> test resolution::tests::missing_ambiguous_mixed_stale_and_oversized_resolution_fail_closed ... ok
+artifact-workspace-tests> test resolution::tests::pinned_and_late_bound_resolution_return_exact_facts ... ok
+artifact-workspace-tests> test retirement::tests::complete_shared_artifact_does_not_keep_old_generation_live ... ok
+artifact-workspace-tests> test retirement::tests::incomplete_and_contradictory_inputs_never_classify_retired ... ok
+artifact-workspace-tests> test retirement::tests::mixed_snapshot_facts_fail_closed ... ok
+artifact-workspace-tests> test retirement::tests::retirement_bounds_fail_before_classification ... ok
+artifact-workspace-tests> test retirement::tests::retirement_is_invariant_under_root_edge_and_attribution_order ... ok
+artifact-workspace-tests> test retirement::tests::scoped_root_and_exclusive_artifact_keep_generation_live_with_paths ... ok
+artifact-workspace-tests> test transition::tests::compatibility_snapshot_and_reachability_fail_closed ... ok
+artifact-workspace-tests> test transition::tests::exact_successor_and_rollback_as_successor_are_planned ... ok
+artifact-workspace-tests> test transition::tests::stale_skipped_reversed_and_overflowing_revisions_fail_separately ... ok
+artifact-workspace-tests> 
+artifact-workspace-tests> test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-workspace-tests> 
+artifact-workspace-tests>      Running tests/pilots.rs (target/x86_64-unknown-linux-gnu/release/deps/pilots-514521e997b48a36)
+artifact-workspace-tests> 
+artifact-workspace-tests> running 2 tests
+artifact-workspace-tests> test molten_system_extension_mapping_supports_transition_resolution_and_retirement ... ok
+artifact-workspace-tests> test onixos_active_rollback_descriptor_mapping_preserves_successor_rules ... ok
+artifact-workspace-tests> 
+artifact-workspace-tests> test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-workspace-tests> 
+artifact-workspace-tests>      Running unittests src/lib.rs (target/x86_64-unknown-linux-gnu/release/deps/artifact_transfer_core-212cd71bc777ac43)
+artifact-workspace-tests> 
+artifact-workspace-tests> running 8 tests
+artifact-workspace-tests> test tests::empty_artifact_policy_is_explicit ... ok
+artifact-workspace-tests> test tests::equal_digest_bytes_remain_distinct_across_algorithms_and_bad_lengths_fail ... ok
+artifact-workspace-tests> test tests::external_ordered_parts_make_no_boundary_algorithm_claim ... ok
+artifact-workspace-tests> test tests::fastcdc_geometry_allows_only_the_final_chunk_below_minimum ... ok
+artifact-workspace-tests> test tests::fixed_geometry_derives_contiguous_ranges_and_short_final_chunk ... ok
+artifact-workspace-tests> test tests::fixed_geometry_rejects_wrong_nonfinal_final_and_total_shapes ... ok
+artifact-workspace-tests> test tests::limits_zero_lengths_absent_chunks_and_sum_overflow_fail_closed ... ok
+artifact-workspace-tests> test tests::malformed_profiles_and_fastcdc_outputs_are_rejected ... ok
+artifact-workspace-tests> 
+artifact-workspace-tests> test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-workspace-tests> 
+artifact-workspace-tests>    Doc-tests artifact_auth_coreartifact-workspace-tests> 
+artifact-workspace-tests> running 0 tests
+artifact-workspace-tests> 
+artifact-workspace-tests> test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-workspace-tests> 
+artifact-workspace-tests>    Doc-tests artifact_auth_ed25519
+artifact-workspace-tests> 
+artifact-workspace-tests> running 0 tests
+artifact-workspace-tests> 
+artifact-workspace-tests> test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-workspace-tests> 
+artifact-workspace-tests>    Doc-tests artifact_binding_core
+artifact-workspace-tests> 
+artifact-workspace-tests> running 0 tests
+artifact-workspace-tests> 
+artifact-workspace-tests> test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-workspace-tests> 
+artifact-workspace-tests>    Doc-tests artifact_transfer_core
+artifact-workspace-tests> 
+artifact-workspace-tests> running 0 tests
+artifact-workspace-tests> 
+artifact-workspace-tests> test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+artifact-workspace-tests> 
+artifact-workspace-tests> Finished cargoCheckHook
+artifact-workspace-tests> Running phase: installPhase
+artifact-workspace-tests> Executing cargoInstallHook
+artifact-workspace-tests> Finished cargoInstallHook
+artifact-workspace-tests> Running phase: fixupPhase
+artifact-workspace-tests> shrinking RPATHs of ELF executables and libraries in /nix/store/5n6ag0vfnhxglmfi5j65pm4v3vvj2s7i-artifact-workspace-tests-0.1.0
+artifact-workspace-tests> checking for references to /build/ in /nix/store/5n6ag0vfnhxglmfi5j65pm4v3vvj2s7i-artifact-workspace-tests-0.1.0...
+artifact-workspace-tests> patching script interpreter paths in /nix/store/5n6ag0vfnhxglmfi5j65pm4v3vvj2s7i-artifact-workspace-tests-0.1.0
+all checks passed!
+warning: The check omitted these incompatible systems: aarch64-linux
+Use '--all-systems' to check all.

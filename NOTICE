@@ -3,4 +3,4 @@ Copyright 2026 OnixResearch
 
 This work includes owner-authorized, substantially refactored concepts and implementation patterns from Mantle, Cairn, Molten, Valence, and the former standalone artifact-transfer repository. Exact source revisions, file identities, roles, and material changes are documented in provenance/SOURCE_GRANT.md and docs/source-inventory.md.
 
-Owner-controlled imported material is offered in this workspace under MIT OR Apache-2.0. Third-party dependencies and protocol specifications retain their own terms.
+All repository-owned packages and new owned source, contracts, schemas, fixtures, templates, documentation and policy are offered under AGPL-3.0-or-later; see LICENSE and LICENSE-AGPL. Historical MIT/Apache grants remain effective for previously granted material, including byte-identical content. LICENSE-MIT and LICENSE-APACHE are retained for those grants and dependencies, not as permissive offers for new contributions. Immutable imports and historical receipts retain their recorded terms. Third-party dependencies and protocol specifications retain their own terms.

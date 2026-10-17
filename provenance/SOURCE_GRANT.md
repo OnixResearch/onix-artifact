@@ -30,3 +30,9 @@ On 2026-07-24, the repository owner directed that the owner-controlled `artifact
 The standalone code does not move a product crate unchanged. It replaces product JSON/Nix/OCI/Preserves/Radicle statements with one versioned length-delimited preimage; uses raw Ed25519 public-key bytes for the canonical full-key identity; removes signing, generation, persistence, clocks, network, registries, build policy, lifecycle policy, and authorization; and evaluates only explicit in-memory observations.
 
 Exact reviewed file identities are listed in `docs/source-inventory.md`.
+
+## Prospective owned-source policy (2026-10-17)
+
+The operator selected AGPL-3.0-or-later for all owned code, including reusable cores, contracts, schemas, fixtures, templates, documentation and policy. Current repository/package metadata records that prospective grant; it does not rewrite the historical authorizations above or the exact source identities in the inventory. LICENSE-AGPL contains the current license text.
+
+Prior MIT/Apache grants cannot be revoked and remain effective for previously granted material, including byte-identical content. LICENSE-MIT and LICENSE-APACHE remain for those grants and dependencies, not as offers for new owned contributions. Immutable imports, baselines, historical receipts, old consumer pins and third-party terms remain unchanged. This is source preparation only, not publication or consumer migration.

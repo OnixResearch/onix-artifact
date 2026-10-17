@@ -1,0 +1,9 @@
+error:
+       … while evaluating the condition of the assertion '((sorted packageNames) == (sorted (release).packages))'
+         at /nix/store/ml6pqc04zvfiyfbr4jc94p2v6nd6fb2c-source/flake.nix:226:13:
+          225|             assert sorted packageNames == sorted repository.packages;
+          226|             assert sorted packageNames == sorted release.packages;
+             |             ^
+          227|             pkgs.runCommand "artifact-workspace-nickel-contracts"
+
+       error: list of size '4' is not equal to list of size '3', left hand side is '[ "artifact-auth-core" "artifact-auth-ed25519" "artifact-binding-core" "artifact-transfer-core" ]', right hand side is '[ "artifact-auth-core" "artifact-auth-ed25519" "artifact-transfer-core" ]'

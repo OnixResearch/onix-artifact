@@ -1,0 +1,78 @@
+{
+  "command": "traceability coverage",
+  "dangling": [],
+  "input_hash": "e4e1545f0743fff86bb6a5e1f5ad97234f917f2be4d19d3e56ebbd30bec53590",
+  "missing": [],
+  "policy": "artifact-default",
+  "policy_hash": "e49e1e82637cbc9d87c9b047eab92a935e764c88944eb249f0678438985a8532",
+  "profile": {
+    "anchor_kind": "exact_marker_bytes",
+    "assurance_level": "declared",
+    "evidence_sources": [
+      {
+        "extensions": [
+          "ncl"
+        ],
+        "root": "config",
+        "source_kind": "nickel_source"
+      },
+      {
+        "extensions": [
+          "ncl"
+        ],
+        "root": "release",
+        "source_kind": "nickel_source"
+      },
+      {
+        "extensions": [
+          "md"
+        ],
+        "root": "README.md",
+        "source_kind": "tool_source"
+      },
+      {
+        "extensions": [
+          "md"
+        ],
+        "root": "docs",
+        "source_kind": "tool_source"
+      },
+      {
+        "extensions": [
+          "nix"
+        ],
+        "root": "flake.nix",
+        "source_kind": "tool_source"
+      }
+    ],
+    "id": "cairn-default",
+    "marker_verbs": [
+      "impl",
+      "verify",
+      "depends",
+      "related"
+    ],
+    "requirement_sources": [
+      {
+        "extensions": [
+          "md"
+        ],
+        "root": ".cairn/specs",
+        "source_kind": "accepted_specs"
+      }
+    ]
+  },
+  "profile_id": "cairn-default",
+  "receipt_hash": "67e97c9717b07e651a04b9ef0f08b46366bdfc76b9682e43cab24c379fa78d69",
+  "referenced": 40,
+  "requirements": 40,
+  "root": ".",
+  "source_summary": {
+    "evidence_files": 33,
+    "evidence_manifest_hash": "a4620e1a37c111d7e09289eff009227984b8258fd7b2ac8a96717a70e350a55a",
+    "requirement_files": 6,
+    "requirement_manifest_hash": "ffafedb95bffc1c9d68e3d12f6e403008f53d1ac59122f6c94bb49384b158e7a"
+  },
+  "valid": true,
+  "verdict": "pass"
+}

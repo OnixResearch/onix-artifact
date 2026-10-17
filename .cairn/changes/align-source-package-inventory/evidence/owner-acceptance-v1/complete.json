@@ -1,0 +1,255 @@
+{
+  "records": [
+    {
+      "label": "extract-owner-source",
+      "command": [
+        "tar",
+        "--extract",
+        "--file",
+        "/home/brittonr/mantle-cairn-finish/inputs/artifact-source-cohort-traceability-resume21.tar",
+        "--directory",
+        "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 0.01603086292743683,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/extract-owner-source.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/extract-owner-source.stderr"
+    },
+    {
+      "label": "cairn-source-nar",
+      "command": [
+        "nix",
+        "hash",
+        "path",
+        "/home/brittonr/mantle-cairn-finish/xrepo/cairn-1cacafebb-source-resume21"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 0.16429654695093632,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/cairn-source-nar.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/cairn-source-nar.stderr"
+    },
+    {
+      "label": "admit-cairn-source",
+      "command": [
+        "nix",
+        "store",
+        "add-path",
+        "--name",
+        "source",
+        "/home/brittonr/mantle-cairn-finish/xrepo/cairn-1cacafebb-source-resume21"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 0.2145957862958312,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/admit-cairn-source.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/admit-cairn-source.stderr"
+    },
+    {
+      "label": "full-owner-flake-check",
+      "command": [
+        "nix",
+        "flake",
+        "check",
+        "--no-write-lock-file",
+        "path:/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+        "-L"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 22.37185709644109,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/full-owner-flake-check.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/full-owner-flake-check.stderr"
+    },
+    {
+      "label": "pinned-cairn-path",
+      "command": [
+        "nix",
+        "eval",
+        "--raw",
+        "--impure",
+        "--expr",
+        "(builtins.getFlake \"path:/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21\").inputs.cairn.packages.x86_64-linux.cairn.outPath"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 5.526166174560785,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/pinned-cairn-path.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/pinned-cairn-path.stderr"
+    },
+    {
+      "label": "pinned-nickel-path",
+      "command": [
+        "nix",
+        "eval",
+        "--raw",
+        "--impure",
+        "--expr",
+        "(builtins.getFlake \"path:/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21\").inputs.nixpkgs.legacyPackages.x86_64-linux.nickel.outPath"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 1.2168294247239828,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/pinned-nickel-path.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/pinned-nickel-path.stderr"
+    },
+    {
+      "label": "traceability-detail",
+      "command": [
+        "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+        "traceability",
+        "coverage",
+        "--root",
+        ".",
+        "--policy",
+        "cairn-policy/generated/cairn-policy.json",
+        "--json"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 0.015969336964190006,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/traceability-detail.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/traceability-detail.stderr"
+    },
+    {
+      "label": "negative-release-export",
+      "command": [
+        "/nix/store/50z2x3404gqyjjnld4m2iq7hdmbwmv6n-nickel-1.17.0/bin/nickel",
+        "export",
+        "--format",
+        "json",
+        "release/profile.ncl"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/negative-release-inventory",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 0.031890965066850185,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/negative-release-export.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/negative-release-export.stderr"
+    },
+    {
+      "label": "negative-release-nix-admission",
+      "command": [
+        "nix",
+        "eval",
+        "--raw",
+        "--no-write-lock-file",
+        "path:/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/negative-release-inventory#checks.x86_64-linux.nickel-contracts.drvPath"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/negative-release-inventory",
+      "exit": 1,
+      "expected": 1,
+      "elapsed_s": 0.16418559104204178,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/negative-release-nix-admission.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/negative-release-nix-admission.stderr"
+    },
+    {
+      "label": "native-workflow-status",
+      "command": [
+        "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+        "workflow",
+        "status",
+        "align-source-package-inventory",
+        "--root",
+        ".",
+        "--policy",
+        "cairn-policy/generated/cairn-policy.json"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 0.015889297239482403,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/native-workflow-status.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/native-workflow-status.stderr"
+    },
+    {
+      "label": "native-validate",
+      "command": [
+        "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+        "validate",
+        "--root",
+        ".",
+        "--policy",
+        "cairn-policy/generated/cairn-policy.json"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 0.03188380133360624,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/native-validate.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/native-validate.stderr"
+    },
+    {
+      "label": "native-gate-proposal",
+      "command": [
+        "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+        "gate",
+        "proposal",
+        "align-source-package-inventory",
+        "--root",
+        ".",
+        "--policy",
+        "cairn-policy/generated/cairn-policy.json"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 0.015824214555323124,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/native-gate-proposal.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/native-gate-proposal.stderr"
+    },
+    {
+      "label": "native-gate-design",
+      "command": [
+        "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+        "gate",
+        "design",
+        "align-source-package-inventory",
+        "--root",
+        ".",
+        "--policy",
+        "cairn-policy/generated/cairn-policy.json"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 0.015764301642775536,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/native-gate-design.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/native-gate-design.stderr"
+    },
+    {
+      "label": "native-gate-tasks",
+      "command": [
+        "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+        "gate",
+        "tasks",
+        "align-source-package-inventory",
+        "--root",
+        ".",
+        "--policy",
+        "cairn-policy/generated/cairn-policy.json"
+      ],
+      "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21",
+      "exit": 0,
+      "expected": 0,
+      "elapsed_s": 0.01579776406288147,
+      "stdout": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/native-gate-tasks.stdout",
+      "stderr": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/native-gate-tasks.stderr"
+    }
+  ],
+  "source": "/home/brittonr/mantle-cairn-finish/runs/artifact-source-inventory-traceability-resume21/source.json",
+  "compatible_native_workflow": true,
+  "isolated_release_inventory_rejection": true,
+  "consumer_migration": false,
+  "publication": false,
+  "archive_performed": false,
+  "release_authority": false
+}
