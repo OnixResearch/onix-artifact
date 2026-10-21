@@ -8,4 +8,4 @@
 ## Phase 2: Verify and publish the exact cohort
 
 - [x] [serial] Run the required owner checks and an isolated positive/negative source-inventory gate smoke; retain exact commands, source identities and bounded non-claims. r[artifact_workspace.source_inventory.complete]
-- [ ] [serial] Commit the verified implementation and prepare complete native gate/sync evidence for the separately executed terminal archive/publication operation. r[artifact_workspace.source_inventory.complete]
+- [x] [serial] Commit the verified implementation and prepare complete native gate/sync evidence for the separately executed terminal archive/publication operation. r[artifact_workspace.source_inventory.complete]

@@ -1,0 +1,87 @@
+{
+  "acceptance_ids": [],
+  "change": "align-source-package-inventory",
+  "evidence_summary": {
+    "docs_only": 0,
+    "fixture": 0,
+    "formal": 0,
+    "mode": "advisory",
+    "model": 0,
+    "probe": 0,
+    "property": 0
+  },
+  "input_hash": "7cafffd2627737a0ba42b1be24f1521ba0487851c4a1dcd8a5c99a8a13b506a8",
+  "issues": [],
+  "layout": "cairn",
+  "non_claims": [
+    "workflow state proves only the selected policy graph and observed structural artifact facts",
+    "workflow instructions do not prove artifact truth, review quality, or implementation correctness",
+    "workflow state does not satisfy proposal, design, tasks, sync, archive, evidence, or release gates",
+    "workflow commands are read-only and do not create, edit, delete, or approve lifecycle artifacts"
+  ],
+  "policy": "artifact-default",
+  "policy_hash": "e49e1e82637cbc9d87c9b047eab92a935e764c88944eb249f0678438985a8532",
+  "policy_selection": {
+    "blake3": "6967ab19f7da5191daa61bf970f975baaa936ef57295b6b7cf438c7b8c9a44d7",
+    "installation_receipt": false,
+    "locator": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/cairn-policy/generated/cairn-policy.json",
+    "source": "explicit"
+  },
+  "probe_evidence": null,
+  "profile_identity_hash": "06082f849acb5b358f4ada9841b3b12f9027ffa69d61a09cea1581584824d559",
+  "receipt_hash": "ddd4868981a67a5e2f3332136e987978222f8cd390a557bd23bd49b0268bcbca",
+  "review_receipt_hashes": [],
+  "spec_effect": "delta",
+  "stage": "design",
+  "substance": [
+    {
+      "checkbox_tasks": 0,
+      "kind": "design",
+      "malformed_dependency_markers": 0,
+      "path": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/.cairn/changes/align-source-package-inventory/design.md",
+      "requirement_blocks": 0,
+      "scenario_blocks": 0,
+      "substantive_lines": 20,
+      "substantive_requirement_blocks": 0,
+      "substantive_tasks": 0,
+      "task_done": 0,
+      "task_in_progress": 0,
+      "task_todo": 0
+    },
+    {
+      "checkbox_tasks": 0,
+      "kind": "proposal",
+      "malformed_dependency_markers": 0,
+      "path": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/.cairn/changes/align-source-package-inventory/proposal.md",
+      "requirement_blocks": 0,
+      "scenario_blocks": 0,
+      "substantive_lines": 8,
+      "substantive_requirement_blocks": 0,
+      "substantive_tasks": 0,
+      "task_done": 0,
+      "task_in_progress": 0,
+      "task_todo": 0
+    },
+    {
+      "checkbox_tasks": 0,
+      "kind": "delta_spec",
+      "malformed_dependency_markers": 0,
+      "path": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/.cairn/changes/align-source-package-inventory/specs/artifact-workspace/spec.md",
+      "requirement_blocks": 1,
+      "scenario_blocks": 4,
+      "substantive_lines": 13,
+      "substantive_requirement_blocks": 1,
+      "substantive_tasks": 0,
+      "task_done": 0,
+      "task_in_progress": 0,
+      "task_todo": 0
+    }
+  ],
+  "task_ordering": null,
+  "valid": true,
+  "verdict": "PASS",
+  "workflow_profile": "spec-driven",
+  "workflow_profile_compatibility_fallback": false,
+  "workflow_profile_source": "change_create",
+  "workflow_profile_version": 1
+}
