@@ -1,0 +1,86 @@
+{
+  "acceptance_ids": [],
+  "actions": [
+    {
+      "description": "merge delta spec into main specs: /home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/.cairn/changes/align-source-package-inventory/specs/artifact-workspace/spec.md",
+      "kind": "sync_delta_spec",
+      "path": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/.cairn/changes/align-source-package-inventory/specs/artifact-workspace/spec.md"
+    }
+  ],
+  "blocked": false,
+  "change": "align-source-package-inventory",
+  "cross_repo_dependencies": {
+    "blocked_count": 0,
+    "dependency_count": 0,
+    "input_hash": "185342b433baf8dc446b43dd7611b5b410619136d3eb1946dedb17edfd0b4a58",
+    "non_claims": [
+      "dependency satisfaction proves presented receipt linkage only",
+      "dependency satisfaction does not prove upstream correctness or remote trust",
+      "dependency satisfaction does not prove downstream integration correctness or release eligibility"
+    ],
+    "policy_hash": "e49e1e82637cbc9d87c9b047eab92a935e764c88944eb249f0678438985a8532",
+    "receipt_hash": "e50c49b5c5c39f31a7cf309d21f431c5d0333d105752c0507e8252f64c10c287",
+    "rows": [],
+    "satisfied_count": 0,
+    "schema": "cairn.cross-repo-dependency-receipt.v1",
+    "valid": true,
+    "verdict": "PASS"
+  },
+  "cross_repo_evidence_issues": [],
+  "delta_specs": [
+    "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/.cairn/changes/align-source-package-inventory/specs/artifact-workspace/spec.md"
+  ],
+  "dry_run": true,
+  "input_hash": "d248a59d00277053866ab9a8b9596490fab090ffbf4602ba14976c4bba225bcc",
+  "layout": "cairn",
+  "merge_preflight": {
+    "documents": [
+      {
+        "accepted_before_exists": true,
+        "accepted_before_hash": "56bbbdbbfeff33601cd9f4fd974a8b70d1c0df491a1656f83347b7cf57436293",
+        "blocked": false,
+        "changed": false,
+        "delta_hash": "5255d973f5dbb507693e2edf053fb80d1866c17fa389f59dd9e8e4be0f014a28",
+        "destination": ".cairn/specs/artifact-workspace/spec.md",
+        "diagnostics": [],
+        "expected_after_hash": "56bbbdbbfeff33601cd9f4fd974a8b70d1c0df491a1656f83347b7cf57436293",
+        "operations": [
+          {
+            "block_hash": "3b9f5fe5388beed63ee64bbe37c442330c331066ec3f8949562676b25e7d8237",
+            "heading": "### Requirement: Source-package inventory is complete",
+            "kind": "added",
+            "requirement_id": "artifact_workspace.source_inventory.complete"
+          }
+        ],
+        "outcomes": [
+          {
+            "kind": "added",
+            "requirement_id": "artifact_workspace.source_inventory.complete",
+            "state": "already_applied"
+          }
+        ],
+        "source": ".cairn/changes/align-source-package-inventory/specs/artifact-workspace/spec.md"
+      }
+    ]
+  },
+  "mutated": false,
+  "mutation_manifest": null,
+  "non_claims": [
+    "workflow state proves only the selected policy graph and observed structural artifact facts",
+    "workflow instructions do not prove artifact truth, review quality, or implementation correctness",
+    "workflow state does not satisfy proposal, design, tasks, sync, archive, evidence, or release gates",
+    "workflow commands are read-only and do not create, edit, delete, or approve lifecycle artifacts"
+  ],
+  "plan_hash": "4fed95f0cdb09cda06545303b3fa68aa616b68f8c8b5640ecae495bbf8bf1c80",
+  "policy": "artifact-default",
+  "policy_hash": "e49e1e82637cbc9d87c9b047eab92a935e764c88944eb249f0678438985a8532",
+  "profile_identity_hash": "f54a448d5c9f60a12f1446b822e2c07c8d60c6444e52e10a08f34c97570d6017",
+  "reasons": [],
+  "receipt_hash": "126dd0d784f82be19d10474ac1808c02df8de7e3ab8e9633ca4a894ae7723e9d",
+  "review_receipt_hashes": [],
+  "spec_effect": "delta",
+  "workflow_profile": "spec-driven",
+  "workflow_profile_compatibility_fallback": false,
+  "workflow_profile_source": "change_create",
+  "workflow_profile_version": 1
+}

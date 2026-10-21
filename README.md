@@ -118,13 +118,18 @@ it does not establish anonymous source availability. The exact 156-file prepared
 cohort passed the x86_64-linux owner flake checks, native validation and gates,
 and an isolated incomplete-release-inventory rejection. Commands, original
 output and source identities are retained in
-[`owner-acceptance-v1`](.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/complete.json).
+[`owner-acceptance-v1`](.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/complete.json).
 The flake check explicitly omitted aarch64-linux. Separate Cargo metadata and
 source-member observations are in
-[`package-metadata-v1`](.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/complete.json):
+[`package-metadata-v1`](.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/complete.json):
 all four packages resolve to AGPL-3.0-or-later, disable crates.io publication,
 and include LICENSE and LICENSE-AGPL. These observations do not establish
-consumer migration, anonymous acquisition, lifecycle archive or release eligibility.
+consumer migration, anonymous acquisition or release eligibility. Native sync
+accepted the complete source-package inventory, and native archive moved the
+change to the tool-selected `1970-01-01-align-source-package-inventory` path.
+Terminal command receipts and post-archive validation are retained in
+[`native-terminal-v1`](.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/complete.json).
+The archive path is the native tool output, not a claim about execution date.
 
 ### Frozen Radicle compatibility source
 

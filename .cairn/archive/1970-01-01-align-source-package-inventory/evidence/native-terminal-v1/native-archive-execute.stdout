@@ -1,0 +1,591 @@
+{
+  "acceptance_ids": [],
+  "actions": [
+    {
+      "description": "move active change to archive: align-source-package-inventory",
+      "kind": "archive_change",
+      "path": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/.cairn/archive/1970-01-01-align-source-package-inventory"
+    }
+  ],
+  "blocked": false,
+  "change": "align-source-package-inventory",
+  "cross_repo_dependencies": {
+    "blocked_count": 0,
+    "dependency_count": 0,
+    "input_hash": "185342b433baf8dc446b43dd7611b5b410619136d3eb1946dedb17edfd0b4a58",
+    "non_claims": [
+      "dependency satisfaction proves presented receipt linkage only",
+      "dependency satisfaction does not prove upstream correctness or remote trust",
+      "dependency satisfaction does not prove downstream integration correctness or release eligibility"
+    ],
+    "policy_hash": "e49e1e82637cbc9d87c9b047eab92a935e764c88944eb249f0678438985a8532",
+    "receipt_hash": "e50c49b5c5c39f31a7cf309d21f431c5d0333d105752c0507e8252f64c10c287",
+    "rows": [],
+    "satisfied_count": 0,
+    "schema": "cairn.cross-repo-dependency-receipt.v1",
+    "valid": true,
+    "verdict": "PASS"
+  },
+  "cross_repo_evidence_issues": [],
+  "dry_run": false,
+  "input_hash": "a26bd0891ca28952308e5b1f7e9a1f2f10877a97025fa87951943d5b1b095dc8",
+  "layout": "cairn",
+  "mutated": true,
+  "mutation_manifest": {
+    "after": {
+      "entries": [
+        {
+          "content_hash": "a613b8b3b7c426abccc13b64379ccaa568cf2153f427af191034888c4f4ec648",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/design.md"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/native-archive-preview.stderr"
+        },
+        {
+          "content_hash": "12a97d95ef8a78e01a1b52427ffff16fd6fe4bbc8934c90032094b88d57d66d7",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/native-archive-preview.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/native-post-sync-archive-preview.stderr"
+        },
+        {
+          "content_hash": "12a97d95ef8a78e01a1b52427ffff16fd6fe4bbc8934c90032094b88d57d66d7",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/native-post-sync-archive-preview.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/native-post-sync-preview.stderr"
+        },
+        {
+          "content_hash": "1893023b5bddfc226814d531f808233c1cf1ed08418d70b8d2d7668101c0119b",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/native-post-sync-preview.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/native-sync-execute.stderr"
+        },
+        {
+          "content_hash": "a8b270a2155ff966d144d7bdfe0944aa79cb00a815b6e823c8b12b92fa2cf3fd",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/native-sync-execute.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/native-sync-preview.stderr"
+        },
+        {
+          "content_hash": "e644c7a82006cb7ee786dc550050f1aa14141a828b04b729acb1491619a5028e",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/native-sync-preview.stdout"
+        },
+        {
+          "content_hash": "bccff3fa14eb8b30bebe69b2394bdaea72de85501b9c7547fc5244764563423a",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/results.json"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/starting-head.stderr"
+        },
+        {
+          "content_hash": "96a9a6198c56561fed3ec6412dd2c69de49749b79a5246acedb568ecd6191236",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/native-terminal-v1/starting-head.stdout"
+        },
+        {
+          "content_hash": "3fdc556fd3782be70a2e3d42c8472ea6b0bfc70b07d6890fd4d0ed54daa40c97",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/complete.json"
+        },
+        {
+          "content_hash": "32310dffceb282a4dc66cbda79692fc2a203d87e43cbe37914af667ac3714df1",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/full-owner-flake-check.stderr"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/full-owner-flake-check.stdout"
+        },
+        {
+          "content_hash": "bbc59c4f113fbe199e9811696e5b36cb2d1576afb55a7fb667ce44365591fdcf",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/native-gate-design.stdout"
+        },
+        {
+          "content_hash": "73acd94d437318ad7ffa60fba6d46429c0d8f600812bd443a7d6b87e8781c940",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/native-gate-proposal.stdout"
+        },
+        {
+          "content_hash": "37dd2e020b1e795e837ca8df4d124b98d5686399501f77aa1887a30328934dd6",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/native-gate-tasks.stdout"
+        },
+        {
+          "content_hash": "dd53592a5a41b34dc8804e926c3a8b8483ff39bab530e6cbdeab360943f64437",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/native-validate.stdout"
+        },
+        {
+          "content_hash": "4f6aa6d02b582419867352b00def571675db332c6dad0fc3c06bd65f465eeace",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/native-workflow-status.stdout"
+        },
+        {
+          "content_hash": "e5c0796e6c6921668f1a8504a55433915fab4e1ec799cb6fd864493abef5a103",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/negative-release-nix-admission.stderr"
+        },
+        {
+          "content_hash": "c92c3dcacc6b3093d7706c8d871ec75a8945a7e9e4387f4f36e8b4719bddd457",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/results.json"
+        },
+        {
+          "content_hash": "f04707933deb7fe859e2e58712069d9a7cb81c707045d3abd7b7c682d551b708",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/source.json"
+        },
+        {
+          "content_hash": "c85ae3f446535999100074774ee1d77be2ea0ee9079e9a97c4fade48a84a0887",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/owner-acceptance-v1/traceability-detail.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/cargo-package-metadata.stderr"
+        },
+        {
+          "content_hash": "d2df28e6e7b13ae1682ac30faf3cc3a713e7c7bd9d8002d0c195c2ff23e12816",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/cargo-package-metadata.stdout"
+        },
+        {
+          "content_hash": "74340007e6af4744b044831cac790a21cbb2247e75dc952c7134230dbcd480de",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-auth-core.stderr"
+        },
+        {
+          "content_hash": "dc58f9aa948ea3853de0bc21a8e814beef3522f7cadb831dbe9aa4217294b792",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-auth-core.stdout"
+        },
+        {
+          "content_hash": "74340007e6af4744b044831cac790a21cbb2247e75dc952c7134230dbcd480de",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-auth-ed25519.stderr"
+        },
+        {
+          "content_hash": "bb6bd147bbb66beda24ad619a86bae15774dbc70b4eebf54f646ad295d6b5e74",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-auth-ed25519.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-binding-core.stderr"
+        },
+        {
+          "content_hash": "d00f2a482a546814ad7f65a008414ed0349f5a9c459bbef25e1a4c862bd706de",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-binding-core.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-transfer-core.stderr"
+        },
+        {
+          "content_hash": "ef5f402ef742123d83653e61b7f1632c5c164f2ef557499017edbd6c6b5ddec8",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-transfer-core.stdout"
+        },
+        {
+          "content_hash": "6d04629769fc6d86dd7a813faa8ad79b906f4837d146b7a11e06c158ef0fd4cc",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/complete.json"
+        },
+        {
+          "content_hash": "e65e83a0170daccbb7e9b5b92140de95624e02d57d3e70a51e66325d445a11ed",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/package-metadata-v1/results.json"
+        },
+        {
+          "content_hash": "07ea68a8a0b00dd0671eea6eb4518845d0815974cba3b38022e7500e46e526f9",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/published-source-v1/complete.json"
+        },
+        {
+          "content_hash": "8a6a03233584e180119b4b2f85426a9394b17b7402e1e5ec3a8a08a6f7f6e1de",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/published-source-v1/primary-nix-metadata.json"
+        },
+        {
+          "content_hash": "755e771d99c2aba8cc671ff31af2d4e4cf9cf7364d8c90b0de9fba5d5efa8129",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/published-source-v1/published-native-design.stdout"
+        },
+        {
+          "content_hash": "cb038bf4f549308a9be9ca69abc02f97addbdef558f18551d676a2e768621605",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/published-source-v1/published-native-proposal.stdout"
+        },
+        {
+          "content_hash": "4ad4072bc943b2251af9919b4356dd8b9228068f48a5e52b527b6257d69f59d5",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/published-source-v1/published-native-sync-preview.stdout"
+        },
+        {
+          "content_hash": "95df6fac6c3a81c7fe979beb69470f4badabd763b7c73a4794e6b9764e48f9db",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/published-source-v1/published-native-tasks.stdout"
+        },
+        {
+          "content_hash": "895d7247b9b6ffa63b6cde70012fc6d3c5d905ffa7298cbc74e365c1f206da83",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/published-source-v1/published-native-validate.stdout"
+        },
+        {
+          "content_hash": "4facbf0a4122b686c9b1862c997a627c8c19698efcf6d0fd99df12a84b6113d6",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/published-source-v1/published-owner-flake-check.stderr"
+        },
+        {
+          "content_hash": "a8b6f06f377d98580aad53f848a9d33e69aac58751756f1d979e5f5aa7bffc10",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/published-source-v1/results.json"
+        },
+        {
+          "content_hash": "edc2e8ec0716227614be977f2ad79747e59e1020409bfa0a7d3444f3329bcddd",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/evidence/published-source-v1/source.json"
+        },
+        {
+          "content_hash": "df8b71bae570eb5accd702e7370a816b8ea9f2e4521254c5d75ea82a9cfcf4db",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/metadata.json"
+        },
+        {
+          "content_hash": "2c54ce686fd3d6087ec77da2b542702576d213150824cc3cc3d2d636151cd77c",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/proposal.md"
+        },
+        {
+          "content_hash": "5255d973f5dbb507693e2edf053fb80d1866c17fa389f59dd9e8e4be0f014a28",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/specs/artifact-workspace/spec.md"
+        },
+        {
+          "content_hash": "04ad8d773edd1ff1eaf873f22cfd9d8d926e36736418e4a02f950274294c8724",
+          "exists": true,
+          "path": "./.cairn/archive/1970-01-01-align-source-package-inventory/tasks.md"
+        },
+        {
+          "content_hash": null,
+          "exists": false,
+          "path": "./.cairn/changes/align-source-package-inventory"
+        }
+      ],
+      "manifest_hash": "e80242d9616be26b9174f44b9b4592c7ee3090cabd6051c61d531f6f44b1b067"
+    },
+    "before": {
+      "entries": [
+        {
+          "content_hash": "a613b8b3b7c426abccc13b64379ccaa568cf2153f427af191034888c4f4ec648",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/design.md"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/native-archive-preview.stderr"
+        },
+        {
+          "content_hash": "12a97d95ef8a78e01a1b52427ffff16fd6fe4bbc8934c90032094b88d57d66d7",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/native-archive-preview.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/native-post-sync-archive-preview.stderr"
+        },
+        {
+          "content_hash": "12a97d95ef8a78e01a1b52427ffff16fd6fe4bbc8934c90032094b88d57d66d7",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/native-post-sync-archive-preview.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/native-post-sync-preview.stderr"
+        },
+        {
+          "content_hash": "1893023b5bddfc226814d531f808233c1cf1ed08418d70b8d2d7668101c0119b",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/native-post-sync-preview.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/native-sync-execute.stderr"
+        },
+        {
+          "content_hash": "a8b270a2155ff966d144d7bdfe0944aa79cb00a815b6e823c8b12b92fa2cf3fd",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/native-sync-execute.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/native-sync-preview.stderr"
+        },
+        {
+          "content_hash": "e644c7a82006cb7ee786dc550050f1aa14141a828b04b729acb1491619a5028e",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/native-sync-preview.stdout"
+        },
+        {
+          "content_hash": "bccff3fa14eb8b30bebe69b2394bdaea72de85501b9c7547fc5244764563423a",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/results.json"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/starting-head.stderr"
+        },
+        {
+          "content_hash": "96a9a6198c56561fed3ec6412dd2c69de49749b79a5246acedb568ecd6191236",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/native-terminal-v1/starting-head.stdout"
+        },
+        {
+          "content_hash": "3fdc556fd3782be70a2e3d42c8472ea6b0bfc70b07d6890fd4d0ed54daa40c97",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/complete.json"
+        },
+        {
+          "content_hash": "32310dffceb282a4dc66cbda79692fc2a203d87e43cbe37914af667ac3714df1",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/full-owner-flake-check.stderr"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/full-owner-flake-check.stdout"
+        },
+        {
+          "content_hash": "bbc59c4f113fbe199e9811696e5b36cb2d1576afb55a7fb667ce44365591fdcf",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/native-gate-design.stdout"
+        },
+        {
+          "content_hash": "73acd94d437318ad7ffa60fba6d46429c0d8f600812bd443a7d6b87e8781c940",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/native-gate-proposal.stdout"
+        },
+        {
+          "content_hash": "37dd2e020b1e795e837ca8df4d124b98d5686399501f77aa1887a30328934dd6",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/native-gate-tasks.stdout"
+        },
+        {
+          "content_hash": "dd53592a5a41b34dc8804e926c3a8b8483ff39bab530e6cbdeab360943f64437",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/native-validate.stdout"
+        },
+        {
+          "content_hash": "4f6aa6d02b582419867352b00def571675db332c6dad0fc3c06bd65f465eeace",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/native-workflow-status.stdout"
+        },
+        {
+          "content_hash": "e5c0796e6c6921668f1a8504a55433915fab4e1ec799cb6fd864493abef5a103",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/negative-release-nix-admission.stderr"
+        },
+        {
+          "content_hash": "c92c3dcacc6b3093d7706c8d871ec75a8945a7e9e4387f4f36e8b4719bddd457",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/results.json"
+        },
+        {
+          "content_hash": "f04707933deb7fe859e2e58712069d9a7cb81c707045d3abd7b7c682d551b708",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/source.json"
+        },
+        {
+          "content_hash": "c85ae3f446535999100074774ee1d77be2ea0ee9079e9a97c4fade48a84a0887",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/owner-acceptance-v1/traceability-detail.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/cargo-package-metadata.stderr"
+        },
+        {
+          "content_hash": "d2df28e6e7b13ae1682ac30faf3cc3a713e7c7bd9d8002d0c195c2ff23e12816",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/cargo-package-metadata.stdout"
+        },
+        {
+          "content_hash": "74340007e6af4744b044831cac790a21cbb2247e75dc952c7134230dbcd480de",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-auth-core.stderr"
+        },
+        {
+          "content_hash": "dc58f9aa948ea3853de0bc21a8e814beef3522f7cadb831dbe9aa4217294b792",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-auth-core.stdout"
+        },
+        {
+          "content_hash": "74340007e6af4744b044831cac790a21cbb2247e75dc952c7134230dbcd480de",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-auth-ed25519.stderr"
+        },
+        {
+          "content_hash": "bb6bd147bbb66beda24ad619a86bae15774dbc70b4eebf54f646ad295d6b5e74",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-auth-ed25519.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-binding-core.stderr"
+        },
+        {
+          "content_hash": "d00f2a482a546814ad7f65a008414ed0349f5a9c459bbef25e1a4c862bd706de",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-binding-core.stdout"
+        },
+        {
+          "content_hash": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-transfer-core.stderr"
+        },
+        {
+          "content_hash": "ef5f402ef742123d83653e61b7f1632c5c164f2ef557499017edbd6c6b5ddec8",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/cargo-source-members-artifact-transfer-core.stdout"
+        },
+        {
+          "content_hash": "6d04629769fc6d86dd7a813faa8ad79b906f4837d146b7a11e06c158ef0fd4cc",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/complete.json"
+        },
+        {
+          "content_hash": "e65e83a0170daccbb7e9b5b92140de95624e02d57d3e70a51e66325d445a11ed",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/package-metadata-v1/results.json"
+        },
+        {
+          "content_hash": "07ea68a8a0b00dd0671eea6eb4518845d0815974cba3b38022e7500e46e526f9",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/published-source-v1/complete.json"
+        },
+        {
+          "content_hash": "8a6a03233584e180119b4b2f85426a9394b17b7402e1e5ec3a8a08a6f7f6e1de",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/published-source-v1/primary-nix-metadata.json"
+        },
+        {
+          "content_hash": "755e771d99c2aba8cc671ff31af2d4e4cf9cf7364d8c90b0de9fba5d5efa8129",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/published-source-v1/published-native-design.stdout"
+        },
+        {
+          "content_hash": "cb038bf4f549308a9be9ca69abc02f97addbdef558f18551d676a2e768621605",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/published-source-v1/published-native-proposal.stdout"
+        },
+        {
+          "content_hash": "4ad4072bc943b2251af9919b4356dd8b9228068f48a5e52b527b6257d69f59d5",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/published-source-v1/published-native-sync-preview.stdout"
+        },
+        {
+          "content_hash": "95df6fac6c3a81c7fe979beb69470f4badabd763b7c73a4794e6b9764e48f9db",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/published-source-v1/published-native-tasks.stdout"
+        },
+        {
+          "content_hash": "895d7247b9b6ffa63b6cde70012fc6d3c5d905ffa7298cbc74e365c1f206da83",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/published-source-v1/published-native-validate.stdout"
+        },
+        {
+          "content_hash": "4facbf0a4122b686c9b1862c997a627c8c19698efcf6d0fd99df12a84b6113d6",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/published-source-v1/published-owner-flake-check.stderr"
+        },
+        {
+          "content_hash": "a8b6f06f377d98580aad53f848a9d33e69aac58751756f1d979e5f5aa7bffc10",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/published-source-v1/results.json"
+        },
+        {
+          "content_hash": "edc2e8ec0716227614be977f2ad79747e59e1020409bfa0a7d3444f3329bcddd",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/evidence/published-source-v1/source.json"
+        },
+        {
+          "content_hash": "df8b71bae570eb5accd702e7370a816b8ea9f2e4521254c5d75ea82a9cfcf4db",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/metadata.json"
+        },
+        {
+          "content_hash": "2c54ce686fd3d6087ec77da2b542702576d213150824cc3cc3d2d636151cd77c",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/proposal.md"
+        },
+        {
+          "content_hash": "5255d973f5dbb507693e2edf053fb80d1866c17fa389f59dd9e8e4be0f014a28",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/specs/artifact-workspace/spec.md"
+        },
+        {
+          "content_hash": "04ad8d773edd1ff1eaf873f22cfd9d8d926e36736418e4a02f950274294c8724",
+          "exists": true,
+          "path": "./.cairn/changes/align-source-package-inventory/tasks.md"
+        }
+      ],
+      "manifest_hash": "1f0b27c3239261238d433fe2a4ec45120e03e252109c378ebc65255977d8346d"
+    },
+    "kind": "archive",
+    "manifest_hash": "d99c43462584cb90c8d4f9e6a2a904410b63c7aeb5eb20a3fc4b43e1b3ba34f7"
+  },
+  "non_claims": [
+    "workflow state proves only the selected policy graph and observed structural artifact facts",
+    "workflow instructions do not prove artifact truth, review quality, or implementation correctness",
+    "workflow state does not satisfy proposal, design, tasks, sync, archive, evidence, or release gates",
+    "workflow commands are read-only and do not create, edit, delete, or approve lifecycle artifacts"
+  ],
+  "plan_hash": "e74055f597e90415620c386f33624745075d7a96a50836397833b965d3565de3",
+  "policy": "artifact-default",
+  "policy_hash": "e49e1e82637cbc9d87c9b047eab92a935e764c88944eb249f0678438985a8532",
+  "profile_identity_hash": "f54a448d5c9f60a12f1446b822e2c07c8d60c6444e52e10a08f34c97570d6017",
+  "reasons": [],
+  "receipt_hash": "cdf2bf471219450d61efd94cac89e0814440950a112c0658859401ea27546f85",
+  "review_receipt_hashes": [],
+  "spec_effect": "delta",
+  "workflow_profile": "spec-driven",
+  "workflow_profile_compatibility_fallback": false,
+  "workflow_profile_source": "change_create",
+  "workflow_profile_version": 1
+}

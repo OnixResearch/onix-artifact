@@ -1,0 +1,25 @@
+{
+  "1416": {
+    "task": {
+      "id": 1416,
+      "created_at": "2026-10-20T23:01:49.281887899-04:00",
+      "original_command": "env MCF_TARGET_NAME=artifact-native-closeout-resume24 /home/brittonr/mantle-cairn-finish/bin/mcf-guard.sh finish-integrated-20261018 artifact-native-closeout-resume24 18000 -- nix shell --inputs-from path:/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21 nixpkgs#b3sum nixpkgs#python3 --command bash /home/brittonr/mantle-cairn-finish/bin/jobs/artifact-native-closeout-check-resume24.sh",
+      "command": "env MCF_TARGET_NAME=artifact-native-closeout-resume24 /home/brittonr/mantle-cairn-finish/bin/mcf-guard.sh finish-integrated-20261018 artifact-native-closeout-resume24 18000 -- nix shell --inputs-from path:/home/brittonr/mantle-cairn-finish/xrepo/artifact-source-cohort-traceability-resume21 nixpkgs#b3sum nixpkgs#python3 --command bash /home/brittonr/mantle-cairn-finish/bin/jobs/artifact-native-closeout-check-resume24.sh",
+      "path": "/home/brittonr",
+      "envs": {},
+      "group": "default",
+      "dependencies": [],
+      "priority": 0,
+      "label": null,
+      "status": {
+        "Done": {
+          "enqueued_at": "2026-10-20T23:01:57.728979872-04:00",
+          "start": "2026-10-20T23:01:57.840223083-04:00",
+          "end": "2026-10-20T23:07:08.489360629-04:00",
+          "result": "Success"
+        }
+      }
+    },
+    "output": "targets bytes=88240050176 cap=250000000000 low=220000000000\ntmp bytes=3098730496 cap=35000000000 low=30000000000"
+  }
+}

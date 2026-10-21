@@ -1,0 +1,150 @@
+[
+  {
+    "label": "starting-head",
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+    "exit": 0,
+    "elapsed_s": 0.003052094019949436
+  },
+  {
+    "label": "native-sync-preview",
+    "command": [
+      "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+      "sync",
+      "align-source-package-inventory",
+      "--root",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+      "--policy",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/cairn-policy/generated/cairn-policy.json"
+    ],
+    "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+    "exit": 0,
+    "elapsed_s": 0.023296324536204338
+  },
+  {
+    "label": "native-archive-preview",
+    "command": [
+      "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+      "archive",
+      "align-source-package-inventory",
+      "--root",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+      "--policy",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/cairn-policy/generated/cairn-policy.json"
+    ],
+    "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+    "exit": 0,
+    "elapsed_s": 0.02425449062138796
+  },
+  {
+    "label": "native-sync-execute",
+    "command": [
+      "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+      "sync",
+      "align-source-package-inventory",
+      "--root",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+      "--policy",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/cairn-policy/generated/cairn-policy.json",
+      "--execute"
+    ],
+    "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+    "exit": 0,
+    "elapsed_s": 0.024912170134484768
+  },
+  {
+    "label": "native-post-sync-preview",
+    "command": [
+      "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+      "sync",
+      "align-source-package-inventory",
+      "--root",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+      "--policy",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/cairn-policy/generated/cairn-policy.json"
+    ],
+    "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+    "exit": 0,
+    "elapsed_s": 0.023475922644138336
+  },
+  {
+    "label": "native-post-sync-archive-preview",
+    "command": [
+      "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+      "archive",
+      "align-source-package-inventory",
+      "--root",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+      "--policy",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/cairn-policy/generated/cairn-policy.json"
+    ],
+    "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+    "exit": 0,
+    "elapsed_s": 0.024822192266583443
+  },
+  {
+    "label": "native-archive-execute",
+    "command": [
+      "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+      "archive",
+      "align-source-package-inventory",
+      "--root",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+      "--policy",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/cairn-policy/generated/cairn-policy.json",
+      "--execute"
+    ],
+    "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+    "exit": 0,
+    "elapsed_s": 0.03510360233485699
+  },
+  {
+    "label": "post-archive-native-validate",
+    "command": [
+      "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+      "validate",
+      "--root",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+      "--policy",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/cairn-policy/generated/cairn-policy.json"
+    ],
+    "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+    "exit": 0,
+    "elapsed_s": 0.02237898577004671
+  },
+  {
+    "label": "post-archive-traceability-coverage",
+    "command": [
+      "/nix/store/xcmnmrk9nd8ssz0snbg4kdg6vlfcqrgm-cairn-0.1.0/bin/cairn",
+      "traceability",
+      "coverage",
+      "--root",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+      "--policy",
+      "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3/cairn-policy/generated/cairn-policy.json",
+      "--json"
+    ],
+    "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+    "exit": 0,
+    "elapsed_s": 0.014509342610836029
+  },
+  {
+    "label": "post-archive-owner-lifecycle-and-inventory-checks",
+    "command": [
+      "/nix/store/kgwqirnzhflf9vmrkzgqz16z2bry397z-nix-2.34.8/bin/nix",
+      "build",
+      "--no-link",
+      "--no-write-lock-file",
+      "-L",
+      "path:/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3#checks.x86_64-linux.cairn-validation",
+      "path:/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3#checks.x86_64-linux.nickel-contracts"
+    ],
+    "cwd": "/home/brittonr/mantle-cairn-finish/xrepo/artifact-published-5f3962d7-resume23-v3",
+    "exit": 0,
+    "elapsed_s": 7.790426938794553
+  }
+]

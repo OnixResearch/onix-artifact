@@ -210,7 +210,8 @@
           };
 
           nickel-contracts =
-            # The source-inventory delta is not an accepted requirement until native sync.
+            # r[impl artifact_workspace.source_inventory.complete]
+            # r[verify artifact_workspace.source_inventory.complete]
             # r[verify artifact_workspace.substrate.uniform]
             # r[verify artifact_workspace.dependencies.narrow]
             let

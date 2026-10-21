@@ -1,0 +1,380 @@
+these 2 derivations will be built:
+  /nix/store/0b96mfp7z9hqyw7pmdwqn7nlgl16s5iz-artifact-workspace-cairn-validation.drv
+  /nix/store/520adik2lp82pdr96jvlh6001lzr6g50-artifact-workspace-nickel-contracts.drv
+building '/nix/store/0b96mfp7z9hqyw7pmdwqn7nlgl16s5iz-artifact-workspace-cairn-validation.drv'...
+building '/nix/store/520adik2lp82pdr96jvlh6001lzr6g50-artifact-workspace-nickel-contracts.drv'...
+artifact-workspace-cairn-validation> {
+artifact-workspace-cairn-validation>   "change_issues": [],
+artifact-workspace-cairn-validation>   "changes": 3,
+artifact-workspace-cairn-validation>   "cross_repo_dependencies": [],
+artifact-workspace-cairn-validation>   "cross_repo_evidence_issues": [],
+artifact-workspace-cairn-validation>   "findings": [],
+artifact-workspace-cairn-validation>   "issues": [],
+artifact-workspace-cairn-validation>   "layout": "cairn",
+artifact-workspace-cairn-validation>   "policy": "artifact-default",
+artifact-workspace-cairn-validation>   "policy_selection": {
+artifact-workspace-cairn-validation>     "blake3": "6967ab19f7da5191daa61bf970f975baaa936ef57295b6b7cf438c7b8c9a44d7",
+artifact-workspace-cairn-validation>     "installation_receipt": false,
+artifact-workspace-cairn-validation>     "locator": "cairn-policy/generated/cairn-policy.json",
+artifact-workspace-cairn-validation>     "source": "explicit"
+artifact-workspace-cairn-validation>   },
+artifact-workspace-cairn-validation>   "profile_issues": [],
+artifact-workspace-cairn-validation>   "receipt_hash": "d248fa611dce417bdc04ca76f0e99eb7db51213988667dcec4edb3d8f66e6ec8",
+artifact-workspace-cairn-validation>   "resolution": {
+artifact-workspace-cairn-validation>     "diagnostics": [],
+artifact-workspace-cairn-validation>     "locator_consulted": false,
+artifact-workspace-cairn-validation>     "registry_lookup": "local_locator_only",
+artifact-workspace-cairn-validation>     "selected": {
+artifact-workspace-cairn-validation>       "project_identity": null,
+artifact-workspace-cairn-validation>       "root": ".",
+artifact-workspace-cairn-validation>       "source": "explicit_root",
+artifact-workspace-cairn-validation>       "store_id": null,
+artifact-workspace-cairn-validation>       "store_identity": null
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     "valid": true
+artifact-workspace-cairn-validation>   },
+artifact-workspace-cairn-validation>   "spec_findings": [],
+artifact-workspace-cairn-validation>   "spec_issues": [],
+artifact-workspace-cairn-validation>   "spec_substance": [
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-fault-injection-io-tests/specs/io-fault-fixtures/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 4,
+artifact-workspace-cairn-validation>       "scenario_blocks": 6,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 4
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-owned-source-agpl/specs/owned-source-license/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 1,
+artifact-workspace-cairn-validation>       "scenario_blocks": 2,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 1
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/publish-required-artifact-source/specs/source-distribution/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 3,
+artifact-workspace-cairn-validation>       "scenario_blocks": 5,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 3
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/specs/artifact-auth/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 6,
+artifact-workspace-cairn-validation>       "scenario_blocks": 12,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 6
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/specs/artifact-binding-core/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 10,
+artifact-workspace-cairn-validation>       "scenario_blocks": 19,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 10
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/specs/artifact-transfer/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 3,
+artifact-workspace-cairn-validation>       "scenario_blocks": 6,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 3
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/specs/artifact-workspace/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 6,
+artifact-workspace-cairn-validation>       "scenario_blocks": 14,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 6
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/specs/durable-file-publication-extraction/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 16,
+artifact-workspace-cairn-validation>       "scenario_blocks": 32,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 16
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "path": "./.cairn/specs/radicle-publication/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 5,
+artifact-workspace-cairn-validation>       "scenario_blocks": 10,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 5
+artifact-workspace-cairn-validation>     }
+artifact-workspace-cairn-validation>   ],
+artifact-workspace-cairn-validation>   "specs_validated": 9,
+artifact-workspace-cairn-validation>   "substance": [
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "design",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-fault-injection-io-tests/design.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 13,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "proposal",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-fault-injection-io-tests/proposal.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 13,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "delta_spec",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-fault-injection-io-tests/specs/io-fault-fixtures/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 4,
+artifact-workspace-cairn-validation>       "scenario_blocks": 6,
+artifact-workspace-cairn-validation>       "substantive_lines": 25,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 4,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 10,
+artifact-workspace-cairn-validation>       "kind": "tasks",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-fault-injection-io-tests/tasks.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 10,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 10,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 10
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "design",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-owned-source-agpl/design.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 8,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "proposal",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-owned-source-agpl/proposal.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 5,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "delta_spec",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-owned-source-agpl/specs/owned-source-license/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 1,
+artifact-workspace-cairn-validation>       "scenario_blocks": 2,
+artifact-workspace-cairn-validation>       "substantive_lines": 7,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 1,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 5,
+artifact-workspace-cairn-validation>       "kind": "tasks",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/adopt-owned-source-agpl/tasks.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 5,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 5,
+artifact-workspace-cairn-validation>       "task_done": 3,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 2
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "design",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/publish-required-artifact-source/design.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 9,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "proposal",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/publish-required-artifact-source/proposal.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 8,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 0,
+artifact-workspace-cairn-validation>       "kind": "delta_spec",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/publish-required-artifact-source/specs/source-distribution/spec.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 3,
+artifact-workspace-cairn-validation>       "scenario_blocks": 5,
+artifact-workspace-cairn-validation>       "substantive_lines": 21,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 3,
+artifact-workspace-cairn-validation>       "substantive_tasks": 0,
+artifact-workspace-cairn-validation>       "task_done": 0,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 0
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "checkbox_tasks": 5,
+artifact-workspace-cairn-validation>       "kind": "tasks",
+artifact-workspace-cairn-validation>       "malformed_dependency_markers": 0,
+artifact-workspace-cairn-validation>       "path": "./.cairn/changes/publish-required-artifact-source/tasks.md",
+artifact-workspace-cairn-validation>       "requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "scenario_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_lines": 5,
+artifact-workspace-cairn-validation>       "substantive_requirement_blocks": 0,
+artifact-workspace-cairn-validation>       "substantive_tasks": 5,
+artifact-workspace-cairn-validation>       "task_done": 4,
+artifact-workspace-cairn-validation>       "task_in_progress": 0,
+artifact-workspace-cairn-validation>       "task_todo": 1
+artifact-workspace-cairn-validation>     }
+artifact-workspace-cairn-validation>   ],
+artifact-workspace-cairn-validation>   "substance_findings": [],
+artifact-workspace-cairn-validation>   "substance_issues": [],
+artifact-workspace-cairn-validation>   "valid": true,
+artifact-workspace-cairn-validation>   "workflow_profiles": [
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "acceptance_ids": [],
+artifact-workspace-cairn-validation>       "non_claims": [
+artifact-workspace-cairn-validation>         "workflow state proves only the selected policy graph and observed structural artifact facts",
+artifact-workspace-cairn-validation>         "workflow instructions do not prove artifact truth, review quality, or implementation correctness",
+artifact-workspace-cairn-validation>         "workflow state does not satisfy proposal, design, tasks, sync, archive, evidence, or release gates",
+artifact-workspace-cairn-validation>         "workflow commands are read-only and do not create, edit, delete, or approve lifecycle artifacts"
+artifact-workspace-cairn-validation>       ],
+artifact-workspace-cairn-validation>       "profile_identity_hash": "ad38ddc0c6601e14836e8c0817f180d6b46ce3403346ca65d0436270159941c4",
+artifact-workspace-cairn-validation>       "review_receipt_hashes": [],
+artifact-workspace-cairn-validation>       "spec_effect": "delta",
+artifact-workspace-cairn-validation>       "workflow_profile": "spec-driven",
+artifact-workspace-cairn-validation>       "workflow_profile_compatibility_fallback": false,
+artifact-workspace-cairn-validation>       "workflow_profile_source": "change_create",
+artifact-workspace-cairn-validation>       "workflow_profile_version": 1
+artifact-workspace-cairn-validation>     },
+artifact-workspace-cairn-validation>     {
+artifact-workspace-cairn-validation>       "acceptance_ids": [],
+artifact-workspace-cairn-validation>       "non_claims": [
+artifact-workspace-cairn-validation>         "workflow state proves only the selected policy graph and observed structural artifact facts",
+artifact-workspace-cairn-validation>         "workflow instructions do not prove artifact truth, review quality, or implementation correctness",
+artifact-workspace-cairn-validation>         "workflow state does not satisfy proposal, design, tasks, sync, archive, evidence, or release gates",
+artifact-workspace-cairn-validation>         "workflow commands are read-only and do not create, edit, delete, or approve lifecycle artifacts"
+artifact-workspace-cairn-validation>       ],
+artifact-workspace-cairn-validation>       "profile_identity_hash": "df8dd498e68658a48cf1be9c89d62a4f18b7cb127f9eba32f1179037658c6a69",
+artifact-workspace-cairn-validation>       "review_receipt_hashes": [],
+artifact-workspace-cairn-validation>       "spec_effect": "delta",
+artifact-workspace-cairn-validation>       "workflow_profile": "spec-driven",
+artifact-workspace-cairn-validation>       "workflow_profile_compatibility_fallback": false,
+artifact-workspace-cairn-validation>       "workflow_profile_source": "change_create",
+artifact-workspace-cairn-validation>       "workflow_profile_version": 1
+artifact-workspace-cairn-validation>     }
+artifact-workspace-cairn-validation>   ]
+artifact-workspace-cairn-validation> }
+artifact-workspace-cairn-validation> {
+artifact-workspace-cairn-validation>   "command": "traceability coverage",
+artifact-workspace-cairn-validation>   "dangling": [],
+artifact-workspace-cairn-validation>   "input_hash": "f5499ee09e53c3aa6d30ba5531d5d9e49826690ce77a272b53f7d4cd4f573cfd",
+artifact-workspace-cairn-validation>   "missing": [],
+artifact-workspace-cairn-validation>   "policy": "artifact-default",
+artifact-workspace-cairn-validation>   "policy_hash": "e49e1e82637cbc9d87c9b047eab92a935e764c88944eb249f0678438985a8532",
+artifact-workspace-cairn-validation>   "profile": {
+artifact-workspace-cairn-validation>     "anchor_kind": "exact_marker_bytes",
+artifact-workspace-cairn-validation>     "assurance_level": "declared",
+artifact-workspace-cairn-validation>     "evidence_sources": [
+artifact-workspace-cairn-validation>       {
+artifact-workspace-cairn-validation>         "extensions": [
+artifact-workspace-cairn-validation>           "ncl"
+artifact-workspace-cairn-validation>         ],
+artifact-workspace-cairn-validation>         "root": "config",
+artifact-workspace-cairn-validation>         "source_kind": "nickel_source"
+artifact-workspace-cairn-validation>       },
+artifact-workspace-cairn-validation>       {
+artifact-workspace-cairn-validation>         "extensions": [
+artifact-workspace-cairn-validation>           "ncl"
+artifact-workspace-cairn-validation>         ],
+artifact-workspace-cairn-validation>         "root": "release",
+artifact-workspace-cairn-validation>         "source_kind": "nickel_source"
+artifact-workspace-cairn-validation>       },
+artifact-workspace-cairn-validation>       {
+artifact-workspace-cairn-validation>         "extensions": [
+artifact-workspace-cairn-validation>           "md"
+artifact-workspace-cairn-validation>         ],
+artifact-workspace-cairn-validation>         "root": "README.md",
+artifact-workspace-cairn-validation>         "source_kind": "tool_source"
+artifact-workspace-cairn-validation>       },
+artifact-workspace-cairn-validation>       {
+artifact-workspace-cairn-validation>         "extensions": [
+artifact-workspace-cairn-validation>           "md"
+artifact-workspace-cairn-validation>         ],
+artifact-workspace-cairn-validation>         "root": "docs",
+artifact-workspace-cairn-validation>         "source_kind": "tool_source"
+artifact-workspace-cairn-validation>       },
+artifact-workspace-cairn-validation>       {
+artifact-workspace-cairn-validation>         "extensions": [
+artifact-workspace-cairn-validation>           "nix"
+artifact-workspace-cairn-validation>         ],
+artifact-workspace-cairn-validation>         "root": "flake.nix",
+artifact-workspace-cairn-validation>         "source_kind": "tool_source"
+artifact-workspace-cairn-validation>       }
+artifact-workspace-cairn-validation>     ],
+artifact-workspace-cairn-validation>     "id": "cairn-default",
+artifact-workspace-cairn-validation>     "marker_verbs": [
+artifact-workspace-cairn-validation>       "impl",
+artifact-workspace-cairn-validation>       "verify",
+artifact-workspace-cairn-validation>       "depends",
+artifact-workspace-cairn-validation>       "related"
+artifact-workspace-cairn-validation>     ],
+artifact-workspace-cairn-validation>     "requirement_sources": [
+artifact-workspace-cairn-validation>       {
+artifact-workspace-cairn-validation>         "extensions": [
+artifact-workspace-cairn-validation>           "md"
+artifact-workspace-cairn-validation>         ],
+artifact-workspace-cairn-validation>         "root": ".cairn/specs",
+artifact-workspace-cairn-validation>         "source_kind": "accepted_specs"
+artifact-workspace-cairn-validation>       }
+artifact-workspace-cairn-validation>     ]
+artifact-workspace-cairn-validation>   },
+artifact-workspace-cairn-validation>   "profile_id": "cairn-default",
+artifact-workspace-cairn-validation>   "receipt_hash": "0777487c713c216c413d450e419650783af826528cf83d0f1a3154a5405cdc00",
+artifact-workspace-cairn-validation>   "referenced": 41,
+artifact-workspace-cairn-validation>   "requirements": 41,
+artifact-workspace-cairn-validation>   "root": ".",
+artifact-workspace-cairn-validation>   "source_summary": {
+artifact-workspace-cairn-validation>     "evidence_files": 33,
+artifact-workspace-cairn-validation>     "evidence_manifest_hash": "31835d504b2d3a29cdd928e1b27bfb31641873f7f66cc916efe59b533e2ee4c3",
+artifact-workspace-cairn-validation>     "requirement_files": 6,
+artifact-workspace-cairn-validation>     "requirement_manifest_hash": "6815552b67ab8ab856ff3beca3745e7ae37ba07011b3431d7b91fa66a988a72d"
+artifact-workspace-cairn-validation>   },
+artifact-workspace-cairn-validation>   "valid": true,
+artifact-workspace-cairn-validation>   "verdict": "pass"
+artifact-workspace-cairn-validation> }
