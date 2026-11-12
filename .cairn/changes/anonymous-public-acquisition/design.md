@@ -1,6 +1,6 @@
 ## Context
 
-The workspace is public on GitHub and on Radicle. `flake.nix` previously pinned Cairn with `git+ssh://git@github.com/OnixResearch/cairn.git`, and the locked Cairn revision declared its own inputs as GitHub SSH locators plus a `git.onix.computer` gateway. Anonymous `nix flake check` and `nix develop` therefore depended on a maintainer GitHub key and an internal service. The published GitHub repository, Mantle, bounded-exec and the recorded Cairn revision are publicly fetchable over HTTPS at the same object identities.
+The workspace is public on GitHub and on Radicle. `flake.nix` previously pinned Cairn with a GitHub SSH locator, and the locked Cairn revision declared its own inputs as GitHub SSH locators plus an internal Git gateway. Anonymous `nix flake check` and `nix develop` therefore depended on a maintainer GitHub key and an internal service. The published GitHub repository, Mantle, bounded-exec and the recorded Cairn revision are publicly fetchable over HTTPS at the same object identities.
 
 ## Decisions
 
