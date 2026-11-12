@@ -129,12 +129,12 @@ Native lifecycle content is `.cairn/`; the immutable tool input is Cairn
 `1cacafebbff7b2716a953961a1ebf52bafb352e7`, acquired anonymously over HTTPS from
 `https://github.com/OnixResearch/cairn`. The flake overrides Cairn's own SSH and
 internal-gateway flake inputs with public HTTPS locators at the same revisions.
-Cairn still declares two of its own Cargo git dependencies with GitHub SSH
-locators, so building the tool for `nix flake check` or
-`nix run --inputs-from . cairn#cairn` currently requires an environment that can
-build it, such as an authorized GitHub key or a Nix store that already contains
-it. Those embedded Cargo locators are owned by the pinned tool, not this
-repository.
+Cairn's own Cargo lock still resolves `onix-artifact` and `mantle` through GitHub
+SSH and `bounded-exec` through an internal Git gateway, so building the tool for
+`nix flake check` or `nix run --inputs-from . cairn#cairn` currently requires an
+environment that can build it, such as an authorized GitHub key with cached
+gateway sources or a Nix store that already contains it. Those embedded Cargo
+locators are owned by the pinned tool, not this repository.
 The pinned tool selects `.cairn/` without relocating lifecycle content or changing
 the checked-in gate policy. The exact 156-file prepared
 cohort passed the x86_64-linux owner flake checks, native validation and gates,

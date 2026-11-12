@@ -20,5 +20,5 @@ The workspace is public on GitHub and on Radicle. `flake.nix` previously pinned 
 
 - The public GitHub repositories are external services; a future rename or removal would break the locators. The lock still pins every revision and narHash, so a mismatch fails closed.
 - Overriding a tool's own inputs couples this repository's lock to those public repositories. The revisions are unchanged, and the Cairn tool remains the reviewed `1cacafe` revision.
-- The pinned Cairn tool still declares two of its own Cargo git dependencies with GitHub SSH locators, so building the tool for `nix flake check` or `cairn validate` needs an environment that can build it. This is pre-existing at the base revision, outside this repository's source inputs, and remains a recorded limitation rather than a source change to the tool.
+- The pinned Cairn tool's own Cargo lock still resolves `onix-artifact` and `mantle` through GitHub SSH and `bounded-exec` through an internal Git gateway, so building the tool for `nix flake check` or `cairn validate` needs an environment that can build it. This is pre-existing at the base revision, outside this repository's source inputs, and remains a recorded limitation rather than a source change to the tool.
 - Documentation accuracy and anonymous acquisition checks do not prove cryptographic correctness, consumer behavior or release eligibility.
