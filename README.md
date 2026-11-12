@@ -10,7 +10,7 @@ Source-only, pre-1.0 and under active development. There are no crates.io releas
 
 ## Requirements
 
-Nix with flakes enabled on `x86_64-linux` or `aarch64-linux`. The flake supplies the pinned Rust toolchain, Nickel, and Cairn; no private source access or service is required.
+Nix with flakes enabled on `x86_64-linux` or `aarch64-linux`. The flake supplies the pinned Rust toolchain, Nickel, and Cairn. The Rust workspace, dev shell, and Nickel checks resolve only public HTTPS sources.
 
 ## Quick start
 
@@ -91,8 +91,9 @@ with one delegate and threshold one. Reviewed consumer revisions
 `consumer-pins/<full-revision>` refs.
 
 `https://github.com/OnixResearch/onix-artifact` is the anonymous HTTPS source for
-this workspace. The flake and every Cargo source resolve from public HTTPS URLs at
-exact revisions; no GitHub credentials or internal gateway are required to build.
+this workspace. The flake and every workspace Cargo dependency resolve from public
+HTTPS URLs at exact revisions. The lifecycle gate's Cairn build prerequisite is
+documented under Validation.
 
 ## Validation
 
@@ -126,8 +127,14 @@ nix flake check path:$PWD -L
 
 Native lifecycle content is `.cairn/`; the immutable tool input is Cairn
 `1cacafebbff7b2716a953961a1ebf52bafb352e7`, acquired anonymously over HTTPS from
-`https://github.com/OnixResearch/cairn`. The flake overrides the tool's own SSH and
-internal-gateway source inputs with public HTTPS locators at the same revisions.
+`https://github.com/OnixResearch/cairn`. The flake overrides Cairn's own SSH and
+internal-gateway flake inputs with public HTTPS locators at the same revisions.
+Cairn still declares two of its own Cargo git dependencies with GitHub SSH
+locators, so building the tool for `nix flake check` or
+`nix run --inputs-from . cairn#cairn` currently requires an environment that can
+build it, such as an authorized GitHub key or a Nix store that already contains
+it. Those embedded Cargo locators are owned by the pinned tool, not this
+repository.
 The pinned tool selects `.cairn/` without relocating lifecycle content or changing
 the checked-in gate policy. The exact 156-file prepared
 cohort passed the x86_64-linux owner flake checks, native validation and gates,

@@ -6,5 +6,5 @@
 
 ## Verification
 
-- [ ] [serial] Run the repository formatting, test, Clippy, no-std, Nickel, Cairn and flake checks once after the edits. r[artifact_workspace.distribution.anonymous_sources]
-- [ ] [serial] Prove anonymous acquisition from a fresh clone with SSH, credentials, prompts and personal configuration disabled, for `cargo fetch --locked` and every locked flake input URL. r[artifact_workspace.distribution.anonymous_sources]
+- [x] [serial] Run the repository formatting, test, Clippy, no-std, Nickel, Cairn and flake checks once after the edits; record the pre-existing Cairn Cargo SSH limitation for the flake check. r[artifact_workspace.distribution.anonymous_sources]
+- [x] [serial] Prove anonymous acquisition from a fresh clone with SSH, credentials, prompts and personal configuration disabled, for `cargo fetch --locked` and every locked flake input URL. r[artifact_workspace.distribution.anonymous_sources]
