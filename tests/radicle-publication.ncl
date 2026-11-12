@@ -26,7 +26,7 @@ in
       rejected_as "publication-governance" (receipt & { governance.signed_refs_feature | force = "root" }),
       rejected_as "publication-governance" (receipt & { governance.signed_main_delegates | force = [] }),
       rejected_as "publication-distribution" (receipt & { distribution.onix_core_policy_revision | force = missing_commit }),
-      rejected_as "publication-distribution" (receipt & { distribution.public_https_git | force = "https://github.com/OnixResearch/artifact-auth" }),
+      rejected_as "publication-distribution" (receipt & { distribution.public_https_git | force = "https://example.invalid/artifact-auth" }),
       rejected_as "publication-distribution" (receipt & { distribution.replica_commit | force = missing_commit }),
       rejected_as "publication-distribution" (receipt & { distribution.github_fallback_configured | force = true }),
       rejected_as "publication-authority" (receipt & { authority_boundary.seed_delegate_keys_absent | force = false }),

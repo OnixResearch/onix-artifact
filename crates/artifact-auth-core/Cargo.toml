@@ -1,5 +1,6 @@
 [package]
 name = "artifact-auth-core"
+description = "Canonical signed statements, explicit observations, and bounded authentication decisions"
 version.workspace = true
 edition.workspace = true
 rust-version.workspace = true

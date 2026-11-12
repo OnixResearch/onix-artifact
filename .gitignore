@@ -1,4 +1,8 @@
 /target/
 /result
+/result-*
 /artifacts/
 .pi/
+.direnv/
+.jj/
+.worktrees/

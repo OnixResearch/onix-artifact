@@ -4,6 +4,22 @@ Product-neutral `no_std + alloc` cores for artifact authentication, transfer geo
 
 The workspace shares a Rust toolchain, license, lint policy, dependency resolution, lifecycle, and release checks. Workspace membership does not make its mechanisms semantically interchangeable and does not transfer consumer authority into these crates.
 
+## Status
+
+Source-only, pre-1.0 and under active development. There are no crates.io releases and no stability promise for the Rust API. The packages are consumed as immutable Git revisions by the product repositories that own the surrounding formats, policy, and authority.
+
+## Requirements
+
+Nix with flakes enabled on `x86_64-linux` or `aarch64-linux`. The flake supplies the pinned Rust toolchain, Nickel, and Cairn; no private source access or service is required.
+
+## Quick start
+
+```console
+git clone https://github.com/OnixResearch/onix-artifact
+cd onix-artifact
+nix develop -c cargo test --workspace
+```
+
 ## Start here
 
 1. Run `nix develop -c cargo test --workspace`.
@@ -68,17 +84,15 @@ The standalone `artifact-auth`, `artifact-transfer`, and `artifact-binding` repo
 
 Historical `artifact-auth` revision `799459346d5416fbd7b9f55840a7371441b55afa` remains a valid compatibility source for existing Molten, Mantle, and Valence pins. Moving a consumer to this workspace requires a repo-local Cairn change, exact source/package/license checks, generated Cargo/Nix locks, focused positive and negative tests, and rollback evidence.
 
-The unified workspace's existing canonical identity is
-`rad:z25ySMy8Hh3HpsxP5zcYoYgaMBi99`. It is now public natively, with its existing
-single delegate, threshold one, default branch and native `main` preserved.
-Reviewed consumer revisions `e41340bec587b6d049b5cc518ec7db925dde84be` and
+The workspace's canonical Radicle identity is `rad:z25ySMy8Hh3HpsxP5zcYoYgaMBi99`,
+with one delegate and threshold one. Reviewed consumer revisions
+`e41340bec587b6d049b5cc518ec7db925dde84be` and
 `c932138d880ddf4c2967f4c024b489b5c0022bf1` are signed on dedicated
-`consumer-pins/<full-revision>` refs. The exact command observations are in
-[`native-publication-and-acquisition.json`](.cairn/changes/publish-required-artifact-source/evidence/native-publication-and-acquisition.json).
-Native publication does not establish a working anonymous HTTPS Git input:
-post-publication exact fetches returned HTTP 500 from the Garden projection and
-repository-not-found from the Onix projection. Neither attempted endpoint is
-admitted for downstream cutover; exact anonymous acquisition remains open.
+`consumer-pins/<full-revision>` refs.
+
+`https://github.com/OnixResearch/onix-artifact` is the anonymous HTTPS source for
+this workspace. The flake and every Cargo source resolve from public HTTPS URLs at
+exact revisions; no GitHub credentials or internal gateway are required to build.
 
 ## Validation
 
@@ -111,10 +125,11 @@ nix flake check path:$PWD -L
 ```
 
 Native lifecycle content is `.cairn/`; the immutable tool input is Cairn
-`1cacafebbff7b2716a953961a1ebf52bafb352e7`, acquired through authorized Git SSH.
+`1cacafebbff7b2716a953961a1ebf52bafb352e7`, acquired anonymously over HTTPS from
+`https://github.com/OnixResearch/cairn`. The flake overrides the tool's own SSH and
+internal-gateway source inputs with public HTTPS locators at the same revisions.
 The pinned tool selects `.cairn/` without relocating lifecycle content or changing
-the checked-in gate policy. SSH acquisition requires an authorized GitHub key;
-it does not establish anonymous source availability. The exact 156-file prepared
+the checked-in gate policy. The exact 156-file prepared
 cohort passed the x86_64-linux owner flake checks, native validation and gates,
 and an isolated incomplete-release-inventory rejection. Commands, original
 output and source identities are retained in
@@ -133,7 +148,7 @@ The archive path is the native tool output, not a claim about execution date.
 
 ### Frozen Radicle compatibility source
 
-Historical revision `799459346d5416fbd7b9f55840a7371441b55afa` is served unchanged at `https://git.onix.computer/z4JGYYW7WsesXUq7MXVdx16Fawu2f.git`. Its typed publication receipt is [`evidence/radicle/publication-v1.ncl`](evidence/radicle/publication-v1.ncl). This compatibility publication does not replace the unified `artifact` workspace or claim current-package equivalence.
+Historical revision `799459346d5416fbd7b9f55840a7371441b55afa` of the deprecated standalone `artifact-auth` source remains in this repository's history as a compatibility source for existing pins. Its typed publication receipt is [`evidence/radicle/publication-v1.ncl`](evidence/radicle/publication-v1.ncl). The `git.onix.computer` projection recorded in that receipt is not a currently supported acquisition endpoint. This compatibility source does not replace the unified `artifact` workspace or claim current-package equivalence.
 
 ## License
 
@@ -141,12 +156,20 @@ Historical revision `799459346d5416fbd7b9f55840a7371441b55afa` is served unchang
 
 All repository-owned packages and new owned source, contracts, schemas, fixtures, templates, documentation and policy are offered under `AGPL-3.0-or-later`; see [`LICENSE`](LICENSE) and [`LICENSE-AGPL`](LICENSE-AGPL).
 
-The authorization and exact imported source revisions are recorded in [`provenance/SOURCE_GRANT.md`](provenance/SOURCE_GRANT.md) and [`docs/source-inventory.md`](docs/source-inventory.md). Prior MIT/Apache grants remain effective for previously granted material, including byte-identical content. Retained permissive texts do not grant permissive terms for new contributions. Immutable baselines, historical receipts and third-party dependencies retain their recorded terms. This source preparation does not publish a revision or migrate consumer pins.
+The authorization and exact imported source revisions are recorded in [`provenance/SOURCE_GRANT.md`](provenance/SOURCE_GRANT.md) and [`docs/source-inventory.md`](docs/source-inventory.md). Prior MIT/Apache grants remain effective for previously granted material, including byte-identical content. Retained permissive texts do not grant permissive terms for new contributions. Immutable baselines, historical receipts and third-party dependencies retain their recorded terms. This license policy does not itself publish a revision or migrate consumer pins.
+
+## Security
+
+Report vulnerabilities privately through GitHub security advisories: <https://github.com/OnixResearch/onix-artifact/security/advisories/new>. See [`SECURITY.md`](SECURITY.md) for supported revisions, scope, and reporting limits.
+
+## Non-claims
+
+A passing test, check, or validator result is not a security proof, release approval, or evidence of artifact truth. The crates do not own trust roots, signing, producer authorization, persistence, transport, deployment, retention, or deletion authority. This repository does not establish consumer migration or compatibility beyond the exact revisions and checks it records.
 
 ## References
 
-- [Deprecated artifact-auth history](https://github.com/OnixResearch/artifact-auth) — immutable authentication source and compatibility revisions.
-- [Deprecated artifact-transfer history](https://github.com/OnixResearch/artifact-transfer) — immutable transfer-geometry source and disposable consumer evidence imported at revision `507b10823c4513064710a70fe565f9a1ee592985`.
-- [`../artifact-binding/`](../artifact-binding/) — deprecated local design history with no publication source.
+- This repository's history retains the deprecated `artifact-auth` source, including compatibility revision `799459346d5416fbd7b9f55840a7371441b55afa`.
+- The deprecated standalone `artifact-transfer` source (revision `507b10823c4513064710a70fe565f9a1ee592985` of its separate history) has no supported publication source; `artifact-transfer-core` in this workspace is the current implementation.
+- The deprecated `artifact-binding` local design history has no publication source.
 - [PsychoLlama/ambient](https://github.com/PsychoLlama/ambient) — non-normative design reference for immutable implementations, explicit late binding, semantic handler identity, and generation retirement tracing.
-- [Molten](https://github.com/brittonr/aspen), [Mantle](https://github.com/OnixResearch/mantle), [Valence](https://github.com/OnixResearch/valence), and [OnixOS](https://github.com/onixcomputer/onix-modules) — consumers and pilots that retain product authority.
+- [Molten](https://github.com/brittonr/aspen), [Mantle](https://github.com/OnixResearch/mantle), [Valence](https://github.com/OnixResearch/valence), and OnixOS — consumers and pilots that retain product authority.

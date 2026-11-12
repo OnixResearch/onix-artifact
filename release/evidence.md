@@ -4,4 +4,4 @@ A release candidate is admitted only when the checked repository/release Nickel 
 
 Passing these checks proves bounded source, contract, build, and fixture facts only. It does not prove cryptographic library correctness, trust-root correctness, revocation freshness, consumer adapter correctness, artifact truth, transfer integrity, observation completeness, authorization, deletion authority, or product release eligibility.
 
-No immutable `artifact` workspace revision has been published yet. Historical consumer pins to `artifact-auth` remain authoritative until each consumer completes its own reviewed migration.
+No immutable `artifact` release tag or crates.io release exists. Consumer pins to `artifact-auth` remain authoritative until each consumer completes its own reviewed migration.

@@ -1,5 +1,6 @@
 [package]
 name = "artifact-auth-ed25519"
+description = "Pure Ed25519 verification over canonical artifact authentication statements"
 version.workspace = true
 edition.workspace = true
 rust-version.workspace = true

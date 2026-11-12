@@ -2,9 +2,9 @@
 
 ## Cutover gate
 
-The configured repository `https://github.com/OnixResearch/artifact-transfer` is not yet a published immutable source. Consumers must not add ambient sibling path dependencies or claim an unpublished local commit as external dependency evidence.
+The deprecated standalone `artifact-transfer` repository has no supported public source. Use the `artifact-transfer-core` package in this workspace at a reviewed immutable revision. Consumers must not add ambient sibling path dependencies or claim an unpublished local commit as external dependency evidence.
 
-Disposable Molten and ChaosControl adapters passed focused positive/negative tests; see [`PILOT.md`](PILOT.md). They were validation evidence only and were removed without modifying authoritative consumers.
+Disposable Molten and ChaosControl adapters passed focused positive/negative tests; see [`pilot.md`](pilot.md). They were validation evidence only and were removed without modifying authoritative consumers.
 
 After explicit publication authorization:
 
