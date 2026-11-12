@@ -7,9 +7,25 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    # The Cairn lifecycle tool is consumed as an immutable public revision.
+    # Its own SSH and private-gateway source inputs are overridden here with
+    # anonymous HTTPS locators for the same revisions so that a clean clone
+    # builds without GitHub credentials or the project's internal services.
     cairn = {
-      url = "git+ssh://git@github.com/OnixResearch/cairn.git?rev=1cacafebbff7b2716a953961a1ebf52bafb352e7";
+      url = "git+https://github.com/OnixResearch/cairn.git?rev=1cacafebbff7b2716a953961a1ebf52bafb352e7";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.artifact = {
+        url = "git+https://github.com/OnixResearch/onix-artifact.git?rev=e41340bec587b6d049b5cc518ec7db925dde84be";
+        flake = false;
+      };
+      inputs.mantle-build-contract = {
+        url = "git+https://github.com/OnixResearch/mantle.git?rev=0bbab77e23ab95caa4e4184b9945cfaa5c8040e2";
+        flake = false;
+      };
+      inputs.bounded-exec = {
+        url = "git+https://github.com/OnixResearch/bounded-exec.git?rev=29dac88ecded94457572db3fdfaaaab95fa91525";
+        flake = false;
+      };
     };
   };
 
